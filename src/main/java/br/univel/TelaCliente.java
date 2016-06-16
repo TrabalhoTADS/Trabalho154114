@@ -169,9 +169,9 @@ public class TelaCliente extends JFrame {
 		 * new BigDecimal(0))); }
 		 */
 
-		ReaderURL reader = new ReaderURL();
+/*		ReaderURL reader = new ReaderURL();
 		List<String> lista = reader.lerUrl();
-
+*/
 		// ReaderArquivo reader = new ReaderArquivo();
 		// List<String> lista = reader.lerArquivo();
 
