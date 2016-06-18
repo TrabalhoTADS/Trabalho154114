@@ -25,10 +25,10 @@ public class parserCliente {
 		listaStr.forEach(e -> {
 
 			if (!e.startsWith("----")) {
-				Matcher m = p.matcher(e);
-				if (m.matches()) {
+/*				Matcher m = p.matcher(e);
+				if (m.matches()) {*/
 					listaPrd.add(getCliente(e));
-				}
+				//}
 			}
 
 		});
@@ -38,19 +38,18 @@ public class parserCliente {
 
 	private Cliente getCliente(String str) {
 
-		String[] itens = str.split("|");
-		JOptionPane.showMessageDialog(null, itens[1]);
+		String[] itens = str.split(";");
 		int id = Integer.parseInt(itens[0]);
-		String nome = itens[1];
-		String endereco = itens[2];
+		String nome = itens[1].trim();
+		String endereco = itens[2].trim();
 		int numero = Integer.parseInt(itens[3]);
-		String complemento = itens[4];
-		String bairro = itens[5];
-		String cidade = itens[6];
-		String estado = itens[7];
+		String complemento = itens[4].trim();
+		String bairro = itens[5].trim();
+		String cidade = itens[6].trim();
+		String estado = itens[7].trim();
 		int cep = Integer.parseInt(itens[8]);
-		String telefone = itens[9];
-		String celular = itens[10];
+		String telefone = itens[9].trim();
+		String celular = itens[10].trim();
 
 		/*
 		 * int indexPrimeiroEspaco = str.indexOf(' '); String subStringCodigo =

@@ -158,13 +158,6 @@ public class TelaCliente extends JFrame {
 	protected void preencheTabela() {
 
 		/*
-		 * List<Produto> lista = new ArrayList<>();
-		 *
-		 * for (int i = 0; i < 10; i++) { lista.add(new Produto(i, "Produto ",
-		 * new BigDecimal(0))); }
-		 */
-
-		/*
 		 * ReaderURL reader = new ReaderURL(); List<String> lista =
 		 * reader.lerUrl();
 		 */
@@ -173,12 +166,6 @@ public class TelaCliente extends JFrame {
 
 		parserCliente parser = new parserCliente();
 		List<Cliente> listaPrd = parser.getCliente(lista);
-
-		NumberFormat formatUS = NumberFormat.getCurrencyInstance(new Locale("en", "US"));
-		NumberFormat formatBR = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
-
-		BigDecimal cotacao = new BigDecimal(
-				3.37); /* formato para valores MONETARIOS */
 
 		ClienteModel model = new ClienteModel(listaPrd);
 		table.setModel(model);

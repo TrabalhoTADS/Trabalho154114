@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 public class ReaderArquivo {
 
 	public List<String> lerArquivo(String arq) {
@@ -17,6 +19,7 @@ public class ReaderArquivo {
 				BufferedReader br = new BufferedReader(fr)) {
 
 			String linha = null;
+			JOptionPane.showMessageDialog(null, lista);
 			while ((linha = br.readLine()) != null) {
 				lista.add(linha);
 			}

@@ -34,23 +34,23 @@ public class ClienteModel extends AbstractTableModel {
 				return c.getId();
 			case 1:
 				return c.getNome();
-			case 3:
+			case 2:
 				return c.getEndereco();
-			case 4:
+			case 3:
 				return c.getNumero();
-			case 5:
+			case 4:
 				return c.getComplemento();
-			case 6:
+			case 5:
 				return c.getBairro();
-			case 7:
+			case 6:
 				return c.getCidade();
-			case 8:
+			case 7:
 				return c.getEstado();
-			case 9:
+			case 8:
 				return c.getCep();
-			case 10:
+			case 9:
 				return c.getTelefone();
-			case 11:
+			case 10:
 				return c.getCelular();
 		}
 
