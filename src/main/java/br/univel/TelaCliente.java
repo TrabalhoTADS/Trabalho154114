@@ -14,20 +14,15 @@ import java.util.Locale;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 
-public class TelaCliente extends JFrame {
+public class TelaCliente extends TelaPrincipal {
 
-	private JPanel contentPane;
 	private JTable table;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -57,6 +52,7 @@ public class TelaCliente extends JFrame {
 		gbl_contentPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
 		contentPane.setLayout(gbl_contentPane);
 
+
 		JButton btnNewButton = new JButton("Preenche");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -83,8 +79,8 @@ public class TelaCliente extends JFrame {
 
 		GridBagConstraints gbc_btnAdiciona = new GridBagConstraints();
 		gbc_btnAdiciona.insets = new Insets(0, 0, 5, 0);
-		gbc_btnAdiciona.gridx = 0;
-		gbc_btnAdiciona.gridy = 2;
+		gbc_btnAdiciona.gridx = 1;
+		gbc_btnAdiciona.gridy = 0;
 		contentPane.add(btnAdiciona, gbc_btnAdiciona);
 
 		JScrollPane scrollPane = new JScrollPane();
@@ -123,6 +119,8 @@ public class TelaCliente extends JFrame {
 		};
 
 		scrollPane.setViewportView(table);
+		
+		preencheTabela();
 
 		// final
 		// configuraTabela();
