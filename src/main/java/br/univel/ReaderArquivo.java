@@ -19,7 +19,6 @@ public class ReaderArquivo {
 				BufferedReader br = new BufferedReader(fr)) {
 
 			String linha = null;
-			JOptionPane.showMessageDialog(null, lista);
 			while ((linha = br.readLine()) != null) {
 				lista.add(linha);
 			}
