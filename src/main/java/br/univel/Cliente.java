@@ -8,7 +8,7 @@ public class Cliente {
 
 	private int id;
 	private String nome;
-	private String endereço;
+	private String endereco;
 	private int numero;
 	private String complemento;
 	private String bairro;
@@ -17,6 +17,22 @@ public class Cliente {
 	private int cep;
 	private String telefone;
 	private String celular;
+
+	public Cliente(int id, String nome, String endereco, int numero, String complemento, String bairro, String cidade,
+			String estado, int cep, String telefone, String celular) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.endereco = endereco;
+		this.numero = numero;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.cep = cep;
+		this.telefone = telefone;
+		this.celular = celular;
+	}
 
 	public int getId() {
 		return id;
@@ -34,12 +50,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getEndereço() {
-		return endereço;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 
 	public int getNumero() {
