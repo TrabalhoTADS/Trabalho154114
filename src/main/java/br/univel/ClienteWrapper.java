@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement(name = "listaclientes")
 public class ClienteWrapper {
 	private List<Cliente> clientes;
 

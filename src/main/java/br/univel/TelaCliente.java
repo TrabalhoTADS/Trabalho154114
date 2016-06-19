@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.util.Collection;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -19,6 +20,7 @@ import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 public class TelaCliente extends TelaPrincipal {
 
@@ -58,8 +60,13 @@ public class TelaCliente extends TelaPrincipal {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				preencheTabela();
-				File salvar = new File ("C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaClientes.xml");
-				SalvarClienteXML(salvar);
+				File xml = new File("C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaClientes.xml");
+				SalvarClienteXML(xml);
+
+				listaCliente = null;
+				LerClienteXML(xml);
+				ClienteModel model = new ClienteModel(listaCliente);
+				table.setModel(model);
 			}
 		});
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
@@ -123,7 +130,7 @@ public class TelaCliente extends TelaPrincipal {
 
 		scrollPane.setViewportView(table);
 
-		preencheTabela();
+		//preencheTabela();
 
 		// final
 		// configuraTabela();
@@ -185,12 +192,27 @@ public class TelaCliente extends TelaPrincipal {
 			Marshaller m = context.createMarshaller();
 			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-			// Envolvendo nossos dados da pessoa.
 			ClienteWrapper wrapper = new ClienteWrapper();
 			wrapper.setClientes(listaCliente);
 
-			// Enpacotando e salvando XML no arquivo.
 			m.marshal(wrapper, file);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void LerClienteXML(File file) {
+		try {
+			JAXBContext context = JAXBContext.newInstance(ClienteWrapper.class);
+			Unmarshaller um = context.createUnmarshaller();
+
+			ClienteWrapper wrapper = (ClienteWrapper) um.unmarshal(file);
+
+    		if (listaCliente != null)
+			   listaCliente.clear();
+
+			listaCliente.addAll(wrapper.getClientes());
 
 		} catch (Exception e) { // catches ANY exception
 			e.printStackTrace();

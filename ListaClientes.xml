@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<clienteWrapper>
+<listaclientes>
     <clientes>
         <id>1</id>
         <nome>EDUARDO H DE FREITAS</nome>
@@ -39,4 +39,4 @@
         <telefone>4530382994</telefone>
         <celular>4599044114</celular>
     </clientes>
-</clienteWrapper>
+</listaclientes>

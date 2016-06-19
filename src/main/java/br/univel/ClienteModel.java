@@ -10,8 +10,8 @@ public class ClienteModel extends AbstractTableModel {
 
 	private List<Cliente> lista;
 
-	public ClienteModel(List<Cliente> lista) {
-		this.lista = lista;
+	public ClienteModel(List<?> lista) {
+		this.lista = (List<Cliente>) lista;
 	}
 
 	@Override
