@@ -62,8 +62,6 @@ public class TelaCliente extends TelaPrincipal {
 				preencheTabela();
 				File xml = new File("C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaClientes.xml");
 				SalvarClienteXML(xml);
-
-				listaCliente = null;
 				LerClienteXML(xml);
 				ClienteModel model = new ClienteModel(listaCliente);
 				table.setModel(model);
@@ -130,7 +128,7 @@ public class TelaCliente extends TelaPrincipal {
 
 		scrollPane.setViewportView(table);
 
-		//preencheTabela();
+		// preencheTabela();
 
 		// final
 		// configuraTabela();
@@ -209,10 +207,13 @@ public class TelaCliente extends TelaPrincipal {
 
 			ClienteWrapper wrapper = (ClienteWrapper) um.unmarshal(file);
 
-    		if (listaCliente != null)
-			   listaCliente.clear();
+			listaCliente.clear();
 
-			listaCliente.addAll(wrapper.getClientes());
+			for (Cliente e : wrapper.getClientes()) {
+				listaCliente.add(e);
+			}
+
+			// listaCliente.addAll(wrapper.getClientes());
 
 		} catch (Exception e) { // catches ANY exception
 			e.printStackTrace();
