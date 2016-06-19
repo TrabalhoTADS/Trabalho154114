@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clienteWrapper>
+    <clientes>
+        <id>1</id>
+        <nome>EDUARDO H DE FREITAS</nome>
+        <endereco>R FLAMBOYANT</endereco>
+        <numero>871</numero>
+        <complemento>B</complemento>
+        <bairro>ALTO ALEGRE</bairro>
+        <cidade>CASCAVEL</cidade>
+        <estado>PARANA</estado>
+        <cep>85805070</cep>
+        <telefone>4530382994</telefone>
+        <celular>4599044114</celular>
+    </clientes>
+    <clientes>
+        <id>2</id>
+        <nome>EDUARDO H DE FREITAS</nome>
+        <endereco>R FLAMBOYANT</endereco>
+        <numero>871</numero>
+        <complemento>B</complemento>
+        <bairro>ALTO ALEGRE</bairro>
+        <cidade>CASCAVEL</cidade>
+        <estado>PARANA</estado>
+        <cep>85805070</cep>
+        <telefone>4530382994</telefone>
+        <celular>4599044114</celular>
+    </clientes>
+    <clientes>
+        <id>3</id>
+        <nome>EDUARDO H DE FREITAS</nome>
+        <endereco>R FLAMBOYANT</endereco>
+        <numero>871</numero>
+        <complemento>B</complemento>
+        <bairro>ALTO ALEGRE</bairro>
+        <cidade>CASCAVEL</cidade>
+        <estado>PARANA</estado>
+        <cep>85805070</cep>
+        <telefone>4530382994</telefone>
+        <celular>4599044114</celular>
+    </clientes>
+</clienteWrapper>

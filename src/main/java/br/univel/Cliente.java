@@ -1,22 +1,51 @@
 
 package br.univel;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement(name = "cliente")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Cliente {
 
+	@XmlElement(name = "id")
 	private int id;
+
+	@XmlElement(name = "nome")
 	private String nome;
+
+	@XmlElement(name = "endereco")
 	private String endereco;
+
+	@XmlElement(name = "numero")
 	private int numero;
+
+	@XmlElement(name = "complemento")
 	private String complemento;
+
+	@XmlElement(name = "bairro")
 	private String bairro;
+
+	@XmlElement(name = "cidade")
 	private String cidade;
+
+	@XmlElement(name = "estado")
 	private String estado;
+
+	@XmlElement(name = "cep")
 	private int cep;
+
+	@XmlElement(name = "telefone")
 	private String telefone;
+
+	@XmlElement(name = "celular")
 	private String celular;
+
+	public Cliente(){
+
+	}
 
 	public Cliente(int id, String nome, String endereco, int numero, String complemento, String bairro, String cidade,
 			String estado, int cep, String telefone, String celular) {

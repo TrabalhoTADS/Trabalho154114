@@ -7,10 +7,9 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
 import java.util.List;
-import java.util.Locale;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -18,10 +17,13 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 
 public class TelaCliente extends TelaPrincipal {
 
 	private JTable table;
+	private List<Cliente> listaCliente;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -52,11 +54,12 @@ public class TelaCliente extends TelaPrincipal {
 		gbl_contentPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
 		contentPane.setLayout(gbl_contentPane);
 
-
 		JButton btnNewButton = new JButton("Preenche");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				preencheTabela();
+				File salvar = new File ("C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaClientes.xml");
+				SalvarClienteXML(salvar);
 			}
 		});
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
@@ -119,7 +122,7 @@ public class TelaCliente extends TelaPrincipal {
 		};
 
 		scrollPane.setViewportView(table);
-		
+
 		preencheTabela();
 
 		// final
@@ -161,21 +164,37 @@ public class TelaCliente extends TelaPrincipal {
 		List<String> lista = reader.lerArquivo("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaclientes.txt");
 
 		parserCliente parser = new parserCliente();
-		List<Cliente> listaPrd = parser.getCliente(lista);
+		listaCliente = parser.getCliente(lista);
 
-		ClienteModel model = new ClienteModel(listaPrd);
+		ClienteModel model = new ClienteModel(listaCliente);
 		table.setModel(model);
 
 	}
 
-/*	private Cliente getProdutoSelecionadoNaTabela() {
-		Cliente c = null;
-		int index = table.getSelectedRow();
-		if (index == -1) {
-			JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!");
-		} else {
-			c = ((ClienteModel) table.getModel()).getProdutoNaLinha(index);
+	/*
+	 * private Cliente getProdutoSelecionadoNaTabela() { Cliente c = null; int
+	 * index = table.getSelectedRow(); if (index == -1) {
+	 * JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!"); } else
+	 * { c = ((ClienteModel) table.getModel()).getProdutoNaLinha(index); }
+	 * return c; }
+	 */
+
+	public void SalvarClienteXML(File file) {
+		try {
+			JAXBContext context = JAXBContext.newInstance(ClienteWrapper.class);
+			Marshaller m = context.createMarshaller();
+			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+			// Envolvendo nossos dados da pessoa.
+			ClienteWrapper wrapper = new ClienteWrapper();
+			wrapper.setClientes(listaCliente);
+
+			// Enpacotando e salvando XML no arquivo.
+			m.marshal(wrapper, file);
+
+		} catch (Exception e) { // catches ANY exception
+			e.printStackTrace();
 		}
-		return c;
-	}*/
+	}
+
 }
