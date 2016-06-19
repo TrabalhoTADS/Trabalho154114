@@ -1,14 +1,18 @@
 
 package br.univel;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.fasterxml.jackson.core.SerializableString;
+
 @XmlRootElement(name = "cliente")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Cliente {
+public class Cliente implements Serializable {
 
 	@XmlElement(name = "id")
 	private int id;
