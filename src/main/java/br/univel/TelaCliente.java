@@ -209,11 +209,7 @@ public class TelaCliente extends TelaPrincipal {
 
 			listaCliente.clear();
 
-			for (Cliente e : wrapper.getClientes()) {
-				listaCliente.add(e);
-			}
-
-			// listaCliente.addAll(wrapper.getClientes());
+			listaCliente.addAll(wrapper.getClientes());
 
 		} catch (Exception e) { // catches ANY exception
 			e.printStackTrace();
