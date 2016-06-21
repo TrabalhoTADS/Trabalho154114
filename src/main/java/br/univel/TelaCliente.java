@@ -77,7 +77,7 @@ public class TelaCliente extends TelaPrincipal {
 
                 listaCliente = (List<Cliente>) ler.LerArquivoXml(xml);
 */
-                ClienteModel model = new ClienteModel(listaCliente);
+                ClienteModel model = new ClienteModel(getListaCliente());
                 table.setModel(model);
             }
         });
@@ -183,9 +183,9 @@ public class TelaCliente extends TelaPrincipal {
         List<String> lista = reader.lerArquivo("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaclientes.txt");
 
         parserCliente parser = new parserCliente();
-        listaCliente = parser.getCliente(lista);
+        setListaCliente(parser.getCliente(lista));
 
-        ClienteModel model = new ClienteModel(listaCliente);
+        ClienteModel model = new ClienteModel(getListaCliente());
         table.setModel(model);
 
     }
@@ -205,7 +205,7 @@ public class TelaCliente extends TelaPrincipal {
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             Wrapper wrapper = new Wrapper();
-            wrapper.setList(listaCliente);
+            wrapper.setList(getListaCliente());
 
             m.marshal(wrapper, file);
 
@@ -221,9 +221,9 @@ public class TelaCliente extends TelaPrincipal {
 
             Wrapper wrapper = (Wrapper) um.unmarshal(file);
 
-            listaCliente.clear();
+            getListaCliente().clear();
 
-            listaCliente.addAll(wrapper.getList());
+            getListaCliente().addAll(wrapper.getList());
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -237,7 +237,7 @@ public class TelaCliente extends TelaPrincipal {
 
             ObjectOutputStream oos = new ObjectOutputStream(fout);
 
-            oos.writeObject(listaCliente);
+            oos.writeObject(getListaCliente());
 
             oos.close();
 
@@ -253,13 +253,21 @@ public class TelaCliente extends TelaPrincipal {
 
             ObjectInputStream ois = new ObjectInputStream(fin);
 
-            listaCliente.clear();
+            getListaCliente().clear();
 
-            listaCliente = (List<Cliente>) ois.readObject();
+            setListaCliente((List<Cliente>) ois.readObject());
 
             ois.close();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
+
+	public List<Cliente> getListaCliente() {
+		return listaCliente;
+	}
+
+	public void setListaCliente(List<Cliente> listaCliente) {
+		this.listaCliente = listaCliente;
+	}
 }
