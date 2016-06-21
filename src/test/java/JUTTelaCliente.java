@@ -19,7 +19,7 @@ public class JUTTelaCliente {
 		File file = new File ("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaclientes.txt");
 		c.preencheTabela();
 
-		assertEquals("A lista vazia deve ter 0 elementos", 3, c.getListaCliente().size());
+		assertEquals("A lista vazia deve ter 3 elementos", 3, c.getListaCliente().size());
 		//Assert.IsNull(true, c.getListaCliente());
 	}
 /*
