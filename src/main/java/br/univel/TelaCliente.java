@@ -13,7 +13,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.Collection;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -28,235 +27,239 @@ import javax.xml.bind.Unmarshaller;
 
 public class TelaCliente extends TelaPrincipal {
 
-	private JTable table;
-	private List<Cliente> listaCliente;
+    private JTable table;
+    private List<Cliente> listaCliente;
 
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					TelaCliente frame = new TelaCliente();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    TelaCliente frame = new TelaCliente();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 
-	public TelaCliente() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(300, 200, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		GridBagLayout gbl_contentPane = new GridBagLayout();
-		gbl_contentPane.columnWidths = new int[] { 0, 0, 0 };
-		gbl_contentPane.rowHeights = new int[] { 12, 12, 12, 12, 12 };
-		gbl_contentPane.columnWeights = new double[] { 1.0, Double.MIN_VALUE };
-		gbl_contentPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
-		contentPane.setLayout(gbl_contentPane);
+    public TelaCliente() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(300, 200, 450, 300);
+        contentPane = new JPanel();
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        setContentPane(contentPane);
+        GridBagLayout gbl_contentPane = new GridBagLayout();
+        gbl_contentPane.columnWidths = new int[] { 0, 0, 0 };
+        gbl_contentPane.rowHeights = new int[] { 12, 12, 12, 12, 12 };
+        gbl_contentPane.columnWeights = new double[] { 1.0, Double.MIN_VALUE };
+        gbl_contentPane.rowWeights = new double[] { 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE };
+        contentPane.setLayout(gbl_contentPane);
 
-		JButton btnNewButton = new JButton("Preenche");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				preencheTabela();
-				String ext;
-				String arquivo = "C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaClientes";
+        JButton btnNewButton = new JButton("Preenche");
+        btnNewButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                preencheTabela();
+                String ext;
+                String arquivo = "C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaClientes";
 
-				ext = ".xml";
-				File xml = new File(arquivo + ext);
-				SalvarClienteXML(xml);
-				LerClienteXML(xml);
+                ext = ".xml";
+                File xml = new File(arquivo + ext);
+                SalvarClienteXML(xml);
+                LerClienteXML(xml);
 
-				ext = ".ser";
-				File serializar = new File(arquivo + ext);
-				SalvarClienteSerializacao(serializar);
-				LerClienteSerializacao(serializar);
+                ext = ".ser";
+                File serializar = new File(arquivo + ext);
+                SalvarClienteSerializacao(serializar);
+                LerClienteSerializacao(serializar);
 
-				ClienteModel model = new ClienteModel(listaCliente);
-				table.setModel(model);
-			}
-		});
-		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
-		gbc_btnNewButton.insets = new Insets(0, 0, 5, 0);
-		gbc_btnNewButton.gridx = 0;
-		gbc_btnNewButton.gridy = 0;
-		contentPane.add(btnNewButton, gbc_btnNewButton);
+/*                LerXml ler = new LerXml();
 
-		/*
-		 * JButton btnRemove = new JButton("Remove");
-		 * btnRemove.addActionListener(new ActionListener() { public void
-		 * actionPerformed(ActionEvent e) { removerSelecionado(); } });
-		 * GridBagConstraints gbc_btnRemove = new GridBagConstraints();
-		 * gbc_btnRemove.insets = new Insets(0, 0, 5, 0); gbc_btnRemove.gridx =
-		 * 0; gbc_btnRemove.gridy = 1; contentPane.add(btnRemove,
-		 * gbc_btnRemove);
-		 */
+                listaCliente = (List<Cliente>) ler.LerArquivoXml(xml);
+*/
+                ClienteModel model = new ClienteModel(listaCliente);
+                table.setModel(model);
+            }
+        });
+        GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
+        gbc_btnNewButton.insets = new Insets(0, 0, 5, 0);
+        gbc_btnNewButton.gridx = 0;
+        gbc_btnNewButton.gridy = 0;
+        contentPane.add(btnNewButton, gbc_btnNewButton);
 
-		JButton btnAdiciona = new JButton("Adiciona");
+        /*
+         * JButton btnRemove = new JButton("Remove");
+         * btnRemove.addActionListener(new ActionListener() { public void
+         * actionPerformed(ActionEvent e) { removerSelecionado(); } });
+         * GridBagConstraints gbc_btnRemove = new GridBagConstraints();
+         * gbc_btnRemove.insets = new Insets(0, 0, 5, 0); gbc_btnRemove.gridx =
+         * 0; gbc_btnRemove.gridy = 1; contentPane.add(btnRemove,
+         * gbc_btnRemove);
+         */
 
-		GridBagConstraints gbc_btnAdiciona = new GridBagConstraints();
-		gbc_btnAdiciona.insets = new Insets(0, 0, 5, 0);
-		gbc_btnAdiciona.gridx = 1;
-		gbc_btnAdiciona.gridy = 0;
-		contentPane.add(btnAdiciona, gbc_btnAdiciona);
+        JButton btnAdiciona = new JButton("Adiciona");
 
-		JScrollPane scrollPane = new JScrollPane();
-		GridBagConstraints gbc_scrollPane = new GridBagConstraints();
-		gbc_scrollPane.fill = GridBagConstraints.BOTH;
-		gbc_scrollPane.gridx = 0;
-		gbc_scrollPane.gridy = 3;
-		contentPane.add(scrollPane, gbc_scrollPane);
+        GridBagConstraints gbc_btnAdiciona = new GridBagConstraints();
+        gbc_btnAdiciona.insets = new Insets(0, 0, 5, 0);
+        gbc_btnAdiciona.gridx = 1;
+        gbc_btnAdiciona.gridy = 0;
+        contentPane.add(btnAdiciona, gbc_btnAdiciona);
 
-		table = new JTable() {
+        JScrollPane scrollPane = new JScrollPane();
+        GridBagConstraints gbc_scrollPane = new GridBagConstraints();
+        gbc_scrollPane.fill = GridBagConstraints.BOTH;
+        gbc_scrollPane.gridx = 0;
+        gbc_scrollPane.gridy = 3;
+        contentPane.add(scrollPane, gbc_scrollPane);
 
-			@Override
-			public String getToolTipText(MouseEvent e) {
+        table = new JTable() {
 
-				String tip = null;
+            @Override
+            public String getToolTipText(MouseEvent e) {
 
-				Point p = e.getPoint();
+                String tip = null;
 
-				int rowIndex = rowAtPoint(p);
-				int colIndex = columnAtPoint(p);
+                Point p = e.getPoint();
 
-				if (rowIndex == -1 || colIndex == -1) {
-					return null;
-				}
+                int rowIndex = rowAtPoint(p);
+                int colIndex = columnAtPoint(p);
 
-				try {
-					tip = getValueAt(rowIndex, colIndex).toString();
-				} catch (RuntimeException e1) {
+                if (rowIndex == -1 || colIndex == -1) {
+                    return null;
+                }
 
-				}
+                try {
+                    tip = getValueAt(rowIndex, colIndex).toString();
+                } catch (RuntimeException e1) {
 
-				return tip;
+                }
 
-			}
+                return tip;
 
-		};
+            }
 
-		scrollPane.setViewportView(table);
+        };
 
-		// preencheTabela();
+        scrollPane.setViewportView(table);
 
-		// final
-		// configuraTabela();
-	}
+        // preencheTabela();
 
-	/*
-	 * protected void removerSelecionado() { Produto c =
-	 * getProdutoSelecionadoNaTabela(); if (c != null) { ((ProdutoModel)
-	 * table.getModel()).removerProduto(c); }
-	 *
-	 * }
-	 */
+        // final
+        // configuraTabela();
+    }
 
-	/*
-	 * private void configuraTabela() { table.addMouseListener(new
-	 * MouseAdapter() {
-	 *
-	 * @Override public void mouseClicked(MouseEvent e) {
-	 *
-	 * if (e.getClickCount() == 2) { Produto c =
-	 * getProdutoSelecionadoNaTabela(); if (c != null) {
-	 * JOptionPane.showMessageDialog(null, "Produto: " + c.toString()); }
-	 *
-	 * } }
-	 *
-	 * });
-	 *
-	 * }
-	 */
+    /*
+     * protected void removerSelecionado() { Produto c =
+     * getProdutoSelecionadoNaTabela(); if (c != null) { ((ProdutoModel)
+     * table.getModel()).removerProduto(c); }
+     *
+     * }
+     */
 
-	protected void preencheTabela() {
+    /*
+     * private void configuraTabela() { table.addMouseListener(new
+     * MouseAdapter() {
+     *
+     * @Override public void mouseClicked(MouseEvent e) {
+     *
+     * if (e.getClickCount() == 2) { Produto c =
+     * getProdutoSelecionadoNaTabela(); if (c != null) {
+     * JOptionPane.showMessageDialog(null, "Produto: " + c.toString()); }
+     *
+     * } }
+     *
+     * });
+     *
+     * }
+     */
 
-		/*
-		 * ReaderURL reader = new ReaderURL(); List<String> lista =
-		 * reader.lerUrl();
-		 */
-		ReaderArquivo reader = new ReaderArquivo();
-		List<String> lista = reader.lerArquivo("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaclientes.txt");
+    public void preencheTabela() {
 
-		parserCliente parser = new parserCliente();
-		listaCliente = parser.getCliente(lista);
+        /*
+         * ReaderURL reader = new ReaderURL(); List<String> lista =
+         * reader.lerUrl();
+         */
+        ReaderArquivo reader = new ReaderArquivo();
+        List<String> lista = reader.lerArquivo("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaclientes.txt");
 
-		ClienteModel model = new ClienteModel(listaCliente);
-		table.setModel(model);
+        parserCliente parser = new parserCliente();
+        listaCliente = parser.getCliente(lista);
 
-	}
+        ClienteModel model = new ClienteModel(listaCliente);
+        table.setModel(model);
 
-	/*
-	 * private Cliente getProdutoSelecionadoNaTabela() { Cliente c = null; int
-	 * index = table.getSelectedRow(); if (index == -1) {
-	 * JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!"); } else
-	 * { c = ((ClienteModel) table.getModel()).getProdutoNaLinha(index); }
-	 * return c; }
-	 */
+    }
 
-	public void SalvarClienteXML(File file) {
-		try {
-			JAXBContext context = JAXBContext.newInstance(ClienteWrapper.class);
-			Marshaller m = context.createMarshaller();
-			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+    /*
+     * private Cliente getProdutoSelecionadoNaTabela() { Cliente c = null; int
+     * index = table.getSelectedRow(); if (index == -1) {
+     * JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!"); } else
+     * { c = ((ClienteModel) table.getModel()).getProdutoNaLinha(index); }
+     * return c; }
+     */
 
-			ClienteWrapper wrapper = new ClienteWrapper();
-			wrapper.setClientes(listaCliente);
+    public void SalvarClienteXML(File file) {
+        try {
+            JAXBContext context = JAXBContext.newInstance(Wrapper.class);
+            Marshaller m = context.createMarshaller();
+            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-			m.marshal(wrapper, file);
+            Wrapper wrapper = new Wrapper();
+            wrapper.setList(listaCliente);
 
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+            m.marshal(wrapper, file);
 
-	public void LerClienteXML(File file) {
-		try {
-			JAXBContext context = JAXBContext.newInstance(ClienteWrapper.class);
-			Unmarshaller um = context.createUnmarshaller();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-			ClienteWrapper wrapper = (ClienteWrapper) um.unmarshal(file);
+    public void LerClienteXML(File file) {
+        try {
+            JAXBContext context = JAXBContext.newInstance(Wrapper.class);
+            Unmarshaller um = context.createUnmarshaller();
 
-			listaCliente.clear();
+            Wrapper wrapper = (Wrapper) um.unmarshal(file);
 
-			listaCliente.addAll(wrapper.getClientes());
+            listaCliente.clear();
 
-		} catch (Exception e) { // catches ANY exception
-			e.printStackTrace();
-		}
-	}
+            listaCliente.addAll(wrapper.getList());
 
-	public void SalvarClienteSerializacao(File file) {
-		try {
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-			FileOutputStream fout = new FileOutputStream(file);
+    public void SalvarClienteSerializacao(File file) {
+        try {
 
-			ObjectOutputStream oos = new ObjectOutputStream(fout);
+            FileOutputStream fout = new FileOutputStream(file);
 
-			oos.writeObject(listaCliente);
+            ObjectOutputStream oos = new ObjectOutputStream(fout);
 
-			oos.close();
+            oos.writeObject(listaCliente);
 
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
+            oos.close();
 
-	public void LerClienteSerializacao(File file) {
-		try {
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 
-			FileInputStream fin = new FileInputStream(file);
+    public void LerClienteSerializacao(File file) {
+        try {
 
-			ObjectInputStream ois = new ObjectInputStream(fin);
+            FileInputStream fin = new FileInputStream(file);
 
-			listaCliente.clear();
+            ObjectInputStream ois = new ObjectInputStream(fin);
 
-			listaCliente = (List<Cliente>) ois.readObject();
+            listaCliente.clear();
 
-			ois.close();
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
+            listaCliente = (List<Cliente>) ois.readObject();
+
+            ois.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 }

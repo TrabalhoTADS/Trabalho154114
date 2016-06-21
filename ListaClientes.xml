@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<listaclientes>
-    <clientes>
+<lista>
+    <list>
         <id>1</id>
         <nome>EDUARDO H DE FREITAS</nome>
         <endereco>R FLAMBOYANT</endereco>
@@ -12,8 +12,8 @@
         <cep>85805070</cep>
         <telefone>4530382994</telefone>
         <celular>4599044114</celular>
-    </clientes>
-    <clientes>
+    </list>
+    <list>
         <id>2</id>
         <nome>EDUARDO H DE FREITAS</nome>
         <endereco>R FLAMBOYANT</endereco>
@@ -25,8 +25,8 @@
         <cep>85805070</cep>
         <telefone>4530382994</telefone>
         <celular>4599044114</celular>
-    </clientes>
-    <clientes>
+    </list>
+    <list>
         <id>3</id>
         <nome>EDUARDO H DE FREITAS</nome>
         <endereco>R FLAMBOYANT</endereco>
@@ -38,5 +38,5 @@
         <cep>85805070</cep>
         <telefone>4530382994</telefone>
         <celular>4599044114</celular>
-    </clientes>
-</listaclientes>
+    </list>
+</lista>
