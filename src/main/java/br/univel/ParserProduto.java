@@ -2,10 +2,13 @@ package br.univel;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ParserProduto {
@@ -20,8 +23,10 @@ public class ParserProduto {
 		listaStr.forEach(e -> {
 
 			if (!e.startsWith("----")) {
+				Matcher m = p.matcher(e);
+				if (m.matches()) {
 					listaPrd.add(getProduto(e));
-
+				}
 			}
 
 		});
@@ -30,17 +35,44 @@ public class ParserProduto {
 	}
 
 	private Produto getProduto(String str) {
-		//MathContext mc = new MathContext(1);
 
-		String[] itens = str.split(";");
-		int id = Integer.parseInt(itens[0]);
-		String descricao = itens[1].trim();
-		BigDecimal preco = itens[2].trim();
+		// Se fosse CSV....
+		// String[] itens = str.split(",");
+		// int id = Integer.parseInt(itens[0]);
+		// String descricao = itens[1];
 
+		int indexPrimeiroEspaco = str.indexOf(' ');
+		String subStringCodigo = str.substring(0, indexPrimeiroEspaco);
+		int id = Integer.parseInt(subStringCodigo);
 
-		Produto c = new Produto(id, descricao, preco);
-		return c;
+		String strSemCodigo = str.substring(indexPrimeiroEspaco).trim();
 
+		int indexDolar = strSemCodigo.indexOf("US$");
+
+		String descricao = strSemCodigo.substring(0, indexDolar).trim();
+
+		BigDecimal preco = null;
+		String strPreco = null;
+
+		try {
+			// strPreco = strSemCodigo.substring(indexDolar + ADAPTA��ES
+			// TECNICAS
+			// 3).trim().replaceAll("\\.", "").replace(',', '.');
+			// preco = new BigDecimal(strPreco);
+
+			strPreco = strSemCodigo.substring(indexDolar + 3).trim();
+			preco = new BigDecimal(format.parse(strPreco).doubleValue()); //
+			preco.setScale(2, RoundingMode.HALF_EVEN); // arredondamento no
+														// mesmo padr�o do
+														// excell
+
+		} catch (NumberFormatException | ParseException e) {
+
+			e.printStackTrace();
+		}
+
+		Produto p = new Produto(id, descricao, preco);
+		return p;
 	}
 
 }

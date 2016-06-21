@@ -14,6 +14,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -67,17 +68,17 @@ public class TelaCliente extends TelaPrincipal {
                 ext = ".xml";
                 File xml = new File(arquivo + ext);
                 //SalvarClienteXML(xml);
-                LerClienteXML(xml);
+                //LerClienteXML(xml);
 
-                ext = ".ser";
+/*                ext = ".ser";
                 File serializar = new File(arquivo + ext);
                 SalvarClienteSerializacao(serializar);
                 LerClienteSerializacao(serializar);
-
-/*                LerXml ler = new LerXml();
+*/
+                LerXml ler = new LerXml();
 
                 listaCliente = (List<Cliente>) ler.LerArquivoXml(xml);
-*/
+
                 ClienteModel model = new ClienteModel(getListaCliente());
                 table.setModel(model);
             }
@@ -199,9 +200,10 @@ public class TelaCliente extends TelaPrincipal {
      * return c; }
      */
 
-    public void SalvarClienteXML(File file) {
+    public void SalvarClienteXML(File file, Object O) {
         try {
-            JAXBContext context = JAXBContext.newInstance(Wrapper.class);
+        	System.out.println(O.getClass());
+            JAXBContext context = JAXBContext.newInstance(O.getClass());
             Marshaller m = context.createMarshaller();
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
@@ -225,10 +227,11 @@ public class TelaCliente extends TelaPrincipal {
             if (listaCliente != null)
             	getListaCliente().clear();
             else
-            	listaCliente = new ArrayList<>();
+            	setListaCliente(new ArrayList<>());
 
-            listaCliente.addAll(wrapper.getList());
+            //getListaCliente().addAll(wrapper.getList());
 
+            System.out.println(getListaCliente());
         } catch (Exception e) {
             e.printStackTrace();
         }

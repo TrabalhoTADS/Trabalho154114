@@ -27,7 +27,7 @@ import javax.xml.bind.Unmarshaller;
 
 public class TelaProduto extends TelaPrincipal {
 
-	
+
 	private JTable table;
 	private List<Produto> listaProduto;
 
@@ -35,7 +35,7 @@ public class TelaProduto extends TelaPrincipal {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					TelaCliente frame = new TelaCliente();
+					TelaProduto frame = new TelaProduto();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -61,7 +61,7 @@ public class TelaProduto extends TelaPrincipal {
 			public void actionPerformed(ActionEvent e) {
 				preencheTabela();
 				String ext;
-				String arquivo = "C:\\Users\\Diogo\\git\\Trabalho154114\\ListaProdutos";
+				String arquivo = "C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaProdutos";
 
 				ext = ".xml";
 				File xml = new File(arquivo + ext);
@@ -131,7 +131,7 @@ public class TelaProduto extends TelaPrincipal {
 
 	}
 
-	
+
 
 	protected void preencheTabela() {
 
@@ -140,12 +140,12 @@ public class TelaProduto extends TelaPrincipal {
 		 * reader.lerUrl();
 		 */
 		ReaderArquivo reader = new ReaderArquivo();
-		List<String> lista = reader.lerArquivo("C:\\Users\\Diogo\\git\\Trabalho154114\\listaProdutos.txt");
+		List<String> lista = reader.lerArquivo("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaProdutos.txt");
 
 		ParserProduto parser = new ParserProduto();
 		listaProduto = parser.getProduto(lista);
 
-		ClienteModel model = new ClienteModel(listaProduto);
+		ProdutoModel model = new ProdutoModel(listaProduto);
 		table.setModel(model);
 
 	}

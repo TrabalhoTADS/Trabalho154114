@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 public class Produto implements Serializable{
 
-    @XmlElement(name=" id")
+    @XmlElement(name="id")
 	int id;
 
 	@XmlElement(name="descricao")
@@ -21,6 +21,9 @@ public class Produto implements Serializable{
 	@XmlElement(name="preco")
 	BigDecimal preco;
 
+	public Produto(){
+
+	}
 
 	public Produto(int id, String descricao, BigDecimal preco) {
 		super();
