@@ -13,6 +13,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -59,13 +60,13 @@ public class TelaCliente extends TelaPrincipal {
         JButton btnNewButton = new JButton("Preenche");
         btnNewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                preencheTabela();
+                //preencheTabela();
                 String ext;
                 String arquivo = "C:\\Users\\Eduardo\\git\\Trabalho154114\\ListaClientes";
 
                 ext = ".xml";
                 File xml = new File(arquivo + ext);
-                SalvarClienteXML(xml);
+                //SalvarClienteXML(xml);
                 LerClienteXML(xml);
 
                 ext = ".ser";
@@ -221,9 +222,12 @@ public class TelaCliente extends TelaPrincipal {
 
             Wrapper wrapper = (Wrapper) um.unmarshal(file);
 
-            getListaCliente().clear();
+            if (listaCliente != null)
+            	getListaCliente().clear();
+            else
+            	listaCliente = new ArrayList<>();
 
-            getListaCliente().addAll(wrapper.getList());
+            listaCliente.addAll(wrapper.getList());
 
         } catch (Exception e) {
             e.printStackTrace();
