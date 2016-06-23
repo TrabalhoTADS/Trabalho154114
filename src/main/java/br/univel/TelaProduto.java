@@ -140,7 +140,7 @@ public class TelaProduto extends TelaPrincipal {
 		 * reader.lerUrl();
 		 */
 		ReaderArquivo reader = new ReaderArquivo();
-		List<String> lista = reader.lerArquivo("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaProdutos.txt");
+		List<String> lista = reader.lerArquivo(new File("listaProdutos.txt"));
 
 		ParserProduto parser = new ParserProduto();
 		listaProduto = parser.getProduto(lista);

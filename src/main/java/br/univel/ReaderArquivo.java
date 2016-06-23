@@ -12,10 +12,10 @@ import javax.swing.JOptionPane;
 
 public class ReaderArquivo {
 
-	public List<String> lerArquivo(String arq) {
+	public List<String> lerArquivo(File file){
 		ArrayList<String> lista = new ArrayList<>();
 
-		try (FileReader fr = new FileReader(new File(arq));
+		try (FileReader fr = new FileReader(file);
 				BufferedReader br = new BufferedReader(fr)) {
 
 			String linha = null;

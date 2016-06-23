@@ -25,10 +25,10 @@ public class JUTTelaCliente {
         c.setListaCliente(lista);
 
         File file = new File ("C:\\Users\\Eduardo\\git\\Trabalho154114\\TesteSalvar.xml");
-        c.SalvarClienteXML(file, cliente);
+        c.SalvarClienteXML(file);
 
         //assertFalse("A lista nao deve estar vazia", c.getListaCliente().size() == 0);
-        assertEquals("A lista vazia deve ter 3 elementos", 1, lista.size());
+        assertEquals("A lista vazia deve ter 1 elementos", 1, lista.size());
         assertTrue("Arquivo Criado!", file.exists());
         assertTrue("Arquivo esta vazio!", file.length() > 0);
         //Assert.IsNull(true, c.getListaCliente());

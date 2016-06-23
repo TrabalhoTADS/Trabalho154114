@@ -8,10 +8,10 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
-public class LerXml {
+public class LerXml <T> {
 
-    public List<?> LerArquivoXml(File file) {
-        List<?> list = null;
+    public List<T> LerArquivoXml(File file) {
+        List<T> list = null;
         try {
             JAXBContext context = JAXBContext.newInstance(Wrapper.class);
             Unmarshaller um = context.createUnmarshaller();
@@ -23,7 +23,8 @@ public class LerXml {
 
             Wrapper wrapper = (Wrapper) um.unmarshal(file);
 
-           //list.addAll(wrapper.getList());
+            System.out.println(wrapper.getList());
+            list.addAll(wrapper.getList());
 
         } catch (Exception e) {
             e.printStackTrace();

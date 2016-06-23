@@ -1,5 +1,4 @@
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertThat;
+import java.io.File;
 
 import org.junit.Test;
 
@@ -9,7 +8,7 @@ public class JUTestReadArquivo {
 
 	@Test
 	public void testReaderArquivo() {
-		assert (new ReaderArquivo().lerArquivo("C:\\Users\\Eduardo\\git\\Trabalho154114\\listaclientes.txt")) != null;
+		assert (new ReaderArquivo().lerArquivo(new File("ListaClientes.txt"))) != null;
 	}
 
 }
