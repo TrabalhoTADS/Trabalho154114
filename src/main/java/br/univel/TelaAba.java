@@ -7,17 +7,21 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
@@ -27,7 +31,6 @@ import javax.swing.border.EmptyBorder;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.swing.SwingConstants;
 
 public class TelaAba extends JFrame {
 
@@ -40,9 +43,9 @@ public class TelaAba extends JFrame {
 	private String ABA_UM = "Produtos";
 	private String ABA_DOIS = "Clientes";
 	private String ABA_TRES = "Vendas";
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private NumberField tfCodigo;
+	private NumberField tfPreco;
+	private JTextField tfDesc;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -59,7 +62,7 @@ public class TelaAba extends JFrame {
 
 	public TelaAba() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 600, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -98,9 +101,9 @@ public class TelaAba extends JFrame {
 
 		tabbedPane.addTab(ABA_UM, telaProduto);
 		GridBagLayout gbl_telaProduto = new GridBagLayout();
-		gbl_telaProduto.columnWidths = new int[] { 70, 70, 70, 70, 30, 70 };
+		gbl_telaProduto.columnWidths = new int[] { 70, 70, 70, 70, 20, 70, 70 };
 		gbl_telaProduto.rowHeights = new int[] { 1, 1, 1, 1, 1, 30 };
-		gbl_telaProduto.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+		gbl_telaProduto.columnWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 		gbl_telaProduto.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 		telaProduto.setLayout(gbl_telaProduto);
 
@@ -112,14 +115,14 @@ public class TelaAba extends JFrame {
 		gbc_lblCodigo.gridy = 0;
 		telaProduto.add(lblCodigo, gbc_lblCodigo);
 
-		textField = new JTextField();
-		GridBagConstraints gbc_textField = new GridBagConstraints();
-		gbc_textField.insets = new Insets(0, 0, 5, 5);
-		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField.gridx = 1;
-		gbc_textField.gridy = 0;
-		telaProduto.add(textField, gbc_textField);
-		textField.setColumns(10);
+		tfCodigo = new NumberField();
+		GridBagConstraints gbc_tfCodigo = new GridBagConstraints();
+		gbc_tfCodigo.insets = new Insets(0, 0, 5, 5);
+		gbc_tfCodigo.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfCodigo.gridx = 1;
+		gbc_tfCodigo.gridy = 0;
+		telaProduto.add(tfCodigo, gbc_tfCodigo);
+		tfCodigo.setColumns(10);
 
 		JLabel lblPreoUn = new JLabel("Preço Un");
 		GridBagConstraints gbc_lblPreoUn = new GridBagConstraints();
@@ -129,14 +132,14 @@ public class TelaAba extends JFrame {
 		gbc_lblPreoUn.gridy = 0;
 		telaProduto.add(lblPreoUn, gbc_lblPreoUn);
 
-		textField_1 = new JTextField();
-		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
-		gbc_textField_1.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_1.gridx = 3;
-		gbc_textField_1.gridy = 0;
-		telaProduto.add(textField_1, gbc_textField_1);
-		textField_1.setColumns(10);
+		tfPreco = new NumberField();
+		GridBagConstraints gbc_tfPreco = new GridBagConstraints();
+		gbc_tfPreco.insets = new Insets(0, 0, 5, 5);
+		gbc_tfPreco.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfPreco.gridx = 3;
+		gbc_tfPreco.gridy = 0;
+		telaProduto.add(tfPreco, gbc_tfPreco);
+		tfPreco.setColumns(10);
 
 		JButton btnImportarTXT = new JButton("Importar TXT");
 		btnImportarTXT.addActionListener(new ActionListener() {
@@ -144,13 +147,44 @@ public class TelaAba extends JFrame {
 				preencheTabela();
 
 				ProdutoModel model = new ProdutoModel(listaProduto);
-				table.setModel(model);
+
+				if (model != null)
+					table.setModel(model);
 
 			}
 		});
+
+		JButton btnAdcionar = new JButton("Adcionar");
+		btnAdcionar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				if (!tfCodigo.getText().equals("") && !tfDesc.getText().equals("") && !tfPreco.getText().equals("")){
+					Produto p = new Produto();
+					p.setId(Integer.parseInt(tfCodigo.getText()));
+					p.setDescricao(tfDesc.getText());
+				    p.setPreco(new BigDecimal(tfPreco.getText()));
+
+
+				    if (listaProduto == null)
+				    	listaProduto = new ArrayList<>();
+
+				    listaProduto.add(p);
+				}
+
+				/*tfCodigo.setText(Integer.toString(c.getId()));
+				tfDesc.setText(c.getDescricao());
+				tfPreco.setText(c.getPreco().toString());*/
+			}
+		});
+		GridBagConstraints gbc_btnAdcionar = new GridBagConstraints();
+		gbc_btnAdcionar.insets = new Insets(0, 0, 5, 5);
+		gbc_btnAdcionar.gridx = 5;
+		gbc_btnAdcionar.gridy = 0;
+		telaProduto.add(btnAdcionar, gbc_btnAdcionar);
 		GridBagConstraints gbc_btnImportarTXT = new GridBagConstraints();
+		gbc_btnImportarTXT.gridwidth = 2;
 		gbc_btnImportarTXT.insets = new Insets(0, 0, 5, 0);
-		gbc_btnImportarTXT.gridx = 5;
+		gbc_btnImportarTXT.gridx = 6;
 		gbc_btnImportarTXT.gridy = 0;
 		telaProduto.add(btnImportarTXT, gbc_btnImportarTXT);
 
@@ -162,27 +196,49 @@ public class TelaAba extends JFrame {
 		gbc_lblDescrio.gridy = 1;
 		telaProduto.add(lblDescrio, gbc_lblDescrio);
 
-		textField_2 = new JTextField();
-		GridBagConstraints gbc_textField_2 = new GridBagConstraints();
-		gbc_textField_2.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_2.gridwidth = 3;
-		gbc_textField_2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_2.gridx = 1;
-		gbc_textField_2.gridy = 1;
-		telaProduto.add(textField_2, gbc_textField_2);
-		textField_2.setColumns(10);
+		tfDesc = new JTextField();
+		GridBagConstraints gbc_tfDesc = new GridBagConstraints();
+		gbc_tfDesc.insets = new Insets(0, 0, 5, 5);
+		gbc_tfDesc.gridwidth = 3;
+		gbc_tfDesc.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfDesc.gridx = 1;
+		gbc_tfDesc.gridy = 1;
+		telaProduto.add(tfDesc, gbc_tfDesc);
+		tfDesc.setColumns(10);
 
-		JButton ExportarXML = new JButton("Exportar XML");
-		ExportarXML.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				SalvarProdutoXML(new File("ListaProdutos.xml"));
+		JButton ImportarXML = new JButton("Importar XML");
+		ImportarXML.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LerProdutoXML(new File("ListaProdutos.xml"));
+
+				ProdutoModel model = new ProdutoModel(listaProduto);
+				if (model != null)
+					table.setModel(model);
 			}
 		});
-		GridBagConstraints gbc_ExportarXML = new GridBagConstraints();
-		gbc_ExportarXML.insets = new Insets(0, 0, 5, 0);
-		gbc_ExportarXML.gridx = 5;
-		gbc_ExportarXML.gridy = 1;
-		telaProduto.add(ExportarXML, gbc_ExportarXML);
+
+		JButton btnAlterar = new JButton("Alterar");
+		btnAlterar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Produto c = getProdutoSelecionadoNaTabela();
+				if (c != null) {
+					tfCodigo.setText(Integer.toString(c.getId()));
+					tfDesc.setText(c.getDescricao());
+					tfPreco.setText(c.getPreco().toString());
+				}
+
+			}
+		});
+		GridBagConstraints gbc_btnAlterar = new GridBagConstraints();
+		gbc_btnAlterar.insets = new Insets(0, 0, 5, 5);
+		gbc_btnAlterar.gridx = 5;
+		gbc_btnAlterar.gridy = 1;
+		telaProduto.add(btnAlterar, gbc_btnAlterar);
+		GridBagConstraints gbc_ImportarXML = new GridBagConstraints();
+		gbc_ImportarXML.insets = new Insets(0, 0, 5, 0);
+		gbc_ImportarXML.gridx = 6;
+		gbc_ImportarXML.gridy = 1;
+		telaProduto.add(ImportarXML, gbc_ImportarXML);
 
 		JScrollPane scrollPane = new JScrollPane();
 		GridBagConstraints gbc_scrollPane = new GridBagConstraints();
@@ -193,48 +249,6 @@ public class TelaAba extends JFrame {
 		gbc_scrollPane.gridx = 0;
 		gbc_scrollPane.gridy = 2;
 		telaProduto.add(scrollPane, gbc_scrollPane);
-
-		JButton ImportarXML = new JButton("Importar XML");
-		ImportarXML.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				LerProdutoXML(new File("ListaProdutos.xml"));
-
-				ProdutoModel model = new ProdutoModel(listaProduto);
-				table.setModel(model);
-			}
-		});
-		GridBagConstraints gbc_ImportarXML = new GridBagConstraints();
-		gbc_ImportarXML.insets = new Insets(0, 0, 5, 0);
-		gbc_ImportarXML.gridx = 5;
-		gbc_ImportarXML.gridy = 2;
-		telaProduto.add(ImportarXML, gbc_ImportarXML);
-
-		JButton Serializar = new JButton("Serializar");
-		Serializar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				SalvarProdutoSerializacao(new File("ListaProdutos.xml"));
-			}
-		});
-		GridBagConstraints gbc_Serializar = new GridBagConstraints();
-		gbc_Serializar.insets = new Insets(0, 0, 5, 0);
-		gbc_Serializar.gridx = 5;
-		gbc_Serializar.gridy = 3;
-		telaProduto.add(Serializar, gbc_Serializar);
-
-		JButton Desserializar = new JButton("Desserializar");
-		Desserializar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				LerProdutoSerializacao(new File("ListaProdutos.xml"));
-
-				ProdutoModel model = new ProdutoModel(listaProduto);
-				table.setModel(model);
-			}
-		});
-		GridBagConstraints gbc_Desserializar = new GridBagConstraints();
-		gbc_Desserializar.insets = new Insets(0, 0, 5, 0);
-		gbc_Desserializar.gridx = 5;
-		gbc_Desserializar.gridy = 4;
-		telaProduto.add(Desserializar, gbc_Desserializar);
 
 		table = new JTable() {
 
@@ -266,9 +280,50 @@ public class TelaAba extends JFrame {
 
 		scrollPane.setViewportView(table);
 
+		JButton Desserializar = new JButton("Desserializar");
+		Desserializar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LerProdutoSerializacao(new File("ListaProdutos.ser"));
+
+				ProdutoModel model = new ProdutoModel(listaProduto);
+
+				if (model != null)
+					table.setModel(model);
+			}
+		});
+
+		JButton ExportarXML = new JButton("Exportar XML");
+		ExportarXML.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				SalvarProdutoXML(new File("ListaProdutos.xml"));
+			}
+		});
+		GridBagConstraints gbc_ExportarXML = new GridBagConstraints();
+		gbc_ExportarXML.insets = new Insets(0, 0, 5, 0);
+		gbc_ExportarXML.gridx = 6;
+		gbc_ExportarXML.gridy = 2;
+		telaProduto.add(ExportarXML, gbc_ExportarXML);
+
+		JButton Serializar = new JButton("Serializar");
+		Serializar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SalvarProdutoSerializacao(new File("ListaProdutos.ser"));
+			}
+		});
+		GridBagConstraints gbc_Serializar = new GridBagConstraints();
+		gbc_Serializar.insets = new Insets(0, 0, 5, 0);
+		gbc_Serializar.gridx = 6;
+		gbc_Serializar.gridy = 3;
+		telaProduto.add(Serializar, gbc_Serializar);
+		GridBagConstraints gbc_Desserializar = new GridBagConstraints();
+		gbc_Desserializar.insets = new Insets(0, 0, 5, 0);
+		gbc_Desserializar.gridx = 6;
+		gbc_Desserializar.gridy = 4;
+		telaProduto.add(Desserializar, gbc_Desserializar);
+
 		JButton btnRelatorio = new JButton("Relatorio");
 		GridBagConstraints gbc_btnRelatorio = new GridBagConstraints();
-		gbc_btnRelatorio.gridx = 5;
+		gbc_btnRelatorio.gridx = 6;
 		gbc_btnRelatorio.gridy = 5;
 		telaProduto.add(btnRelatorio, gbc_btnRelatorio);
 
@@ -337,7 +392,6 @@ public class TelaAba extends JFrame {
 		}
 	}
 
-
 	public void LerProdutoXML(File file) {
 		try {
 			JAXBContext context = JAXBContext.newInstance(ProdutoWrapper.class);
@@ -345,12 +399,15 @@ public class TelaAba extends JFrame {
 
 			ProdutoWrapper wrapper = (ProdutoWrapper) um.unmarshal(file);
 
-			listaProduto.clear();
+			if (listaProduto != null)
+				listaProduto.clear();
+			else
+				listaProduto = new ArrayList<>();
 
 			listaProduto.addAll(wrapper.getProduto());
 
-		} catch (Exception e) { // catches ANY exception
-			e.printStackTrace();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
 		}
 	}
 
@@ -377,14 +434,28 @@ public class TelaAba extends JFrame {
 
 			ObjectInputStream ois = new ObjectInputStream(fin);
 
-			listaProduto.clear();
+			if (listaProduto != null)
+				listaProduto.clear();
+			else
+				listaProduto = new ArrayList<>();
 
 			listaProduto = (List<Produto>) ois.readObject();
 
 			ois.close();
 		} catch (Exception ex) {
-			ex.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
 		}
+	}
+
+	private Produto getProdutoSelecionadoNaTabela() {
+		Produto c = null;
+		int index = table.getSelectedRow();
+		if (index == -1) {
+			JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!");
+		} else {
+			c = ((ProdutoModel) table.getModel()).getProdutoNaLinha(index);
+		}
+		return c;
 	}
 
 }
