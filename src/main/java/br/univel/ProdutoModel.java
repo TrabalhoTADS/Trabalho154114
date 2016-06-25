@@ -39,7 +39,7 @@ public class ProdutoModel extends AbstractTableModel {
 		return null;
 	}
 
-	public Produto geProdutoNaLinha(int index) {
+	public Produto getProdutoNaLinha(int index) {
 		return lista.get(index);
 	}
 
