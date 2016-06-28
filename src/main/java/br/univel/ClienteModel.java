@@ -4,8 +4,6 @@ import java.util.List;
 
 import javax.swing.table.AbstractTableModel;
 
-//import br.univel.exemplos.tabela.Cliente;
-
 public class ClienteModel extends AbstractTableModel {
 
 	private List<Cliente> lista;

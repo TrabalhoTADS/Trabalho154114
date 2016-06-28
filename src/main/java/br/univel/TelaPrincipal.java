@@ -47,9 +47,12 @@ public class TelaPrincipal extends JFrame {
 	private JTabbedPane tabbedPane;
 	private JTable tableCli;
 	private JTable tablePro;
+	private JTable tableProVda;
 
 	private List<Produto> listaProduto;
 	private List<Cliente> listaCliente;
+	private List<ProdVenda> listaProdVenda;
+
 	private SqlGenImplementation imp;
 
 	private String ABA_UM = "Produtos";
@@ -72,6 +75,9 @@ public class TelaPrincipal extends JFrame {
 	private JTextField tfTel;
 	private JTextField tfCel;
 	private JTextField tfId;
+	private JTextField tfIdV;
+	private JTextField textField_1;
+	private JTextField textField_2;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -353,6 +359,9 @@ public class TelaPrincipal extends JFrame {
 		btnNewButton_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				removerSelecionado(1);
+				tfCodigo.setText("");
+				tfDesc.setText("");
+				tfPreco.setText("");
 				SetModel(1);
 			}
 		});
@@ -408,7 +417,7 @@ public class TelaPrincipal extends JFrame {
 			HashMap map = new HashMap();
 			if (modelo == 1) {
 				arquivoJasper = "C:\\Users\\Eduardo\\git\\Trabalho154114\\src\\main\\java\\br\\univel\\RelProdutos.jasper";
-			} else if (modelo == 2){
+			} else if (modelo == 2) {
 				arquivoJasper = "C:\\Users\\Eduardo\\git\\Trabalho154114\\src\\main\\java\\br\\univel\\RelClientes.jasper";
 			}
 			rel = JasperFillManager.fillReport(arquivoJasper, map, getImp().getCon());
@@ -793,6 +802,17 @@ public class TelaPrincipal extends JFrame {
 		btnExcluir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				removerSelecionado(2);
+				tfId.setText("");
+				tfNome.setText("");
+				tfEnd.setText("");
+				tfNumero.setText("");
+				tfComp.setText("");
+				tfBairro.setText("");
+				tfCidade.setText("");
+				tfEstado.setText("");
+				tfCep.setText("");
+				tfTel.setText("");
+				tfCel.setText("");
 				SetModel(2);
 			}
 		});
@@ -964,26 +984,36 @@ public class TelaPrincipal extends JFrame {
 
 		tabbedPane.addTab("Vendas", telaVenda);
 		GridBagLayout gbl_telaVenda = new GridBagLayout();
-		gbl_telaVenda.columnWidths = new int[] { 10, 95, 65, 30, 67, 30, 97, 30 };
-		gbl_telaVenda.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0 };
-		gbl_telaVenda.columnWeights = new double[] { 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
-		gbl_telaVenda.rowWeights = new double[] { 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0 };
+		gbl_telaVenda.columnWidths = new int[] { 10, 0, 10, 10, 30, 0, 30, 30, 30 };
+		gbl_telaVenda.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_telaVenda.columnWeights = new double[] { 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+		gbl_telaVenda.rowWeights = new double[] { 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 		telaVenda.setLayout(gbl_telaVenda);
 
 		JLabel lblCliente = new JLabel("Cliente:");
 		GridBagConstraints gbc_lblCliente = new GridBagConstraints();
+		gbc_lblCliente.anchor = GridBagConstraints.EAST;
 		gbc_lblCliente.insets = new Insets(0, 0, 5, 5);
 		gbc_lblCliente.gridx = 0;
-		gbc_lblCliente.gridy = 1;
+		gbc_lblCliente.gridy = 0;
 		telaVenda.add(lblCliente, gbc_lblCliente);
+
+		tfIdV = new JTextField();
+		GridBagConstraints gbc_tfIdV = new GridBagConstraints();
+		gbc_tfIdV.anchor = GridBagConstraints.NORTH;
+		gbc_tfIdV.insets = new Insets(0, 0, 5, 5);
+		gbc_tfIdV.gridx = 1;
+		gbc_tfIdV.gridy = 0;
+		telaVenda.add(tfIdV, gbc_tfIdV);
+		tfIdV.setColumns(10);
 
 		textField = new JTextField();
 		GridBagConstraints gbc_textField = new GridBagConstraints();
-		gbc_textField.gridwidth = 4;
+		gbc_textField.gridwidth = 6;
 		gbc_textField.insets = new Insets(0, 0, 5, 5);
 		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField.gridx = 1;
-		gbc_textField.gridy = 1;
+		gbc_textField.gridx = 2;
+		gbc_textField.gridy = 0;
 		telaVenda.add(textField, gbc_textField);
 		textField.setColumns(10);
 
@@ -991,82 +1021,78 @@ public class TelaPrincipal extends JFrame {
 		GridBagConstraints gbc_button = new GridBagConstraints();
 		gbc_button.fill = GridBagConstraints.HORIZONTAL;
 		gbc_button.anchor = GridBagConstraints.NORTH;
-		gbc_button.insets = new Insets(0, 0, 5, 5);
-		gbc_button.gridx = 6;
-		gbc_button.gridy = 1;
+		gbc_button.insets = new Insets(0, 0, 5, 0);
+		gbc_button.gridx = 8;
+		gbc_button.gridy = 0;
 		telaVenda.add(button, gbc_button);
 
-		JButton button_1 = new JButton("Importar TXT");
-		GridBagConstraints gbc_button_1 = new GridBagConstraints();
-		gbc_button_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_button_1.anchor = GridBagConstraints.NORTH;
-		gbc_button_1.insets = new Insets(0, 0, 5, 0);
-		gbc_button_1.gridx = 7;
-		gbc_button_1.gridy = 1;
-		telaVenda.add(button_1, gbc_button_1);
+		JLabel lblProduto = new JLabel("Produto:");
+		GridBagConstraints gbc_lblProduto = new GridBagConstraints();
+		gbc_lblProduto.anchor = GridBagConstraints.EAST;
+		gbc_lblProduto.insets = new Insets(0, 0, 5, 5);
+		gbc_lblProduto.gridx = 0;
+		gbc_lblProduto.gridy = 1;
+		telaVenda.add(lblProduto, gbc_lblProduto);
 
-		JScrollPane PainelClientes = new JScrollPane();
-		GridBagConstraints gbc_PainelClientes = new GridBagConstraints();
-		gbc_PainelClientes.gridheight = 5;
-		gbc_PainelClientes.gridwidth = 5;
-		gbc_PainelClientes.insets = new Insets(0, 0, 0, 5);
-		gbc_PainelClientes.fill = GridBagConstraints.BOTH;
-		gbc_PainelClientes.gridx = 0;
-		gbc_PainelClientes.gridy = 2;
-		telaVenda.add(PainelClientes, gbc_PainelClientes);
+		textField_1 = new JTextField();
+		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
+		gbc_textField_1.insets = new Insets(0, 0, 5, 5);
+		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
+		gbc_textField_1.gridx = 1;
+		gbc_textField_1.gridy = 1;
+		telaVenda.add(textField_1, gbc_textField_1);
+		textField_1.setColumns(10);
+
+		JLabel lblQtd = new JLabel("QTD:");
+		GridBagConstraints gbc_lblQtd = new GridBagConstraints();
+		gbc_lblQtd.anchor = GridBagConstraints.EAST;
+		gbc_lblQtd.insets = new Insets(0, 0, 5, 5);
+		gbc_lblQtd.gridx = 2;
+		gbc_lblQtd.gridy = 1;
+		telaVenda.add(lblQtd, gbc_lblQtd);
+
+		textField_2 = new JTextField();
+		GridBagConstraints gbc_textField_2 = new GridBagConstraints();
+		gbc_textField_2.insets = new Insets(0, 0, 5, 5);
+		gbc_textField_2.fill = GridBagConstraints.HORIZONTAL;
+		gbc_textField_2.gridx = 3;
+		gbc_textField_2.gridy = 1;
+		telaVenda.add(textField_2, gbc_textField_2);
+		textField_2.setColumns(10);
+
+		JLabel label = new JLabel("");
+		GridBagConstraints gbc_label = new GridBagConstraints();
+		gbc_label.insets = new Insets(0, 0, 5, 5);
+		gbc_label.gridx = 4;
+		gbc_label.gridy = 1;
+		telaVenda.add(label, gbc_label);
+
+		JButton btnNewButton_1 = new JButton("Remover");
+		GridBagConstraints gbc_btnNewButton_1 = new GridBagConstraints();
+		gbc_btnNewButton_1.gridwidth = 3;
+		gbc_btnNewButton_1.insets = new Insets(0, 0, 5, 5);
+		gbc_btnNewButton_1.gridx = 5;
+		gbc_btnNewButton_1.gridy = 1;
+		telaVenda.add(btnNewButton_1, gbc_btnNewButton_1);
 
 		JButton button_2 = new JButton("Alterar");
 		GridBagConstraints gbc_button_2 = new GridBagConstraints();
 		gbc_button_2.fill = GridBagConstraints.HORIZONTAL;
 		gbc_button_2.anchor = GridBagConstraints.NORTH;
-		gbc_button_2.insets = new Insets(0, 0, 5, 5);
-		gbc_button_2.gridx = 6;
-		gbc_button_2.gridy = 2;
+		gbc_button_2.insets = new Insets(0, 0, 5, 0);
+		gbc_button_2.gridx = 8;
+		gbc_button_2.gridy = 1;
 		telaVenda.add(button_2, gbc_button_2);
 
-		JButton button_3 = new JButton("Importar XML");
-		GridBagConstraints gbc_button_3 = new GridBagConstraints();
-		gbc_button_3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_button_3.anchor = GridBagConstraints.NORTH;
-		gbc_button_3.insets = new Insets(0, 0, 5, 0);
-		gbc_button_3.gridx = 7;
-		gbc_button_3.gridy = 2;
-		telaVenda.add(button_3, gbc_button_3);
-
-		JButton button_4 = new JButton("Exportar XML");
-		GridBagConstraints gbc_button_4 = new GridBagConstraints();
-		gbc_button_4.fill = GridBagConstraints.HORIZONTAL;
-		gbc_button_4.anchor = GridBagConstraints.NORTH;
-		gbc_button_4.insets = new Insets(0, 0, 5, 0);
-		gbc_button_4.gridx = 7;
-		gbc_button_4.gridy = 3;
-		telaVenda.add(button_4, gbc_button_4);
-
-		JButton button_5 = new JButton("Serializar");
-		GridBagConstraints gbc_button_5 = new GridBagConstraints();
-		gbc_button_5.fill = GridBagConstraints.HORIZONTAL;
-		gbc_button_5.anchor = GridBagConstraints.NORTH;
-		gbc_button_5.insets = new Insets(0, 0, 5, 0);
-		gbc_button_5.gridx = 7;
-		gbc_button_5.gridy = 4;
-		telaVenda.add(button_5, gbc_button_5);
-
-		JButton button_6 = new JButton("Desserializar");
-		GridBagConstraints gbc_button_6 = new GridBagConstraints();
-		gbc_button_6.fill = GridBagConstraints.HORIZONTAL;
-		gbc_button_6.anchor = GridBagConstraints.NORTH;
-		gbc_button_6.insets = new Insets(0, 0, 5, 0);
-		gbc_button_6.gridx = 7;
-		gbc_button_6.gridy = 5;
-		telaVenda.add(button_6, gbc_button_6);
-
-		JButton button_7 = new JButton("Relatorio");
-		GridBagConstraints gbc_button_7 = new GridBagConstraints();
-		gbc_button_7.fill = GridBagConstraints.HORIZONTAL;
-		gbc_button_7.anchor = GridBagConstraints.NORTH;
-		gbc_button_7.gridx = 7;
-		gbc_button_7.gridy = 6;
-		telaVenda.add(button_7, gbc_button_7);
+		JScrollPane PainelProdVenda = new JScrollPane();
+		GridBagConstraints gbc_PainelProdVenda = new GridBagConstraints();
+		gbc_PainelProdVenda.gridheight = 6;
+		gbc_PainelProdVenda.gridwidth = 8;
+		gbc_PainelProdVenda.insets = new Insets(0, 0, 5, 5);
+		gbc_PainelProdVenda.fill = GridBagConstraints.BOTH;
+		gbc_PainelProdVenda.gridx = 0;
+		gbc_PainelProdVenda.gridy = 3;
+		telaVenda.add(PainelProdVenda, gbc_PainelProdVenda);
 		mostraUltima();
 
 	}
@@ -1100,7 +1126,7 @@ public class TelaPrincipal extends JFrame {
 		for (Cliente c : listaCliente) {
 			salvar(c);
 		}
-		JOptionPane.showMessageDialog(null, "BANCO DE DADOS VAZIO! Os produtos foram importados do arquivo TXT");
+		JOptionPane.showMessageDialog(null, "BANCO DE DADOS VAZIO! Os Clientes foram importados do arquivo TXT");
 	}
 
 	public void SalvarProdutoXML(File file) {
@@ -1265,7 +1291,7 @@ public class TelaPrincipal extends JFrame {
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
 		}
-		JOptionPane.showMessageDialog(null, "PRODUTOS IMPORTADOS DO ARQUIVO " + file);
+		JOptionPane.showMessageDialog(null, "CLIENTES IMPORTADOS DO ARQUIVO " + file);
 	}
 
 	public void LerClienteSerializacao(File file) {
@@ -1286,7 +1312,7 @@ public class TelaPrincipal extends JFrame {
 		} catch (Exception ex) {
 			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
 		}
-		JOptionPane.showMessageDialog(null, "PRODUTOS IMPORTADOS DO ARQUIVO " + file);
+		JOptionPane.showMessageDialog(null, "CLIENTES IMPORTADOS DO ARQUIVO " + file);
 	}
 
 	public void SetModel(int modelo) {
@@ -1298,6 +1324,10 @@ public class TelaPrincipal extends JFrame {
 			ClienteModel model = new ClienteModel(listaCliente);
 			if (model != null)
 				tableCli.setModel(model);
+		} else if (modelo == 3){
+			ProdVendaModel model = new ProdVendaModel(listaProdVenda);
+			if (model != null)
+				tableProVda.setModel(model);
 		}
 	}
 
@@ -1569,7 +1599,9 @@ public class TelaPrincipal extends JFrame {
 			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
 		}
 
-		if (listaProduto.size() > 0)
-			JOptionPane.showMessageDialog(null, "REGISTROS IMPORTADOS DO BANCO DE DADOS!");
-	}
+		/*
+		 * if (listaProduto.size() > 0 && listaCliente.size() > 0)
+		 * JOptionPane.showMessageDialog(null, obj.getClass() +
+		 * "IMPORTADOS DO BANCO DE DADOS!");
+		 */ }
 }
