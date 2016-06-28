@@ -1,82 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <lista>
     <listaCliente>
-        <id>1058</id>
-        <nome>vel dapibus</nome>
-        <endereco>eget rutrum at</endereco>
-        <numero>52</numero>
-        <complemento>pretium</complemento>
-        <bairro>tempus semper est</bairro>
-        <cidade>interdum</cidade>
-        <estado>sapien</estado>
-        <cep>8</cep>
-        <telefone>duis</telefone>
-        <celular>aenean</celular>
-    </listaCliente>
-    <listaCliente>
-        <id>1122</id>
-        <nome>vitae</nome>
-        <endereco>posuere cubilia</endereco>
-        <numero>18</numero>
-        <complemento>ut</complemento>
-        <bairro>nulla suscipit</bairro>
-        <cidade>mauris</cidade>
-        <estado>integer</estado>
-        <cep>7</cep>
-        <telefone>ut</telefone>
-        <celular>non</celular>
-    </listaCliente>
-    <listaCliente>
-        <id>1130</id>
-        <nome>varius integer</nome>
-        <endereco>tincidunt</endereco>
-        <numero>89</numero>
-        <complemento>non</complemento>
-        <bairro>placerat ante</bairro>
-        <cidade>urna</cidade>
-        <estado>diam</estado>
-        <cep>6</cep>
-        <telefone>sed</telefone>
-        <celular>rutrum</celular>
-    </listaCliente>
-    <listaCliente>
-        <id>1697</id>
-        <nome>justo aliquam</nome>
-        <endereco>vel sem sed</endereco>
-        <numero>56</numero>
-        <complemento>turpis</complemento>
-        <bairro>amet eros suspendisse</bairro>
-        <cidade>in</cidade>
-        <estado>justo</estado>
-        <cep>1</cep>
-        <telefone>ut</telefone>
-        <celular>venenatis</celular>
-    </listaCliente>
-    <listaCliente>
-        <id>2224</id>
-        <nome>donec vitae</nome>
-        <endereco>erat quisque</endereco>
-        <numero>92</numero>
-        <complemento>ligula</complemento>
-        <bairro>amet eros suspendisse</bairro>
-        <cidade>in</cidade>
-        <estado>maecenas</estado>
-        <cep>6</cep>
-        <telefone>ligula</telefone>
-        <celular>sed</celular>
-    </listaCliente>
-    <listaCliente>
-        <id>2793</id>
-        <nome>feugiat</nome>
-        <endereco>mauris morbi</endereco>
-        <numero>31</numero>
-        <complemento>ornare</complemento>
-        <bairro>velum ante ipsum</bairro>
-        <cidade>at</cidade>
-        <estado>ultrices</estado>
-        <cep>2</cep>
-        <telefone>lacus</telefone>
-        <celular>non</celular>
+        <id>1</id>
+        <nome>Eduardo</nome>
+        <endereco>R:Flamboyant</endereco>
+        <numero>871</numero>
+        <complemento>B</complemento>
+        <bairro>Alto Alegre</bairro>
+        <cidade>Cascavel</cidade>
+        <estado>PR</estado>
+        <cep>85805070</cep>
+        <telefone>1</telefone>
+        <celular>1</celular>
     </listaCliente>
     <listaCliente>
         <id>2816</id>
