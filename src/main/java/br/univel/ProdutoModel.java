@@ -49,6 +49,14 @@ public class ProdutoModel extends AbstractTableModel {
 		super.fireTableRowsDeleted(idx, idx);
 	}
 
+	public List<Produto> getLista() {
+		return lista;
+	}
+
+	public void setLista(List<Produto> lista) {
+		this.lista = lista;
+	}
+
 	public void adicionarProduto(Produto c) {
 		this.lista.add(c);
 		super.fireTableRowsInserted(lista.size() - 1, lista.size() - 1);

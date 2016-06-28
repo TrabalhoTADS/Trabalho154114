@@ -15,6 +15,8 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.math.BigDecimal;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +41,8 @@ public class TelaPrincipal extends JFrame {
 	private JTable table;
 
 	private List<Produto> listaProduto;
+	private List<Cliente> listaCliente;
+	private SqlGenImplementation imp;
 
 	private String ABA_UM = "Produtos";
 	private String ABA_DOIS = "Clientes";
@@ -112,18 +116,6 @@ public class TelaPrincipal extends JFrame {
 			}
 		}
 
-		mostraUltima();
-
-	}
-
-	protected void adicionaClientes() {
-
-		for (int i = 0; i < tabbedPane.getTabCount(); i++) {
-			if (tabbedPane.getTitleAt(i).equals(ABA_DOIS)) {
-				tabbedPane.setSelectedIndex(i);
-				return;
-			}
-		}
 		JPanel telaProduto = new JPanel();
 
 		tabbedPane.addTab(ABA_UM, telaProduto);
@@ -151,43 +143,6 @@ public class TelaPrincipal extends JFrame {
 		telaProduto.add(tfCodigo, gbc_tfCodigo);
 		tfCodigo.setColumns(10);
 
-		JButton btnImportarTXT = new JButton("Importar TXT");
-		btnImportarTXT.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				preencheTabela();
-
-				ProdutoModel model = new ProdutoModel(listaProduto);
-
-				if (model != null)
-					table.setModel(model);
-
-			}
-		});
-
-		JButton btnAdcionar = new JButton("Adcionar");
-		btnAdcionar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
-				if (!tfCodigo.getText().equals("") && !tfDesc.getText().equals("") && !tfPreco.getText().equals("")) {
-					Produto p = new Produto();
-					p.setId(Integer.parseInt(tfCodigo.getText()));
-					p.setDescricao(tfDesc.getText());
-					p.setPreco(new BigDecimal(tfPreco.getText()));
-
-					if (listaProduto == null)
-						listaProduto = new ArrayList<>();
-
-					listaProduto.add(p);
-				}
-
-				/*
-				 * tfCodigo.setText(Integer.toString(c.getId()));
-				 * tfDesc.setText(c.getDescricao());
-				 * tfPreco.setText(c.getPreco().toString());
-				 */
-			}
-		});
-
 		JLabel lblPreoUn = new JLabel("Preço Un");
 		GridBagConstraints gbc_lblPreoUn = new GridBagConstraints();
 		gbc_lblPreoUn.anchor = GridBagConstraints.EAST;
@@ -205,18 +160,6 @@ public class TelaPrincipal extends JFrame {
 		gbc_tfPreco.gridy = 0;
 		telaProduto.add(tfPreco, gbc_tfPreco);
 		tfPreco.setColumns(10);
-		GridBagConstraints gbc_btnAdcionar = new GridBagConstraints();
-		gbc_btnAdcionar.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnAdcionar.insets = new Insets(0, 0, 5, 5);
-		gbc_btnAdcionar.gridx = 6;
-		gbc_btnAdcionar.gridy = 0;
-		telaProduto.add(btnAdcionar, gbc_btnAdcionar);
-		GridBagConstraints gbc_btnImportarTXT = new GridBagConstraints();
-		gbc_btnImportarTXT.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnImportarTXT.insets = new Insets(0, 0, 5, 0);
-		gbc_btnImportarTXT.gridx = 7;
-		gbc_btnImportarTXT.gridy = 0;
-		telaProduto.add(btnImportarTXT, gbc_btnImportarTXT);
 
 		JLabel lblDescrio = new JLabel("Descrição");
 		GridBagConstraints gbc_lblDescrio = new GridBagConstraints();
@@ -236,42 +179,18 @@ public class TelaPrincipal extends JFrame {
 		telaProduto.add(tfDesc, gbc_tfDesc);
 		tfDesc.setColumns(10);
 
-		JButton ImportarXML = new JButton("Importar XML");
-		ImportarXML.addActionListener(new ActionListener() {
+		JButton btnNewButton_3 = new JButton("ExportarXML");
+		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				LerProdutoXML(new File("ListaProdutos.xml"));
-
-				ProdutoModel model = new ProdutoModel(listaProduto);
-				if (model != null)
-					table.setModel(model);
+				SalvarProdutoXML(new File("ListaProdutos.xml"));
 			}
 		});
-
-		JButton btnAlterar = new JButton("Alterar");
-		btnAlterar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Produto c = getProdutoSelecionadoNaTabela();
-				if (c != null) {
-					tfCodigo.setText(Integer.toString(c.getId()));
-					tfCodigo.setEditable(false);
-					tfDesc.setText(c.getDescricao());
-					tfPreco.setText(c.getPreco().toString());
-				}
-
-			}
-		});
-		GridBagConstraints gbc_btnAlterar = new GridBagConstraints();
-		gbc_btnAlterar.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnAlterar.insets = new Insets(0, 0, 5, 5);
-		gbc_btnAlterar.gridx = 6;
-		gbc_btnAlterar.gridy = 1;
-		telaProduto.add(btnAlterar, gbc_btnAlterar);
-		GridBagConstraints gbc_ImportarXML = new GridBagConstraints();
-		gbc_ImportarXML.fill = GridBagConstraints.HORIZONTAL;
-		gbc_ImportarXML.insets = new Insets(0, 0, 5, 0);
-		gbc_ImportarXML.gridx = 7;
-		gbc_ImportarXML.gridy = 1;
-		telaProduto.add(ImportarXML, gbc_ImportarXML);
+		GridBagConstraints gbc_btnNewButton_3 = new GridBagConstraints();
+		gbc_btnNewButton_3.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton_3.insets = new Insets(0, 0, 5, 0);
+		gbc_btnNewButton_3.gridx = 7;
+		gbc_btnNewButton_3.gridy = 1;
+		telaProduto.add(btnNewButton_3, gbc_btnNewButton_3);
 		PainelProdutos = new JScrollPane();
 		GridBagConstraints gbc_PainelProdutos = new GridBagConstraints();
 		gbc_PainelProdutos.gridheight = 4;
@@ -312,57 +231,138 @@ public class TelaPrincipal extends JFrame {
 
 		PainelProdutos.setViewportView(table);
 
-		JButton Desserializar = new JButton("Desserializar");
-		Desserializar.addActionListener(new ActionListener() {
+		if (listaProduto == null)
+			listaProduto = new ArrayList<>();
+
+		if (listaProduto.size() == 0) {
+			listarTodos(new Produto());
+		}
+
+		if (listaProduto.size() == 0) {
+			importarProdutosTXT();
+		}
+
+		SetModel(1);
+
+		JButton btnNewButton = new JButton("Adicionar");
+		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				LerProdutoSerializacao(new File("ListaProdutos.ser"));
+				if (!tfCodigo.getText().equals("") && !tfDesc.getText().equals("") && !tfPreco.getText().equals("")) {
+					Produto p = new Produto();
+					p.setId(Integer.parseInt(tfCodigo.getText()));
+					p.setDescricao(tfDesc.getText());
+					p.setPreco(new BigDecimal(tfPreco.getText()));
 
-				ProdutoModel model = new ProdutoModel(listaProduto);
+					if (buscar(p) > 0) {
+						JOptionPane.showMessageDialog(null, "PRODUTO JA CADASTRADO!");
+						return;
+					}
 
-				if (model != null)
-					table.setModel(model);
+					if (listaProduto == null)
+						listaProduto = new ArrayList<>();
+
+					salvar(p);
+
+					listaProduto.add(p);
+
+					SetModel(1);
+
+					tfCodigo.setText("");
+					tfDesc.setText("");
+					tfPreco.setText("");
+				}
 			}
 		});
 
-		JButton ExportarXML = new JButton("Exportar XML");
-		ExportarXML.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				SalvarProdutoXML(new File("ListaProdutos.xml"));
+		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
+		gbc_btnNewButton.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton.insets = new Insets(0, 0, 5, 5);
+		gbc_btnNewButton.gridx = 6;
+		gbc_btnNewButton.gridy = 2;
+		telaProduto.add(btnNewButton, gbc_btnNewButton);
+
+		JButton btnNewButton_4 = new JButton("ImportarXML");
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LerProdutoXML(new File("ListaProdutos.xml"));
+				SetModel(1);
 			}
 		});
+		GridBagConstraints gbc_btnNewButton_4 = new GridBagConstraints();
+		gbc_btnNewButton_4.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton_4.insets = new Insets(0, 0, 5, 0);
+		gbc_btnNewButton_4.gridx = 7;
+		gbc_btnNewButton_4.gridy = 2;
+		telaProduto.add(btnNewButton_4, gbc_btnNewButton_4);
 
-		JButton button_8 = new JButton("Excluir");
-		GridBagConstraints gbc_button_8 = new GridBagConstraints();
-		gbc_button_8.fill = GridBagConstraints.HORIZONTAL;
-		gbc_button_8.insets = new Insets(0, 0, 5, 5);
-		gbc_button_8.gridx = 6;
-		gbc_button_8.gridy = 2;
-		telaProduto.add(button_8, gbc_button_8);
-		GridBagConstraints gbc_ExportarXML = new GridBagConstraints();
-		gbc_ExportarXML.fill = GridBagConstraints.HORIZONTAL;
-		gbc_ExportarXML.insets = new Insets(0, 0, 5, 0);
-		gbc_ExportarXML.gridx = 7;
-		gbc_ExportarXML.gridy = 2;
-		telaProduto.add(ExportarXML, gbc_ExportarXML);
+		JButton btnNewButton_2 = new JButton("Alterar");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Produto c = getProdutoSelecionadoNaTabela();
+				if (c != null) {
+					if (!tfCodigo.getText().equals("") && !tfDesc.getText().equals("")
+							&& !tfPreco.getText().equals("")) {
+						c.setId(Integer.parseInt(tfCodigo.getText()));
+						c.setDescricao(tfDesc.getText());
+						c.setPreco(new BigDecimal(tfPreco.getText()));
+						listaProduto.set(table.getSelectedRow(), c);
 
-		JButton Serializar = new JButton("Serializar");
-		Serializar.addActionListener(new ActionListener() {
+						SetModel(1);
+
+						tfCodigo.setText("");
+						tfDesc.setText("");
+						tfPreco.setText("");
+					}
+				}
+			}
+		});
+		GridBagConstraints gbc_btnNewButton_2 = new GridBagConstraints();
+		gbc_btnNewButton_2.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton_2.insets = new Insets(0, 0, 5, 5);
+		gbc_btnNewButton_2.gridx = 6;
+		gbc_btnNewButton_2.gridy = 3;
+		telaProduto.add(btnNewButton_2, gbc_btnNewButton_2);
+
+		JButton btnNewButton_6 = new JButton("Serializar");
+		btnNewButton_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SalvarProdutoSerializacao(new File("ListaProdutos.ser"));
 			}
 		});
-		GridBagConstraints gbc_Serializar = new GridBagConstraints();
-		gbc_Serializar.fill = GridBagConstraints.HORIZONTAL;
-		gbc_Serializar.insets = new Insets(0, 0, 5, 0);
-		gbc_Serializar.gridx = 7;
-		gbc_Serializar.gridy = 3;
-		telaProduto.add(Serializar, gbc_Serializar);
-		GridBagConstraints gbc_Desserializar = new GridBagConstraints();
-		gbc_Desserializar.fill = GridBagConstraints.HORIZONTAL;
-		gbc_Desserializar.insets = new Insets(0, 0, 5, 0);
-		gbc_Desserializar.gridx = 7;
-		gbc_Desserializar.gridy = 4;
-		telaProduto.add(Desserializar, gbc_Desserializar);
+		GridBagConstraints gbc_btnNewButton_6 = new GridBagConstraints();
+		gbc_btnNewButton_6.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton_6.insets = new Insets(0, 0, 5, 0);
+		gbc_btnNewButton_6.gridx = 7;
+		gbc_btnNewButton_6.gridy = 3;
+		telaProduto.add(btnNewButton_6, gbc_btnNewButton_6);
+
+		JButton btnNewButton_5 = new JButton("Excluir");
+		btnNewButton_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				removerSelecionado(1);
+				SetModel(1);
+			}
+		});
+		GridBagConstraints gbc_btnNewButton_5 = new GridBagConstraints();
+		gbc_btnNewButton_5.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton_5.insets = new Insets(0, 0, 5, 5);
+		gbc_btnNewButton_5.gridx = 6;
+		gbc_btnNewButton_5.gridy = 4;
+		telaProduto.add(btnNewButton_5, gbc_btnNewButton_5);
+
+		JButton btnNewButton_7 = new JButton("Desseralizar");
+		btnNewButton_7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LerProdutoSerializacao(new File("ListaProdutos.ser"));
+				SetModel(1);
+			}
+		});
+		GridBagConstraints gbc_btnNewButton_7 = new GridBagConstraints();
+		gbc_btnNewButton_7.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton_7.insets = new Insets(0, 0, 5, 0);
+		gbc_btnNewButton_7.gridx = 7;
+		gbc_btnNewButton_7.gridy = 4;
+		telaProduto.add(btnNewButton_7, gbc_btnNewButton_7);
 
 		JButton btnRelatorio = new JButton("Relatorio");
 		GridBagConstraints gbc_btnRelatorio = new GridBagConstraints();
@@ -370,6 +370,20 @@ public class TelaPrincipal extends JFrame {
 		gbc_btnRelatorio.gridx = 7;
 		gbc_btnRelatorio.gridy = 5;
 		telaProduto.add(btnRelatorio, gbc_btnRelatorio);
+
+		mostraUltima();
+
+		configuraTabela(1);
+	}
+
+	protected void adicionaClientes() {
+
+		for (int i = 0; i < tabbedPane.getTabCount(); i++) {
+			if (tabbedPane.getTitleAt(i).equals(ABA_DOIS)) {
+				tabbedPane.setSelectedIndex(i);
+				return;
+			}
+		}
 
 		JPanel telaCliente = new JPanel();
 
@@ -527,6 +541,14 @@ public class TelaPrincipal extends JFrame {
 		textField_7.setColumns(10);
 
 		JButton btnExcluir = new JButton("Excluir");
+		btnExcluir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Produto c = getProdutoSelecionadoNaTabela();
+				if (c != null) {
+					((ProdutoModel) table.getModel()).removerProduto(c);
+				}
+			}
+		});
 		GridBagConstraints gbc_btnExcluir = new GridBagConstraints();
 		gbc_btnExcluir.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnExcluir.insets = new Insets(0, 0, 5, 5);
@@ -654,6 +676,17 @@ public class TelaPrincipal extends JFrame {
 		gbc_RelCliente.gridy = 5;
 		telaCliente.add(RelCliente, gbc_RelCliente);
 
+	}
+
+	protected void adicionaVendas() {
+
+		for (int i = 0; i < tabbedPane.getTabCount(); i++) {
+			if (tabbedPane.getTitleAt(i).equals(ABA_TRES)) {
+				tabbedPane.setSelectedIndex(i);
+				return;
+			}
+		}
+
 		JPanel telaVenda = new JPanel();
 
 		tabbedPane.addTab("Vendas", telaVenda);
@@ -762,18 +795,6 @@ public class TelaPrincipal extends JFrame {
 		gbc_button_7.gridy = 6;
 		telaVenda.add(button_7, gbc_button_7);
 		mostraUltima();
-	}
-
-	protected void adicionaVendas() {
-
-		for (int i = 0; i < tabbedPane.getTabCount(); i++) {
-			if (tabbedPane.getTitleAt(i).equals(ABA_TRES)) {
-				tabbedPane.setSelectedIndex(i);
-				return;
-			}
-		}
-
-		JScrollPane scrollPane;
 		mostraUltima();
 
 	}
@@ -782,7 +803,7 @@ public class TelaPrincipal extends JFrame {
 		tabbedPane.setSelectedIndex(tabbedPane.getTabCount() - 1);
 	}
 
-	protected void preencheTabela() {
+	protected void importarProdutosTXT() {
 
 		ReaderArquivo reader = new ReaderArquivo();
 		List<String> lista = reader.lerArquivo(new File("listaProdutos.txt"));
@@ -790,6 +811,10 @@ public class TelaPrincipal extends JFrame {
 		ParserProduto parser = new ParserProduto();
 		listaProduto = parser.getProduto(lista);
 
+		for (Produto p : listaProduto) {
+			salvar(p);
+		}
+		JOptionPane.showMessageDialog(null, "BANCO DE DADOS VAZIO! Os produtos foram importados do arquivo TXT");
 	}
 
 	public void SalvarProdutoXML(File file) {
@@ -806,6 +831,24 @@ public class TelaPrincipal extends JFrame {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS EXPORTADOS PARA O ARQUIVO " + file);
+	}
+
+	public void SalvarProdutoSerializacao(File file) {
+		try {
+
+			FileOutputStream fout = new FileOutputStream(file);
+
+			ObjectOutputStream oos = new ObjectOutputStream(fout);
+
+			oos.writeObject(listaProduto);
+
+			oos.close();
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS EXPORTADOS PARA O ARQUIVO " + file);
 	}
 
 	public void LerProdutoXML(File file) {
@@ -825,22 +868,7 @@ public class TelaPrincipal extends JFrame {
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
 		}
-	}
-
-	public void SalvarProdutoSerializacao(File file) {
-		try {
-
-			FileOutputStream fout = new FileOutputStream(file);
-
-			ObjectOutputStream oos = new ObjectOutputStream(fout);
-
-			oos.writeObject(listaProduto);
-
-			oos.close();
-
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS IMPORTADOS DO ARQUIVO " + file);
 	}
 
 	public void LerProdutoSerializacao(File file) {
@@ -861,6 +889,7 @@ public class TelaPrincipal extends JFrame {
 		} catch (Exception ex) {
 			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
 		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS IMPORTADOS DO ARQUIVO " + file);
 	}
 
 	private Produto getProdutoSelecionadoNaTabela() {
@@ -874,4 +903,238 @@ public class TelaPrincipal extends JFrame {
 		return c;
 	}
 
+	public void SetModel(int modelo) {
+		if (modelo == 1) {
+			ProdutoModel model = new ProdutoModel(listaProduto);
+			if (model != null)
+				table.setModel(model);
+		} else if (modelo == 2) {
+			ClienteModel model = new ClienteModel(listaCliente);
+			if (model != null)
+				table.setModel(model);
+		}
+	}
+
+	protected void removerSelecionado(int modelo) {
+		if (modelo == 1) {
+			Produto c = getProdutoSelecionadoNaTabela();
+			if (c != null) {
+				((ProdutoModel) table.getModel()).removerProduto(c);
+				excluir(c);
+				listaProduto = ((ProdutoModel) table.getModel()).getLista();
+			}
+		} else if (modelo == 2) {
+
+		}
+	}
+
+	private void configuraTabela(int modelo) {
+		table.addMouseListener(new MouseAdapter() {
+
+			@Override
+			public void mouseClicked(MouseEvent e) {
+
+				if (e.getClickCount() == 1) {
+					if (modelo == 1) {
+						Produto c = getProdutoSelecionadoNaTabela();
+						if (c != null) {
+							tfCodigo.setEditable(true);
+							tfCodigo.setText("");
+							tfDesc.setText("");
+							tfPreco.setText("");
+						}
+					}
+
+				} else if (e.getClickCount() == 2) {
+					if (modelo == 1) {
+						Produto c = getProdutoSelecionadoNaTabela();
+						if (c != null) {
+							tfCodigo.setText(Integer.toString(c.getId()));
+							tfCodigo.setEditable(false);
+							tfDesc.setText(c.getDescricao());
+							tfPreco.setText(c.getPreco().toString());
+						}
+					}
+
+				}
+			}
+
+		});
+	}
+
+	private SqlGenImplementation getImp() {
+		if (imp == null) {
+			try {
+				setImp(new SqlGenImplementation());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		return imp;
+	}
+
+	private void setImp(SqlGenImplementation imp) {
+		this.imp = imp;
+	}
+
+	public void CriarTabela(Object obj) {
+		String sql = getImp().getCreateTable(getImp().getCon(), obj);
+
+		try (PreparedStatement ps = getImp().getCon().prepareStatement(sql)) {
+			ps.executeUpdate();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+		}
+	}
+
+	public void salvar(Object obj) {
+		PreparedStatement inclusao = getImp().getSqlInsert(getImp().getCon(), obj);
+
+		if (obj.getClass() == Produto.class) {
+			Produto p = (Produto) obj;
+			try {
+				inclusao.setInt(1, p.getId());
+				inclusao.setString(2, p.getDescricao());
+				inclusao.setBigDecimal(3, p.getPreco());
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+			}
+
+		} else if (obj.getClass() == Cliente.class) {
+			Cliente c = (Cliente) obj;
+			try {
+				inclusao.setInt(1, c.getId());
+				inclusao.setString(2, c.getNome());
+				inclusao.setString(3, c.getEndereco());
+				inclusao.setInt(4, c.getNumero());
+				inclusao.setString(5, c.getComplemento());
+				inclusao.setString(6, c.getCidade());
+				inclusao.setString(7, c.getEstado());
+				inclusao.setInt(8, c.getCep());
+				inclusao.setString(9, c.getTelefone());
+				inclusao.setString(10, c.getCelular());
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+			}
+		}
+
+		try {
+			inclusao.executeUpdate();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+		}
+	}
+
+	public int buscar(Object obj) {
+		PreparedStatement buscar = getImp().getSqlSelectById(getImp().getCon(), obj);
+
+		ResultSet exibir = null;
+		int cont = 0;
+
+		try {
+			exibir = buscar.executeQuery();
+			while (exibir.next()) {
+				cont++;
+			}
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+		}
+
+		return cont;
+	}
+
+	public void atualizar(Object obj) {
+		PreparedStatement alterar = getImp().getSqlUpdateById(getImp().getCon(), obj);
+
+		Cliente cliente = (Cliente) obj;
+
+		int exibir = 0;
+
+		try {
+			alterar.setString(1, cliente.getNome());
+			alterar.setString(2, cliente.getEndereco());
+			alterar.setString(3, cliente.getTelefone());
+			alterar.setInt(5, cliente.getId());
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+		}
+
+		try {
+			exibir = alterar.executeUpdate();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+		}
+	}
+
+	public void excluir(Object obj) {
+		PreparedStatement excluir = getImp().getSqlDeleteById(getImp().getCon(), obj);
+
+		try {
+			excluir.executeUpdate();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+		}
+
+	}
+
+	public void listarTodos(Object obj) {
+
+		PreparedStatement listar = getImp().getSqlSelectAll(getImp().getCon(), obj);
+
+		if (obj.getClass() == Produto.class) {
+			ResultSet retorno = null;
+
+			try {
+				retorno = listar.executeQuery();
+				while (retorno.next()) {
+					Produto aux = new Produto();
+					aux.setId(retorno.getInt("id"));
+					aux.setDescricao(retorno.getString("descricao"));
+					aux.setPreco(new BigDecimal(retorno.getString("preco")));
+
+					listaProduto.add(aux);
+
+				}
+
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+			}
+
+		} else if (obj.getClass() == Cliente.class) {
+			ResultSet retorno = null;
+
+			try {
+				retorno = listar.executeQuery();
+				while (retorno.next()) {
+					Cliente aux = new Cliente();
+					aux.setId(retorno.getInt("id"));
+					aux.setNome(retorno.getString("nome"));
+					aux.setEndereco(retorno.getString("endereco"));
+					aux.setNumero(retorno.getInt("numero"));
+					aux.setComplemento(retorno.getString("complemento"));
+					aux.setBairro(retorno.getString("bairro"));
+					aux.setCidade(retorno.getString("cidade"));
+					aux.setEstado(retorno.getString("estado"));
+					aux.setCep(retorno.getInt("cep"));
+					aux.setTelefone(retorno.getString("telefone"));
+					aux.setCelular(retorno.getString("celular"));
+
+					listaCliente.add(aux);
+				}
+
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+			}
+		}
+
+		try {
+			listar.executeQuery();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
+		}
+
+		if (listaProduto.size() > 0)
+			JOptionPane.showMessageDialog(null, "REGISTROS IMPORTADOS DO BANCO DE DADOS!");
+	}
 }
