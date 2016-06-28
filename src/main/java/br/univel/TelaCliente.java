@@ -27,7 +27,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-public class TelaCliente extends TelaPrincipal {
+public class TelaCliente  {
 
 	private JTable table;
 	private List<Cliente> listaCliente;
