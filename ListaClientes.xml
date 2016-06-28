@@ -1,2 +1,419 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<lista/>
+<lista>
+    <listaCliente>
+        <id>1058</id>
+        <nome>vel dapibus</nome>
+        <endereco>eget rutrum at</endereco>
+        <numero>52</numero>
+        <complemento>pretium</complemento>
+        <bairro>tempus semper est</bairro>
+        <cidade>interdum</cidade>
+        <estado>sapien</estado>
+        <cep>8</cep>
+        <telefone>duis</telefone>
+        <celular>aenean</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>1122</id>
+        <nome>vitae</nome>
+        <endereco>posuere cubilia</endereco>
+        <numero>18</numero>
+        <complemento>ut</complemento>
+        <bairro>nulla suscipit</bairro>
+        <cidade>mauris</cidade>
+        <estado>integer</estado>
+        <cep>7</cep>
+        <telefone>ut</telefone>
+        <celular>non</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>1130</id>
+        <nome>varius integer</nome>
+        <endereco>tincidunt</endereco>
+        <numero>89</numero>
+        <complemento>non</complemento>
+        <bairro>placerat ante</bairro>
+        <cidade>urna</cidade>
+        <estado>diam</estado>
+        <cep>6</cep>
+        <telefone>sed</telefone>
+        <celular>rutrum</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>1697</id>
+        <nome>justo aliquam</nome>
+        <endereco>vel sem sed</endereco>
+        <numero>56</numero>
+        <complemento>turpis</complemento>
+        <bairro>amet eros suspendisse</bairro>
+        <cidade>in</cidade>
+        <estado>justo</estado>
+        <cep>1</cep>
+        <telefone>ut</telefone>
+        <celular>venenatis</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>2224</id>
+        <nome>donec vitae</nome>
+        <endereco>erat quisque</endereco>
+        <numero>92</numero>
+        <complemento>ligula</complemento>
+        <bairro>amet eros suspendisse</bairro>
+        <cidade>in</cidade>
+        <estado>maecenas</estado>
+        <cep>6</cep>
+        <telefone>ligula</telefone>
+        <celular>sed</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>2793</id>
+        <nome>feugiat</nome>
+        <endereco>mauris morbi</endereco>
+        <numero>31</numero>
+        <complemento>ornare</complemento>
+        <bairro>velum ante ipsum</bairro>
+        <cidade>at</cidade>
+        <estado>ultrices</estado>
+        <cep>2</cep>
+        <telefone>lacus</telefone>
+        <celular>non</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>2816</id>
+        <nome>ligula</nome>
+        <endereco>dictumst aliquam augue</endereco>
+        <numero>3</numero>
+        <complemento>imperdiet</complemento>
+        <bairro>magna</bairro>
+        <cidade>duis</cidade>
+        <estado>volutpat</estado>
+        <cep>4</cep>
+        <telefone>sagittis</telefone>
+        <celular>sociis</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>3463</id>
+        <nome>nam nulla</nome>
+        <endereco>tempus semper</endereco>
+        <numero>6</numero>
+        <complemento>id</complemento>
+        <bairro>sagittis sapien</bairro>
+        <cidade>mauris</cidade>
+        <estado>lorem</estado>
+        <cep>8</cep>
+        <telefone>non</telefone>
+        <celular>et</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>3467</id>
+        <nome>orci luctus et</nome>
+        <endereco>integer ac leo</endereco>
+        <numero>3</numero>
+        <complemento>donec</complemento>
+        <bairro>vestibulum ante</bairro>
+        <cidade>vehicula</cidade>
+        <estado>tortor</estado>
+        <cep>1</cep>
+        <telefone>justo</telefone>
+        <celular>magna</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>3664</id>
+        <nome>duis consequat dui</nome>
+        <endereco>habitasse platea dictumst</endereco>
+        <numero>67</numero>
+        <complemento>ut</complemento>
+        <bairro>quis turpis sed</bairro>
+        <cidade>augue</cidade>
+        <estado>justo</estado>
+        <cep>1</cep>
+        <telefone>tristique</telefone>
+        <celular>libero</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>3738</id>
+        <nome>quam a odio</nome>
+        <endereco>sed ante vivamus</endereco>
+        <numero>62</numero>
+        <complemento>sit</complemento>
+        <bairro>pede venenatis</bairro>
+        <cidade>justo</cidade>
+        <estado>integer</estado>
+        <cep>4</cep>
+        <telefone>donec</telefone>
+        <celular>fermentum</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>4027</id>
+        <nome>eleifend luctus</nome>
+        <endereco>sit amet lobortis</endereco>
+        <numero>3</numero>
+        <complemento>metus</complemento>
+        <bairro>ante</bairro>
+        <cidade>amet</cidade>
+        <estado>est</estado>
+        <cep>7</cep>
+        <telefone>rhoncus</telefone>
+        <celular>ut</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>4052</id>
+        <nome>pretium iaculis</nome>
+        <endereco>nulla pede ullamcorper</endereco>
+        <numero>58</numero>
+        <complemento>pretium</complemento>
+        <bairro>non velit</bairro>
+        <cidade>platea</cidade>
+        <estado>etiam</estado>
+        <cep>5</cep>
+        <telefone>dui</telefone>
+        <celular>lacinia</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>4367</id>
+        <nome>consectetuer adipiscing</nome>
+        <endereco>quam sollicitudin vitae</endereco>
+        <numero>78</numero>
+        <complemento>condimentum</complemento>
+        <bairro>in est risus</bairro>
+        <cidade>ut</cidade>
+        <estado>convallis</estado>
+        <cep>2</cep>
+        <telefone>vestibulum</telefone>
+        <celular>libero</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>4430</id>
+        <nome>dis</nome>
+        <endereco>a libero nam</endereco>
+        <numero>70</numero>
+        <complemento>morbi</complemento>
+        <bairro>velit</bairro>
+        <cidade>nonummy</cidade>
+        <estado>a</estado>
+        <cep>6</cep>
+        <telefone>lobortis</telefone>
+        <celular>pulvinar</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>4824</id>
+        <nome>eu orci mauris</nome>
+        <endereco>integer ac</endereco>
+        <numero>87</numero>
+        <complemento>turpis</complemento>
+        <bairro>lacinia eget</bairro>
+        <cidade>etiam</cidade>
+        <estado>sapien</estado>
+        <cep>5</cep>
+        <telefone>convallis</telefone>
+        <celular>odio</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>4922</id>
+        <nome>sit</nome>
+        <endereco>convallis duis consequat</endereco>
+        <numero>46</numero>
+        <complemento>duis</complemento>
+        <bairro>iaculis diam</bairro>
+        <cidade>sit</cidade>
+        <estado>mauris</estado>
+        <cep>6</cep>
+        <telefone>amet</telefone>
+        <celular>morbi</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>4973</id>
+        <nome>duis bibendum</nome>
+        <endereco>laoreet ut</endereco>
+        <numero>20</numero>
+        <complemento>duis</complemento>
+        <bairro>suspendisse potenti in</bairro>
+        <cidade>rhoncus</cidade>
+        <estado>viverra</estado>
+        <cep>1</cep>
+        <telefone>turpis</telefone>
+        <celular>in</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>5825</id>
+        <nome>a</nome>
+        <endereco>etiam</endereco>
+        <numero>19</numero>
+        <complemento>pulvinar</complemento>
+        <bairro>posuere metus</bairro>
+        <cidade>id</cidade>
+        <estado>proin</estado>
+        <cep>9</cep>
+        <telefone>at</telefone>
+        <celular>ac</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>5981</id>
+        <nome>vestibulum</nome>
+        <endereco>in lacus</endereco>
+        <numero>40</numero>
+        <complemento>pretium</complemento>
+        <bairro>fusce lacus purus</bairro>
+        <cidade>nibh</cidade>
+        <estado>bibendum</estado>
+        <cep>9</cep>
+        <telefone>vivamus</telefone>
+        <celular>lacinia</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>6018</id>
+        <nome>cursus</nome>
+        <endereco>dictumst</endereco>
+        <numero>30</numero>
+        <complemento>lorem</complemento>
+        <bairro>neque libero convallis</bairro>
+        <cidade>sem</cidade>
+        <estado>auctor</estado>
+        <cep>5</cep>
+        <telefone>sed</telefone>
+        <celular>sed</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>6137</id>
+        <nome>quisque id justo</nome>
+        <endereco>blandit nam</endereco>
+        <numero>2</numero>
+        <complemento>vel</complemento>
+        <bairro>dui maecenas tristique</bairro>
+        <cidade>cubilia</cidade>
+        <estado>ligula</estado>
+        <cep>9</cep>
+        <telefone>sapien</telefone>
+        <celular>eleifend</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>6296</id>
+        <nome>dui vel sem</nome>
+        <endereco>dapibus dolor vel</endereco>
+        <numero>87</numero>
+        <complemento>maecenas</complemento>
+        <bairro>sapien iaculis congue</bairro>
+        <cidade>tristique</cidade>
+        <estado>morbi</estado>
+        <cep>4</cep>
+        <telefone>venenatis</telefone>
+        <celular>dui</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>6444</id>
+        <nome>nec dui luctus</nome>
+        <endereco>feugiat non pretium</endereco>
+        <numero>70</numero>
+        <complemento>fusce</complemento>
+        <bairro>a pede posuere</bairro>
+        <cidade>congue</cidade>
+        <estado>pede</estado>
+        <cep>8</cep>
+        <telefone>justo</telefone>
+        <celular>non</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>7971</id>
+        <nome>feugiat</nome>
+        <endereco>magnis dis</endereco>
+        <numero>80</numero>
+        <complemento>tristique</complemento>
+        <bairro>sit amet</bairro>
+        <cidade>nisi</cidade>
+        <estado>cursus</estado>
+        <cep>7</cep>
+        <telefone>sit</telefone>
+        <celular>rhoncus</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>8367</id>
+        <nome>turpis</nome>
+        <endereco>ac</endereco>
+        <numero>58</numero>
+        <complemento>consequat</complemento>
+        <bairro>dui</bairro>
+        <cidade>mauris</cidade>
+        <estado>sociis</estado>
+        <cep>2</cep>
+        <telefone>in</telefone>
+        <celular>est</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>8618</id>
+        <nome>id luctus nec</nome>
+        <endereco>ipsum dolor sit</endereco>
+        <numero>70</numero>
+        <complemento>interdum</complemento>
+        <bairro>lacus at velit</bairro>
+        <cidade>bibendum</cidade>
+        <estado>hendrerit</estado>
+        <cep>9</cep>
+        <telefone>dui</telefone>
+        <celular>ut</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>8629</id>
+        <nome>luctus</nome>
+        <endereco>eget eleifend luctus</endereco>
+        <numero>25</numero>
+        <complemento>ut</complemento>
+        <bairro>eu sapien cursus</bairro>
+        <cidade>est</cidade>
+        <estado>nunc</estado>
+        <cep>8</cep>
+        <telefone>duis</telefone>
+        <celular>est</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>8795</id>
+        <nome>augue</nome>
+        <endereco>pede posuere nonummy</endereco>
+        <numero>32</numero>
+        <complemento>lobortis</complemento>
+        <bairro>pede ac</bairro>
+        <cidade>turpis</cidade>
+        <estado>orci</estado>
+        <cep>6</cep>
+        <telefone>nibh</telefone>
+        <celular>mus</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>8813</id>
+        <nome>ac diam cras</nome>
+        <endereco>quam pede lobortis</endereco>
+        <numero>75</numero>
+        <complemento>porta</complemento>
+        <bairro>vitae nisl aenean</bairro>
+        <cidade>dui</cidade>
+        <estado>sapien</estado>
+        <cep>2</cep>
+        <telefone>suspendisse</telefone>
+        <celular>leo</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>8924</id>
+        <nome>enim</nome>
+        <endereco>aliquam non mauris</endereco>
+        <numero>33</numero>
+        <complemento>arcu</complemento>
+        <bairro>hendrerit at vulputate</bairro>
+        <cidade>id</cidade>
+        <estado>massa</estado>
+        <cep>8</cep>
+        <telefone>ut</telefone>
+        <celular>vestibulum</celular>
+    </listaCliente>
+    <listaCliente>
+        <id>9930</id>
+        <nome>vel augue</nome>
+        <endereco>montes nascetur</endereco>
+        <numero>96</numero>
+        <complemento>curae</complemento>
+        <bairro>hac</bairro>
+        <cidade>mus</cidade>
+        <estado>hac</estado>
+        <cep>2</cep>
+        <telefone>morbi</telefone>
+        <celular>adipiscing</celular>
+    </listaCliente>
+</lista>

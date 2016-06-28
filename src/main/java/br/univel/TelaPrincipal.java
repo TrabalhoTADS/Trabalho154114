@@ -45,7 +45,8 @@ public class TelaPrincipal extends JFrame {
 
 	private JPanel contentPane;
 	private JTabbedPane tabbedPane;
-	private JTable table;
+	private JTable tableCli;
+	private JTable tablePro;
 
 	private List<Produto> listaProduto;
 	private List<Cliente> listaCliente;
@@ -60,17 +61,17 @@ public class TelaPrincipal extends JFrame {
 	private JScrollPane PainelProdutos;
 	private JScrollPane PainelVendas;
 	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
-	private JTextField textField_8;
-	private JTextField textField_9;
-	private JTextField textField_10;
-	private JTextField textField_11;
+	private JTextField tfNome;
+	private JTextField tfEnd;
+	private JTextField tfNumero;
+	private JTextField tfComp;
+	private JTextField tfBairro;
+	private JTextField tfCidade;
+	private JTextField tfCep;
+	private JTextField tfEstado;
+	private JTextField tfTel;
+	private JTextField tfCel;
+	private JTextField tfId;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -213,7 +214,7 @@ public class TelaPrincipal extends JFrame {
 		gbc_PainelProdutos.gridy = 2;
 		telaProduto.add(PainelProdutos, gbc_PainelProdutos);
 
-		table = new JTable() {
+		tablePro = new JTable() {
 
 			@Override
 			public String getToolTipText(MouseEvent e) {
@@ -241,7 +242,7 @@ public class TelaPrincipal extends JFrame {
 
 		};
 
-		PainelProdutos.setViewportView(table);
+		PainelProdutos.setViewportView(tablePro);
 
 		if (listaProduto == null)
 			listaProduto = new ArrayList<>();
@@ -317,7 +318,7 @@ public class TelaPrincipal extends JFrame {
 						c.setId(Integer.parseInt(tfCodigo.getText()));
 						c.setDescricao(tfDesc.getText());
 						c.setPreco(new BigDecimal(tfPreco.getText()));
-						listaProduto.set(table.getSelectedRow(), c);
+						listaProduto.set(tablePro.getSelectedRow(), c);
 
 						SetModel(1);
 
@@ -382,7 +383,7 @@ public class TelaPrincipal extends JFrame {
 				JasperPrint relat;
 
 				try {
-					relat = gerar();
+					relat = gerar(1);
 					JasperViewer.viewReport(relat, false);
 				} catch (Exception e) {
 					JOptionPane.showMessageDialog(null, "Erro: " + e.getMessage());
@@ -400,11 +401,16 @@ public class TelaPrincipal extends JFrame {
 		configuraTabela(1);
 	}
 
-	public JasperPrint gerar() {
+	public JasperPrint gerar(int modelo) {
 		JasperPrint rel = null;
+		String arquivoJasper = "";
 		try {
 			HashMap map = new HashMap();
-			String arquivoJasper = "C:\\Users\\Eduardo\\git\\Trabalho154114\\src\\main\\java\\br\\univel\\RelProdutos.jasper";
+			if (modelo == 1) {
+				arquivoJasper = "C:\\Users\\Eduardo\\git\\Trabalho154114\\src\\main\\java\\br\\univel\\RelProdutos.jasper";
+			} else if (modelo == 2){
+				arquivoJasper = "C:\\Users\\Eduardo\\git\\Trabalho154114\\src\\main\\java\\br\\univel\\RelClientes.jasper";
+			}
 			rel = JasperFillManager.fillReport(arquivoJasper, map, getImp().getCon());
 		} catch (JRException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
@@ -439,14 +445,14 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblNewLabel_1.gridy = 0;
 		telaCliente.add(lblNewLabel_1, gbc_lblNewLabel_1);
 
-		textField_11 = new JTextField();
-		GridBagConstraints gbc_textField_11 = new GridBagConstraints();
-		gbc_textField_11.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_11.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_11.gridx = 1;
-		gbc_textField_11.gridy = 0;
-		telaCliente.add(textField_11, gbc_textField_11);
-		textField_11.setColumns(10);
+		tfId = new JTextField();
+		GridBagConstraints gbc_tfId = new GridBagConstraints();
+		gbc_tfId.insets = new Insets(0, 0, 5, 5);
+		gbc_tfId.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfId.gridx = 1;
+		gbc_tfId.gridy = 0;
+		telaCliente.add(tfId, gbc_tfId);
+		tfId.setColumns(10);
 
 		JLabel lblNome = new JLabel("Nome:");
 		GridBagConstraints gbc_lblNome = new GridBagConstraints();
@@ -456,15 +462,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblNome.gridy = 0;
 		telaCliente.add(lblNome, gbc_lblNome);
 
-		textField_1 = new JTextField();
-		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
-		gbc_textField_1.gridwidth = 4;
-		gbc_textField_1.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_1.gridx = 3;
-		gbc_textField_1.gridy = 0;
-		telaCliente.add(textField_1, gbc_textField_1);
-		textField_1.setColumns(10);
+		tfNome = new JTextField();
+		GridBagConstraints gbc_tfNome = new GridBagConstraints();
+		gbc_tfNome.gridwidth = 4;
+		gbc_tfNome.insets = new Insets(0, 0, 5, 5);
+		gbc_tfNome.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfNome.gridx = 3;
+		gbc_tfNome.gridy = 0;
+		telaCliente.add(tfNome, gbc_tfNome);
+		tfNome.setColumns(10);
 
 		JButton ExpClienteXml = new JButton("Exportar XML");
 		ExpClienteXml.addActionListener(new ActionListener() {
@@ -488,19 +494,96 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblEndereco.gridy = 1;
 		telaCliente.add(lblEndereco, gbc_lblEndereco);
 
-		textField_2 = new JTextField();
-		GridBagConstraints gbc_textField_2 = new GridBagConstraints();
-		gbc_textField_2.gridwidth = 3;
-		gbc_textField_2.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_2.gridx = 1;
-		gbc_textField_2.gridy = 1;
-		telaCliente.add(textField_2, gbc_textField_2);
-		textField_2.setColumns(10);
+		tfEnd = new JTextField();
+		GridBagConstraints gbc_tfEnd = new GridBagConstraints();
+		gbc_tfEnd.gridwidth = 3;
+		gbc_tfEnd.insets = new Insets(0, 0, 5, 5);
+		gbc_tfEnd.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfEnd.gridx = 1;
+		gbc_tfEnd.gridy = 1;
+		telaCliente.add(tfEnd, gbc_tfEnd);
+		tfEnd.setColumns(10);
 
 		JButton AddCliente = new JButton("Adcionar");
 		AddCliente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				if (tfNome.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Nome é obrigatorio");
+					return;
+				}
+				if (tfEnd.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Endereco é obrigatorio");
+					return;
+				}
+				if (tfNumero.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Numero é obrigatorio");
+					return;
+				}
+
+				if (tfBairro.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Bairro é obrigatorio");
+					return;
+				}
+				if (tfCidade.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Cidade é obrigatorio");
+					return;
+				}
+				if (tfCep.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Cep é obrigatorio");
+					return;
+				}
+				if (tfEstado.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Estado é obrigatorio");
+					return;
+				}
+				if (tfTel.getText().equals("") && tfCel.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "Informa Telefone e/ou Celular");
+					return;
+				}
+				if (tfId.getText().equals("")) {
+					JOptionPane.showMessageDialog(null, "ID é obrigatorio");
+					return;
+				}
+
+				Cliente c = new Cliente();
+				c.setId(Integer.parseInt(tfId.getText()));
+				c.setNome(tfNome.getText());
+				c.setEndereco(tfEnd.getText());
+				c.setNumero(Integer.parseInt(tfNumero.getText()));
+				c.setComplemento(tfComp.getText());
+				c.setBairro(tfBairro.getText());
+				c.setCidade(tfCidade.getText());
+				c.setEstado(tfEstado.getText());
+				c.setCep(Integer.parseInt(tfCep.getText()));
+				c.setTelefone(tfTel.getText());
+				c.setCelular(tfCel.getText());
+
+				if (buscar(c) > 0) {
+					JOptionPane.showMessageDialog(null, "CLIENTE JA CADASTRADO!");
+					return;
+				}
+
+				if (listaCliente == null)
+					listaCliente = new ArrayList<>();
+
+				salvar(c);
+
+				listaCliente.add(c);
+
+				SetModel(2);
+
+				tfId.setText("");
+				tfNome.setText("");
+				tfEnd.setText("");
+				tfNumero.setText("");
+				tfComp.setText("");
+				tfBairro.setText("");
+				tfCidade.setText("");
+				tfEstado.setText("");
+				tfCep.setText("");
+				tfTel.setText("");
+				tfCel.setText("");
+
 			}
 		});
 
@@ -512,15 +595,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblNumero.gridy = 1;
 		telaCliente.add(lblNumero, gbc_lblNumero);
 
-		textField_3 = new JTextField();
-		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
-		gbc_textField_3.gridwidth = 2;
-		gbc_textField_3.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_3.gridx = 5;
-		gbc_textField_3.gridy = 1;
-		telaCliente.add(textField_3, gbc_textField_3);
-		textField_3.setColumns(10);
+		tfNumero = new JTextField();
+		GridBagConstraints gbc_tfNumero = new GridBagConstraints();
+		gbc_tfNumero.gridwidth = 2;
+		gbc_tfNumero.insets = new Insets(0, 0, 5, 5);
+		gbc_tfNumero.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfNumero.gridx = 5;
+		gbc_tfNumero.gridy = 1;
+		telaCliente.add(tfNumero, gbc_tfNumero);
+		tfNumero.setColumns(10);
 		GridBagConstraints gbc_AddCliente = new GridBagConstraints();
 		gbc_AddCliente.fill = GridBagConstraints.HORIZONTAL;
 		gbc_AddCliente.insets = new Insets(0, 0, 5, 5);
@@ -551,14 +634,14 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblNewLabel.gridy = 2;
 		telaCliente.add(lblNewLabel, gbc_lblNewLabel);
 
-		textField_4 = new JTextField();
-		GridBagConstraints gbc_textField_4 = new GridBagConstraints();
-		gbc_textField_4.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_4.gridx = 1;
-		gbc_textField_4.gridy = 2;
-		telaCliente.add(textField_4, gbc_textField_4);
-		textField_4.setColumns(10);
+		tfComp = new JTextField();
+		GridBagConstraints gbc_tfComp = new GridBagConstraints();
+		gbc_tfComp.insets = new Insets(0, 0, 5, 5);
+		gbc_tfComp.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfComp.gridx = 1;
+		gbc_tfComp.gridy = 2;
+		telaCliente.add(tfComp, gbc_tfComp);
+		tfComp.setColumns(10);
 
 		JLabel lblCep = new JLabel("CEP:");
 		GridBagConstraints gbc_lblCep = new GridBagConstraints();
@@ -578,18 +661,84 @@ public class TelaPrincipal extends JFrame {
 		JButton AltCliente = new JButton("Alterar");
 		AltCliente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Cliente c = getClienteSelecionadoNaTabela();
+				if (c != null) {
+					if (tfNome.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Nome é obrigatorio");
+						return;
+					}
+					if (tfEnd.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Endereco é obrigatorio");
+						return;
+					}
+					if (tfNumero.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Numero é obrigatorio");
+						return;
+					}
+					if (tfBairro.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Bairro é obrigatorio");
+						return;
+					}
+					if (tfCidade.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Cidade é obrigatorio");
+						return;
+					}
+					if (tfCep.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Cep é obrigatorio");
+						return;
+					}
+					if (tfEstado.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Estado é obrigatorio");
+						return;
+					}
+					if (tfTel.getText().equals("") && tfCel.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "Informa Telefone e/ou Celular");
+						return;
+					}
+					if (tfId.getText().equals("")) {
+						JOptionPane.showMessageDialog(null, "ID é obrigatorio");
+						return;
+					}
 
+					c.setId(Integer.parseInt(tfId.getText()));
+					c.setNome(tfNome.getText());
+					c.setEndereco(tfEnd.getText());
+					c.setNumero(Integer.parseInt(tfNumero.getText()));
+					c.setComplemento(tfComp.getText());
+					c.setBairro(tfBairro.getText());
+					c.setCidade(tfCidade.getText());
+					c.setEstado(tfEstado.getText());
+					c.setCep(Integer.parseInt(tfCep.getText()));
+					c.setTelefone(tfTel.getText());
+					c.setCelular(tfCel.getText());
+
+					listaCliente.set(tableCli.getSelectedRow(), c);
+
+					SetModel(2);
+
+					tfId.setText("");
+					tfNome.setText("");
+					tfEnd.setText("");
+					tfNumero.setText("");
+					tfComp.setText("");
+					tfBairro.setText("");
+					tfCidade.setText("");
+					tfEstado.setText("");
+					tfCep.setText("");
+					tfTel.setText("");
+					tfCel.setText("");
+				}
 			}
 		});
 
-		textField_7 = new JTextField();
-		GridBagConstraints gbc_textField_7 = new GridBagConstraints();
-		gbc_textField_7.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_7.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_7.gridx = 3;
-		gbc_textField_7.gridy = 2;
-		telaCliente.add(textField_7, gbc_textField_7);
-		textField_7.setColumns(10);
+		tfCep = new JTextField();
+		GridBagConstraints gbc_tfCep = new GridBagConstraints();
+		gbc_tfCep.insets = new Insets(0, 0, 5, 5);
+		gbc_tfCep.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfCep.gridx = 3;
+		gbc_tfCep.gridy = 2;
+		telaCliente.add(tfCep, gbc_tfCep);
+		tfCep.setColumns(10);
 
 		JLabel lblBairro = new JLabel("Bairro: ");
 		GridBagConstraints gbc_lblBairro = new GridBagConstraints();
@@ -599,15 +748,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblBairro.gridy = 2;
 		telaCliente.add(lblBairro, gbc_lblBairro);
 
-		textField_5 = new JTextField();
-		GridBagConstraints gbc_textField_5 = new GridBagConstraints();
-		gbc_textField_5.gridwidth = 2;
-		gbc_textField_5.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_5.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_5.gridx = 5;
-		gbc_textField_5.gridy = 2;
-		telaCliente.add(textField_5, gbc_textField_5);
-		textField_5.setColumns(10);
+		tfBairro = new JTextField();
+		GridBagConstraints gbc_tfBairro = new GridBagConstraints();
+		gbc_tfBairro.gridwidth = 2;
+		gbc_tfBairro.insets = new Insets(0, 0, 5, 5);
+		gbc_tfBairro.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfBairro.gridx = 5;
+		gbc_tfBairro.gridy = 2;
+		telaCliente.add(tfBairro, gbc_tfBairro);
+		tfBairro.setColumns(10);
 		GridBagConstraints gbc_AltCliente = new GridBagConstraints();
 		gbc_AltCliente.fill = GridBagConstraints.HORIZONTAL;
 		gbc_AltCliente.anchor = GridBagConstraints.ABOVE_BASELINE;
@@ -633,6 +782,7 @@ public class TelaPrincipal extends JFrame {
 
 		JButton DesCliente = new JButton("Desserializar");
 		DesCliente.addActionListener(new ActionListener() {
+
 			public void actionPerformed(ActionEvent e) {
 				LerClienteSerializacao(new File("ListaCliente.ser"));
 				SetModel(2);
@@ -642,22 +792,21 @@ public class TelaPrincipal extends JFrame {
 		JButton btnExcluir = new JButton("Excluir");
 		btnExcluir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Produto c = getProdutoSelecionadoNaTabela();
-				if (c != null) {
-					((ProdutoModel) table.getModel()).removerProduto(c);
-				}
+				removerSelecionado(2);
+				SetModel(2);
 			}
 		});
 
-		textField_6 = new JTextField();
-		GridBagConstraints gbc_textField_6 = new GridBagConstraints();
-		gbc_textField_6.gridwidth = 4;
-		gbc_textField_6.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_6.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_6.gridx = 1;
-		gbc_textField_6.gridy = 3;
-		telaCliente.add(textField_6, gbc_textField_6);
-		textField_6.setColumns(10);
+		tfCidade = new JTextField();
+		GridBagConstraints gbc_tfCidade = new GridBagConstraints();
+		gbc_tfCidade.anchor = GridBagConstraints.NORTH;
+		gbc_tfCidade.gridwidth = 4;
+		gbc_tfCidade.insets = new Insets(0, 0, 5, 5);
+		gbc_tfCidade.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfCidade.gridx = 1;
+		gbc_tfCidade.gridy = 3;
+		telaCliente.add(tfCidade, gbc_tfCidade);
+		tfCidade.setColumns(10);
 
 		JLabel lblEstado = new JLabel("Estado:");
 		GridBagConstraints gbc_lblEstado = new GridBagConstraints();
@@ -667,20 +816,22 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblEstado.gridy = 3;
 		telaCliente.add(lblEstado, gbc_lblEstado);
 
-		textField_8 = new JTextField();
-		GridBagConstraints gbc_textField_8 = new GridBagConstraints();
-		gbc_textField_8.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_8.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_8.gridx = 6;
-		gbc_textField_8.gridy = 3;
-		telaCliente.add(textField_8, gbc_textField_8);
-		textField_8.setColumns(10);
+		tfEstado = new JTextField();
+		GridBagConstraints gbc_tfEstado = new GridBagConstraints();
+		gbc_tfEstado.insets = new Insets(0, 0, 5, 5);
+		gbc_tfEstado.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfEstado.gridx = 6;
+		gbc_tfEstado.gridy = 3;
+		telaCliente.add(tfEstado, gbc_tfEstado);
+
+		tfEstado.setColumns(10);
 		GridBagConstraints gbc_btnExcluir = new GridBagConstraints();
 		gbc_btnExcluir.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnExcluir.insets = new Insets(0, 0, 5, 5);
 		gbc_btnExcluir.gridx = 8;
 		gbc_btnExcluir.gridy = 3;
 		telaCliente.add(btnExcluir, gbc_btnExcluir);
+
 		GridBagConstraints gbc_DesCliente = new GridBagConstraints();
 		gbc_DesCliente.fill = GridBagConstraints.HORIZONTAL;
 		gbc_DesCliente.anchor = GridBagConstraints.NORTH;
@@ -697,15 +848,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblTel.gridy = 4;
 		telaCliente.add(lblTel, gbc_lblTel);
 
-		textField_9 = new JTextField();
-		GridBagConstraints gbc_textField_9 = new GridBagConstraints();
-		gbc_textField_9.gridwidth = 3;
-		gbc_textField_9.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_9.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_9.gridx = 1;
-		gbc_textField_9.gridy = 4;
-		telaCliente.add(textField_9, gbc_textField_9);
-		textField_9.setColumns(10);
+		tfTel = new JTextField();
+		GridBagConstraints gbc_tfTel = new GridBagConstraints();
+		gbc_tfTel.gridwidth = 3;
+		gbc_tfTel.insets = new Insets(0, 0, 5, 5);
+		gbc_tfTel.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfTel.gridx = 1;
+		gbc_tfTel.gridy = 4;
+		telaCliente.add(tfTel, gbc_tfTel);
+		tfTel.setColumns(10);
 
 		JLabel lblCel = new JLabel("CEL:");
 		GridBagConstraints gbc_lblCel = new GridBagConstraints();
@@ -715,19 +866,27 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblCel.gridy = 4;
 		telaCliente.add(lblCel, gbc_lblCel);
 
-		textField_10 = new JTextField();
-		GridBagConstraints gbc_textField_10 = new GridBagConstraints();
-		gbc_textField_10.gridwidth = 2;
-		gbc_textField_10.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_10.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_10.gridx = 5;
-		gbc_textField_10.gridy = 4;
-		telaCliente.add(textField_10, gbc_textField_10);
-		textField_10.setColumns(10);
+		tfCel = new JTextField();
+		GridBagConstraints gbc_tfCel = new GridBagConstraints();
+		gbc_tfCel.gridwidth = 2;
+		gbc_tfCel.insets = new Insets(0, 0, 5, 5);
+		gbc_tfCel.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfCel.gridx = 5;
+		gbc_tfCel.gridy = 4;
+		telaCliente.add(tfCel, gbc_tfCel);
+		tfCel.setColumns(10);
 
 		JButton RelCliente = new JButton("Relatorio");
 		RelCliente.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				JasperPrint relat;
+
+				try {
+					relat = gerar(2);
+					JasperViewer.viewReport(relat, false);
+				} catch (Exception x) {
+					JOptionPane.showMessageDialog(null, "Erro: " + x.getMessage());
+				}
 			}
 		});
 		GridBagConstraints gbc_RelCliente = new GridBagConstraints();
@@ -746,6 +905,50 @@ public class TelaPrincipal extends JFrame {
 		gbc_PainelClientes.gridy = 5;
 		telaCliente.add(PainelClientes, gbc_PainelClientes);
 
+		tableCli = new JTable() {
+
+			@Override
+			public String getToolTipText(MouseEvent e) {
+
+				String tip = null;
+
+				Point p = e.getPoint();
+
+				int rowIndex = rowAtPoint(p);
+				int colIndex = columnAtPoint(p);
+
+				if (rowIndex == -1 || colIndex == -1) {
+					return null;
+				}
+
+				try {
+					tip = getValueAt(rowIndex, colIndex).toString();
+				} catch (RuntimeException e1) {
+
+				}
+
+				return tip;
+
+			}
+
+		};
+
+		PainelClientes.setViewportView(tableCli);
+
+		if (listaCliente == null)
+			listaCliente = new ArrayList<>();
+
+		if (listaCliente.size() == 0) {
+			listarTodos(new Cliente());
+		}
+
+		if (listaCliente.size() == 0) {
+			importarClienteTXT();
+		}
+
+		SetModel(2);
+
+		configuraTabela(2);
 	}
 
 	protected void adicionaVendas() {
@@ -866,49 +1069,6 @@ public class TelaPrincipal extends JFrame {
 		telaVenda.add(button_7, gbc_button_7);
 		mostraUltima();
 
-		table = new JTable() {
-
-			@Override
-			public String getToolTipText(MouseEvent e) {
-
-				String tip = null;
-
-				Point p = e.getPoint();
-
-				int rowIndex = rowAtPoint(p);
-				int colIndex = columnAtPoint(p);
-
-				if (rowIndex == -1 || colIndex == -1) {
-					return null;
-				}
-
-				try {
-					tip = getValueAt(rowIndex, colIndex).toString();
-				} catch (RuntimeException e1) {
-
-				}
-
-				return tip;
-
-			}
-
-		};
-
-		PainelClientes.setViewportView(table);
-
-		if (listaCliente == null)
-			listaCliente = new ArrayList<>();
-
-		if (listaCliente.size() == 0) {
-			listarTodos(new Cliente());
-		}
-
-		if (listaCliente.size() == 0) {
-			importarClienteTXT();
-		}
-
-		SetModel(1);
-
 	}
 
 	private void mostraUltima() {
@@ -932,7 +1092,7 @@ public class TelaPrincipal extends JFrame {
 	protected void importarClienteTXT() {
 
 		ReaderArquivo reader = new ReaderArquivo();
-		List<String> lista = reader.lerArquivo(new File("listaClientes.txt"));
+		List<String> lista = reader.lerArquivo(new File("ListaClientes.txt"));
 
 		ParserCliente parser = new ParserCliente();
 		listaCliente = parser.getCliente(lista);
@@ -1020,11 +1180,22 @@ public class TelaPrincipal extends JFrame {
 
 	private Produto getProdutoSelecionadoNaTabela() {
 		Produto c = null;
-		int index = table.getSelectedRow();
+		int index = tablePro.getSelectedRow();
 		if (index == -1) {
 			JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!");
 		} else {
-			c = ((ProdutoModel) table.getModel()).getProdutoNaLinha(index);
+			c = ((ProdutoModel) tablePro.getModel()).getProdutoNaLinha(index);
+		}
+		return c;
+	}
+
+	private Cliente getClienteSelecionadoNaTabela() {
+		Cliente c = null;
+		int index = tableCli.getSelectedRow();
+		if (index == -1) {
+			JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!");
+		} else {
+			c = ((ClienteModel) tableCli.getModel()).getClienteNaLinha(index);
 		}
 		return c;
 	}
@@ -1122,11 +1293,11 @@ public class TelaPrincipal extends JFrame {
 		if (modelo == 1) {
 			ProdutoModel model = new ProdutoModel(listaProduto);
 			if (model != null)
-				table.setModel(model);
+				tablePro.setModel(model);
 		} else if (modelo == 2) {
 			ClienteModel model = new ClienteModel(listaCliente);
 			if (model != null)
-				table.setModel(model);
+				tableCli.setModel(model);
 		}
 	}
 
@@ -1134,23 +1305,29 @@ public class TelaPrincipal extends JFrame {
 		if (modelo == 1) {
 			Produto c = getProdutoSelecionadoNaTabela();
 			if (c != null) {
-				((ProdutoModel) table.getModel()).removerProduto(c);
+				((ProdutoModel) tablePro.getModel()).removerProduto(c);
 				excluir(c);
-				listaProduto = ((ProdutoModel) table.getModel()).getLista();
+				listaProduto = ((ProdutoModel) tablePro.getModel()).getLista();
 			}
 		} else if (modelo == 2) {
-
+			Cliente c = getClienteSelecionadoNaTabela();
+			if (c != null) {
+				((ClienteModel) tableCli.getModel()).removerCliente(c);
+				excluir(c);
+				listaCliente = ((ClienteModel) tableCli.getModel()).getLista();
+			}
 		}
 	}
 
 	private void configuraTabela(int modelo) {
-		table.addMouseListener(new MouseAdapter() {
+		if (modelo == 1) {
+			tablePro.addMouseListener(new MouseAdapter() {
 
-			@Override
-			public void mouseClicked(MouseEvent e) {
+				@Override
+				public void mouseClicked(MouseEvent e) {
 
-				if (e.getClickCount() == 1) {
-					if (modelo == 1) {
+					if (e.getClickCount() == 1) {
+
 						Produto c = getProdutoSelecionadoNaTabela();
 						if (c != null) {
 							tfCodigo.setEditable(true);
@@ -1158,23 +1335,63 @@ public class TelaPrincipal extends JFrame {
 							tfDesc.setText("");
 							tfPreco.setText("");
 						}
-					}
-
-				} else if (e.getClickCount() == 2) {
-					if (modelo == 1) {
+					} else if (e.getClickCount() == 2) {
 						Produto c = getProdutoSelecionadoNaTabela();
 						if (c != null) {
-							tfCodigo.setText(Integer.toString(c.getId()));
 							tfCodigo.setEditable(false);
+							tfCodigo.setText(Integer.toString(c.getId()));
 							tfDesc.setText(c.getDescricao());
 							tfPreco.setText(c.getPreco().toString());
 						}
 					}
-
 				}
-			}
+			});
+		} else if (modelo == 2) {
+			tableCli.addMouseListener(new MouseAdapter() {
 
-		});
+				@Override
+				public void mouseClicked(MouseEvent e) {
+
+					if (e.getClickCount() == 1) {
+						Cliente c = getClienteSelecionadoNaTabela();
+						if (c != null) {
+
+							tfId.setEditable(true);
+							tfId.setText("");
+							tfNome.setText("");
+							tfEnd.setText("");
+							tfNumero.setText("");
+							tfComp.setText("");
+							tfBairro.setText("");
+							tfCidade.setText("");
+							tfEstado.setText("");
+							tfCep.setText("");
+							tfTel.setText("");
+							tfCel.setText("");
+						}
+
+					} else if (e.getClickCount() == 2) {
+						Cliente c = getClienteSelecionadoNaTabela();
+						if (c != null) {
+
+							tfId.setEditable(false);
+							tfId.setText(Integer.toString(c.getId()));
+							tfNome.setText(c.getNome());
+							tfEnd.setText(c.getEndereco());
+							tfNumero.setText(Integer.toString(c.getNumero()));
+							tfComp.setText(c.getComplemento());
+							tfBairro.setText(c.getBairro());
+							tfCidade.setText(c.getCidade());
+							tfEstado.setText(c.getEstado());
+							tfCep.setText(Integer.toString(c.getCep()));
+							tfTel.setText(c.getTelefone());
+							tfCel.setText(c.getCelular());
+						}
+					}
+				}
+			});
+		}
+
 	}
 
 	private SqlGenImplementation getImp() {
@@ -1231,6 +1448,7 @@ public class TelaPrincipal extends JFrame {
 				inclusao.setString(10, c.getTelefone());
 				inclusao.setString(11, c.getCelular());
 			} catch (Exception e) {
+				e.printStackTrace();
 				JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
 			}
 		}
@@ -1238,6 +1456,7 @@ public class TelaPrincipal extends JFrame {
 		try {
 			inclusao.executeUpdate();
 		} catch (Exception e) {
+			e.printStackTrace();
 			JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
 		}
 	}

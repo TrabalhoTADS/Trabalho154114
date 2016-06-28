@@ -19,6 +19,14 @@ public class ClienteModel extends AbstractTableModel {
 		return 11;
 	}
 
+	public List<Cliente> getLista() {
+		return lista;
+	}
+
+	public void setLista(List<Cliente> lista) {
+		this.lista = lista;
+	}
+
 	@Override
 	public int getRowCount() {
 		return lista.size();
