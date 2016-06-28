@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
 
-public class parserCliente {
+public class ParserCliente {
 
 	private NumberFormat format = NumberFormat.getInstance(new Locale("pt", "BR"));
 

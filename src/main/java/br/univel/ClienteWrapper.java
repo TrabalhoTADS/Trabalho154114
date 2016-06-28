@@ -6,14 +6,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "lista")
 public class ClienteWrapper {
-	private List<Cliente> list;
+	private List<Cliente> listaCliente;
 
-	public List<Cliente> getList() {
-		return list;
+	public List<Cliente> getListaCliente() {
+		return listaCliente;
 	}
 
-	public void setList(List<Cliente> _list) {
-		this.list = _list;
+	public void setListaCliente(List<Cliente> listaCliente) {
+		this.listaCliente = listaCliente;
 	}
 
 }

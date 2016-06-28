@@ -17,6 +17,7 @@ import java.io.ObjectOutputStream;
 import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -82,11 +83,13 @@ public class TelaPrincipal extends JFrame {
 				}
 			}
 		});
+
 	}
 
 	public TelaPrincipal() {
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 600, 300);
+		setBounds(100, 100, 600, 377);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -111,6 +114,7 @@ public class TelaPrincipal extends JFrame {
 		adicionaVendas();
 
 		tabbedPane.setSelectedIndex(0);
+
 	}
 
 	protected void adicionaProdutos() {
@@ -197,7 +201,9 @@ public class TelaPrincipal extends JFrame {
 		gbc_btnNewButton_3.gridx = 7;
 		gbc_btnNewButton_3.gridy = 1;
 		telaProduto.add(btnNewButton_3, gbc_btnNewButton_3);
+
 		PainelProdutos = new JScrollPane();
+
 		GridBagConstraints gbc_PainelProdutos = new GridBagConstraints();
 		gbc_PainelProdutos.gridheight = 4;
 		gbc_PainelProdutos.gridwidth = 5;
@@ -401,7 +407,7 @@ public class TelaPrincipal extends JFrame {
 			String arquivoJasper = "C:\\Users\\Eduardo\\git\\Trabalho154114\\src\\main\\java\\br\\univel\\RelProdutos.jasper";
 			rel = JasperFillManager.fillReport(arquivoJasper, map, getImp().getCon());
 		} catch (JRException e) {
-			JOptionPane.showMessageDialog(null,e.getMessage());
+			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 		return rel;
 	}
@@ -422,7 +428,7 @@ public class TelaPrincipal extends JFrame {
 		gbl_telaCliente.rowHeights = new int[] { 0, 0, 0, 0, 0, 0 };
 		gbl_telaCliente.columnWidths = new int[] { 30, 30, 30, 30, 10, 30, 30, 30, 0, 30 };
 		gbl_telaCliente.columnWeights = new double[] { 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0 };
-		gbl_telaCliente.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+		gbl_telaCliente.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 1.0 };
 		telaCliente.setLayout(gbl_telaCliente);
 
 		JLabel lblNewLabel_1 = new JLabel("ID: ");
@@ -452,7 +458,7 @@ public class TelaPrincipal extends JFrame {
 
 		textField_1 = new JTextField();
 		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
-		gbc_textField_1.gridwidth = 3;
+		gbc_textField_1.gridwidth = 4;
 		gbc_textField_1.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_1.gridx = 3;
@@ -460,22 +466,19 @@ public class TelaPrincipal extends JFrame {
 		telaCliente.add(textField_1, gbc_textField_1);
 		textField_1.setColumns(10);
 
-		JButton AddCliente = new JButton("Adcionar");
-		GridBagConstraints gbc_AddCliente = new GridBagConstraints();
-		gbc_AddCliente.fill = GridBagConstraints.HORIZONTAL;
-		gbc_AddCliente.insets = new Insets(0, 0, 5, 5);
-		gbc_AddCliente.gridx = 7;
-		gbc_AddCliente.gridy = 0;
-		telaCliente.add(AddCliente, gbc_AddCliente);
-
-		JButton ImpClienteTXT = new JButton("Importar TXT");
-		GridBagConstraints gbc_ImpClienteTXT = new GridBagConstraints();
-		gbc_ImpClienteTXT.fill = GridBagConstraints.HORIZONTAL;
-		gbc_ImpClienteTXT.anchor = GridBagConstraints.NORTH;
-		gbc_ImpClienteTXT.insets = new Insets(0, 0, 5, 0);
-		gbc_ImpClienteTXT.gridx = 8;
-		gbc_ImpClienteTXT.gridy = 0;
-		telaCliente.add(ImpClienteTXT, gbc_ImpClienteTXT);
+		JButton ExpClienteXml = new JButton("Exportar XML");
+		ExpClienteXml.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SalvarClienteXML(new File("ListaClientes.xml"));
+			}
+		});
+		GridBagConstraints gbc_ExpClienteXml = new GridBagConstraints();
+		gbc_ExpClienteXml.fill = GridBagConstraints.HORIZONTAL;
+		gbc_ExpClienteXml.anchor = GridBagConstraints.NORTH;
+		gbc_ExpClienteXml.insets = new Insets(0, 0, 5, 0);
+		gbc_ExpClienteXml.gridx = 9;
+		gbc_ExpClienteXml.gridy = 0;
+		telaCliente.add(ExpClienteXml, gbc_ExpClienteXml);
 
 		JLabel lblEndereco = new JLabel("Endereco:");
 		GridBagConstraints gbc_lblEndereco = new GridBagConstraints();
@@ -487,7 +490,7 @@ public class TelaPrincipal extends JFrame {
 
 		textField_2 = new JTextField();
 		GridBagConstraints gbc_textField_2 = new GridBagConstraints();
-		gbc_textField_2.gridwidth = 5;
+		gbc_textField_2.gridwidth = 3;
 		gbc_textField_2.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_2.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_2.gridx = 1;
@@ -495,52 +498,56 @@ public class TelaPrincipal extends JFrame {
 		telaCliente.add(textField_2, gbc_textField_2);
 		textField_2.setColumns(10);
 
-		JButton AltCliente = new JButton("Alterar");
-		GridBagConstraints gbc_AltCliente = new GridBagConstraints();
-		gbc_AltCliente.fill = GridBagConstraints.HORIZONTAL;
-		gbc_AltCliente.anchor = GridBagConstraints.ABOVE_BASELINE;
-		gbc_AltCliente.insets = new Insets(0, 0, 5, 5);
-		gbc_AltCliente.gridx = 7;
-		gbc_AltCliente.gridy = 1;
-		telaCliente.add(AltCliente, gbc_AltCliente);
-
-		JButton ImpClienteXml = new JButton("Importar XML");
-		GridBagConstraints gbc_ImpClienteXml = new GridBagConstraints();
-		gbc_ImpClienteXml.fill = GridBagConstraints.HORIZONTAL;
-		gbc_ImpClienteXml.anchor = GridBagConstraints.NORTH;
-		gbc_ImpClienteXml.insets = new Insets(0, 0, 5, 0);
-		gbc_ImpClienteXml.gridx = 8;
-		gbc_ImpClienteXml.gridy = 1;
-		telaCliente.add(ImpClienteXml, gbc_ImpClienteXml);
+		JButton AddCliente = new JButton("Adcionar");
+		AddCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 
 		JLabel lblNumero = new JLabel("Numero:");
 		GridBagConstraints gbc_lblNumero = new GridBagConstraints();
 		gbc_lblNumero.anchor = GridBagConstraints.EAST;
 		gbc_lblNumero.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNumero.gridx = 0;
-		gbc_lblNumero.gridy = 2;
+		gbc_lblNumero.gridx = 4;
+		gbc_lblNumero.gridy = 1;
 		telaCliente.add(lblNumero, gbc_lblNumero);
 
 		textField_3 = new JTextField();
 		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
+		gbc_textField_3.gridwidth = 2;
 		gbc_textField_3.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_3.gridx = 1;
-		gbc_textField_3.gridy = 2;
+		gbc_textField_3.gridx = 5;
+		gbc_textField_3.gridy = 1;
 		telaCliente.add(textField_3, gbc_textField_3);
 		textField_3.setColumns(10);
+		GridBagConstraints gbc_AddCliente = new GridBagConstraints();
+		gbc_AddCliente.fill = GridBagConstraints.HORIZONTAL;
+		gbc_AddCliente.insets = new Insets(0, 0, 5, 5);
+		gbc_AddCliente.gridx = 8;
+		gbc_AddCliente.gridy = 1;
+		telaCliente.add(AddCliente, gbc_AddCliente);
 
-		JButton ExpClienteXml = new JButton("Exportar XML");
-		ExpClienteXml.addActionListener(new ActionListener() {
+		JButton ImpClienteXml = new JButton("Importar XML");
+		ImpClienteXml.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				LerClienteXML(new File("ListaClientes.xml"));
+				SetModel(2);
 			}
 		});
+		GridBagConstraints gbc_ImpClienteXml = new GridBagConstraints();
+		gbc_ImpClienteXml.fill = GridBagConstraints.HORIZONTAL;
+		gbc_ImpClienteXml.anchor = GridBagConstraints.NORTH;
+		gbc_ImpClienteXml.insets = new Insets(0, 0, 5, 0);
+		gbc_ImpClienteXml.gridx = 9;
+		gbc_ImpClienteXml.gridy = 1;
+		telaCliente.add(ImpClienteXml, gbc_ImpClienteXml);
 
 		JLabel lblNewLabel = new JLabel("Comp: ");
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.anchor = GridBagConstraints.EAST;
 		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNewLabel.gridx = 2;
+		gbc_lblNewLabel.gridx = 0;
 		gbc_lblNewLabel.gridy = 2;
 		telaCliente.add(lblNewLabel, gbc_lblNewLabel);
 
@@ -548,7 +555,7 @@ public class TelaPrincipal extends JFrame {
 		GridBagConstraints gbc_textField_4 = new GridBagConstraints();
 		gbc_textField_4.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_4.gridx = 3;
+		gbc_textField_4.gridx = 1;
 		gbc_textField_4.gridy = 2;
 		telaCliente.add(textField_4, gbc_textField_4);
 		textField_4.setColumns(10);
@@ -557,18 +564,80 @@ public class TelaPrincipal extends JFrame {
 		GridBagConstraints gbc_lblCep = new GridBagConstraints();
 		gbc_lblCep.anchor = GridBagConstraints.EAST;
 		gbc_lblCep.insets = new Insets(0, 0, 5, 5);
-		gbc_lblCep.gridx = 4;
+		gbc_lblCep.gridx = 2;
 		gbc_lblCep.gridy = 2;
 		telaCliente.add(lblCep, gbc_lblCep);
+
+		JButton SerCliente = new JButton("Serializar");
+		SerCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SalvarClienteSerializacao(new File("ListaClientes.ser"));
+			}
+		});
+
+		JButton AltCliente = new JButton("Alterar");
+		AltCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+			}
+		});
 
 		textField_7 = new JTextField();
 		GridBagConstraints gbc_textField_7 = new GridBagConstraints();
 		gbc_textField_7.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_7.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_7.gridx = 5;
+		gbc_textField_7.gridx = 3;
 		gbc_textField_7.gridy = 2;
 		telaCliente.add(textField_7, gbc_textField_7);
 		textField_7.setColumns(10);
+
+		JLabel lblBairro = new JLabel("Bairro: ");
+		GridBagConstraints gbc_lblBairro = new GridBagConstraints();
+		gbc_lblBairro.anchor = GridBagConstraints.EAST;
+		gbc_lblBairro.insets = new Insets(0, 0, 5, 5);
+		gbc_lblBairro.gridx = 4;
+		gbc_lblBairro.gridy = 2;
+		telaCliente.add(lblBairro, gbc_lblBairro);
+
+		textField_5 = new JTextField();
+		GridBagConstraints gbc_textField_5 = new GridBagConstraints();
+		gbc_textField_5.gridwidth = 2;
+		gbc_textField_5.insets = new Insets(0, 0, 5, 5);
+		gbc_textField_5.fill = GridBagConstraints.HORIZONTAL;
+		gbc_textField_5.gridx = 5;
+		gbc_textField_5.gridy = 2;
+		telaCliente.add(textField_5, gbc_textField_5);
+		textField_5.setColumns(10);
+		GridBagConstraints gbc_AltCliente = new GridBagConstraints();
+		gbc_AltCliente.fill = GridBagConstraints.HORIZONTAL;
+		gbc_AltCliente.anchor = GridBagConstraints.ABOVE_BASELINE;
+		gbc_AltCliente.insets = new Insets(0, 0, 5, 5);
+		gbc_AltCliente.gridx = 8;
+		gbc_AltCliente.gridy = 2;
+		telaCliente.add(AltCliente, gbc_AltCliente);
+		GridBagConstraints gbc_SerCliente = new GridBagConstraints();
+		gbc_SerCliente.fill = GridBagConstraints.HORIZONTAL;
+		gbc_SerCliente.anchor = GridBagConstraints.NORTH;
+		gbc_SerCliente.insets = new Insets(0, 0, 5, 0);
+		gbc_SerCliente.gridx = 9;
+		gbc_SerCliente.gridy = 2;
+		telaCliente.add(SerCliente, gbc_SerCliente);
+
+		JLabel lblCidade = new JLabel("Cidade:");
+		GridBagConstraints gbc_lblCidade = new GridBagConstraints();
+		gbc_lblCidade.anchor = GridBagConstraints.EAST;
+		gbc_lblCidade.insets = new Insets(0, 0, 5, 5);
+		gbc_lblCidade.gridx = 0;
+		gbc_lblCidade.gridy = 3;
+		telaCliente.add(lblCidade, gbc_lblCidade);
+
+		JButton DesCliente = new JButton("Desserializar");
+		DesCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LerClienteSerializacao(new File("ListaCliente.ser"));
+				SetModel(2);
+			}
+		});
 
 		JButton btnExcluir = new JButton("Excluir");
 		btnExcluir.addActionListener(new ActionListener() {
@@ -579,95 +648,61 @@ public class TelaPrincipal extends JFrame {
 				}
 			}
 		});
-		GridBagConstraints gbc_btnExcluir = new GridBagConstraints();
-		gbc_btnExcluir.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnExcluir.insets = new Insets(0, 0, 5, 5);
-		gbc_btnExcluir.gridx = 7;
-		gbc_btnExcluir.gridy = 2;
-		telaCliente.add(btnExcluir, gbc_btnExcluir);
-		GridBagConstraints gbc_ExpClienteXml = new GridBagConstraints();
-		gbc_ExpClienteXml.fill = GridBagConstraints.HORIZONTAL;
-		gbc_ExpClienteXml.anchor = GridBagConstraints.NORTH;
-		gbc_ExpClienteXml.insets = new Insets(0, 0, 5, 0);
-		gbc_ExpClienteXml.gridx = 8;
-		gbc_ExpClienteXml.gridy = 2;
-		telaCliente.add(ExpClienteXml, gbc_ExpClienteXml);
-
-		JLabel lblBairro = new JLabel("Bairro: ");
-		GridBagConstraints gbc_lblBairro = new GridBagConstraints();
-		gbc_lblBairro.anchor = GridBagConstraints.EAST;
-		gbc_lblBairro.insets = new Insets(0, 0, 5, 5);
-		gbc_lblBairro.gridx = 0;
-		gbc_lblBairro.gridy = 3;
-		telaCliente.add(lblBairro, gbc_lblBairro);
-
-		textField_5 = new JTextField();
-		GridBagConstraints gbc_textField_5 = new GridBagConstraints();
-		gbc_textField_5.gridwidth = 2;
-		gbc_textField_5.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_5.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_5.gridx = 1;
-		gbc_textField_5.gridy = 3;
-		telaCliente.add(textField_5, gbc_textField_5);
-		textField_5.setColumns(10);
-
-		JLabel lblCidade = new JLabel("Cidade:");
-		GridBagConstraints gbc_lblCidade = new GridBagConstraints();
-		gbc_lblCidade.anchor = GridBagConstraints.EAST;
-		gbc_lblCidade.insets = new Insets(0, 0, 5, 5);
-		gbc_lblCidade.gridx = 3;
-		gbc_lblCidade.gridy = 3;
-		telaCliente.add(lblCidade, gbc_lblCidade);
 
 		textField_6 = new JTextField();
 		GridBagConstraints gbc_textField_6 = new GridBagConstraints();
-		gbc_textField_6.gridwidth = 2;
+		gbc_textField_6.gridwidth = 4;
 		gbc_textField_6.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_6.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_6.gridx = 4;
+		gbc_textField_6.gridx = 1;
 		gbc_textField_6.gridy = 3;
 		telaCliente.add(textField_6, gbc_textField_6);
 		textField_6.setColumns(10);
-
-		JButton SerCliente = new JButton("Serializar");
-		GridBagConstraints gbc_SerCliente = new GridBagConstraints();
-		gbc_SerCliente.fill = GridBagConstraints.HORIZONTAL;
-		gbc_SerCliente.anchor = GridBagConstraints.NORTH;
-		gbc_SerCliente.insets = new Insets(0, 0, 5, 0);
-		gbc_SerCliente.gridx = 8;
-		gbc_SerCliente.gridy = 3;
-		telaCliente.add(SerCliente, gbc_SerCliente);
 
 		JLabel lblEstado = new JLabel("Estado:");
 		GridBagConstraints gbc_lblEstado = new GridBagConstraints();
 		gbc_lblEstado.anchor = GridBagConstraints.EAST;
 		gbc_lblEstado.insets = new Insets(0, 0, 5, 5);
-		gbc_lblEstado.gridx = 0;
-		gbc_lblEstado.gridy = 4;
+		gbc_lblEstado.gridx = 5;
+		gbc_lblEstado.gridy = 3;
 		telaCliente.add(lblEstado, gbc_lblEstado);
 
 		textField_8 = new JTextField();
 		GridBagConstraints gbc_textField_8 = new GridBagConstraints();
 		gbc_textField_8.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_8.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_8.gridx = 1;
-		gbc_textField_8.gridy = 4;
+		gbc_textField_8.gridx = 6;
+		gbc_textField_8.gridy = 3;
 		telaCliente.add(textField_8, gbc_textField_8);
 		textField_8.setColumns(10);
+		GridBagConstraints gbc_btnExcluir = new GridBagConstraints();
+		gbc_btnExcluir.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnExcluir.insets = new Insets(0, 0, 5, 5);
+		gbc_btnExcluir.gridx = 8;
+		gbc_btnExcluir.gridy = 3;
+		telaCliente.add(btnExcluir, gbc_btnExcluir);
+		GridBagConstraints gbc_DesCliente = new GridBagConstraints();
+		gbc_DesCliente.fill = GridBagConstraints.HORIZONTAL;
+		gbc_DesCliente.anchor = GridBagConstraints.NORTH;
+		gbc_DesCliente.insets = new Insets(0, 0, 5, 0);
+		gbc_DesCliente.gridx = 9;
+		gbc_DesCliente.gridy = 3;
+		telaCliente.add(DesCliente, gbc_DesCliente);
 
 		JLabel lblTel = new JLabel("TEL:");
 		GridBagConstraints gbc_lblTel = new GridBagConstraints();
 		gbc_lblTel.anchor = GridBagConstraints.EAST;
 		gbc_lblTel.insets = new Insets(0, 0, 5, 5);
-		gbc_lblTel.gridx = 2;
+		gbc_lblTel.gridx = 0;
 		gbc_lblTel.gridy = 4;
 		telaCliente.add(lblTel, gbc_lblTel);
 
 		textField_9 = new JTextField();
 		GridBagConstraints gbc_textField_9 = new GridBagConstraints();
+		gbc_textField_9.gridwidth = 3;
 		gbc_textField_9.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_9.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_9.gridx = 3;
+		gbc_textField_9.gridx = 1;
 		gbc_textField_9.gridy = 4;
 		telaCliente.add(textField_9, gbc_textField_9);
 		textField_9.setColumns(10);
@@ -682,6 +717,7 @@ public class TelaPrincipal extends JFrame {
 
 		textField_10 = new JTextField();
 		GridBagConstraints gbc_textField_10 = new GridBagConstraints();
+		gbc_textField_10.gridwidth = 2;
 		gbc_textField_10.insets = new Insets(0, 0, 5, 5);
 		gbc_textField_10.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_10.gridx = 5;
@@ -689,22 +725,26 @@ public class TelaPrincipal extends JFrame {
 		telaCliente.add(textField_10, gbc_textField_10);
 		textField_10.setColumns(10);
 
-		JButton DesCliente = new JButton("Desserializar");
-		GridBagConstraints gbc_DesCliente = new GridBagConstraints();
-		gbc_DesCliente.fill = GridBagConstraints.HORIZONTAL;
-		gbc_DesCliente.anchor = GridBagConstraints.NORTH;
-		gbc_DesCliente.insets = new Insets(0, 0, 5, 0);
-		gbc_DesCliente.gridx = 8;
-		gbc_DesCliente.gridy = 4;
-		telaCliente.add(DesCliente, gbc_DesCliente);
-
 		JButton RelCliente = new JButton("Relatorio");
+		RelCliente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		GridBagConstraints gbc_RelCliente = new GridBagConstraints();
+		gbc_RelCliente.insets = new Insets(0, 0, 5, 0);
 		gbc_RelCliente.fill = GridBagConstraints.HORIZONTAL;
 		gbc_RelCliente.anchor = GridBagConstraints.NORTH;
-		gbc_RelCliente.gridx = 8;
-		gbc_RelCliente.gridy = 5;
+		gbc_RelCliente.gridx = 9;
+		gbc_RelCliente.gridy = 4;
 		telaCliente.add(RelCliente, gbc_RelCliente);
+
+		JScrollPane PainelClientes = new JScrollPane();
+		GridBagConstraints gbc_PainelClientes = new GridBagConstraints();
+		gbc_PainelClientes.gridwidth = 10;
+		gbc_PainelClientes.fill = GridBagConstraints.BOTH;
+		gbc_PainelClientes.gridx = 0;
+		gbc_PainelClientes.gridy = 5;
+		telaCliente.add(PainelClientes, gbc_PainelClientes);
 
 	}
 
@@ -825,7 +865,49 @@ public class TelaPrincipal extends JFrame {
 		gbc_button_7.gridy = 6;
 		telaVenda.add(button_7, gbc_button_7);
 		mostraUltima();
-		mostraUltima();
+
+		table = new JTable() {
+
+			@Override
+			public String getToolTipText(MouseEvent e) {
+
+				String tip = null;
+
+				Point p = e.getPoint();
+
+				int rowIndex = rowAtPoint(p);
+				int colIndex = columnAtPoint(p);
+
+				if (rowIndex == -1 || colIndex == -1) {
+					return null;
+				}
+
+				try {
+					tip = getValueAt(rowIndex, colIndex).toString();
+				} catch (RuntimeException e1) {
+
+				}
+
+				return tip;
+
+			}
+
+		};
+
+		PainelClientes.setViewportView(table);
+
+		if (listaCliente == null)
+			listaCliente = new ArrayList<>();
+
+		if (listaCliente.size() == 0) {
+			listarTodos(new Cliente());
+		}
+
+		if (listaCliente.size() == 0) {
+			importarClienteTXT();
+		}
+
+		SetModel(1);
 
 	}
 
@@ -843,6 +925,20 @@ public class TelaPrincipal extends JFrame {
 
 		for (Produto p : listaProduto) {
 			salvar(p);
+		}
+		JOptionPane.showMessageDialog(null, "BANCO DE DADOS VAZIO! Os produtos foram importados do arquivo TXT");
+	}
+
+	protected void importarClienteTXT() {
+
+		ReaderArquivo reader = new ReaderArquivo();
+		List<String> lista = reader.lerArquivo(new File("listaClientes.txt"));
+
+		ParserCliente parser = new ParserCliente();
+		listaCliente = parser.getCliente(lista);
+
+		for (Cliente c : listaCliente) {
+			salvar(c);
 		}
 		JOptionPane.showMessageDialog(null, "BANCO DE DADOS VAZIO! Os produtos foram importados do arquivo TXT");
 	}
@@ -931,6 +1027,95 @@ public class TelaPrincipal extends JFrame {
 			c = ((ProdutoModel) table.getModel()).getProdutoNaLinha(index);
 		}
 		return c;
+	}
+
+	protected void importarClientesTXT() {
+
+		ReaderArquivo reader = new ReaderArquivo();
+		List<String> lista = reader.lerArquivo(new File("listaClientes.txt"));
+
+		ParserCliente parser = new ParserCliente();
+		listaCliente = parser.getCliente(lista);
+
+		for (Cliente p : listaCliente) {
+			salvar(p);
+		}
+		JOptionPane.showMessageDialog(null, "BANCO DE DADOS VAZIO! Os clientes foram importados do arquivo TXT");
+	}
+
+	public void SalvarClienteXML(File file) {
+		try {
+			JAXBContext context = JAXBContext.newInstance(ClienteWrapper.class);
+			Marshaller m = context.createMarshaller();
+			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+			ClienteWrapper wrapper = new ClienteWrapper();
+			wrapper.setListaCliente(listaCliente);
+
+			m.marshal(wrapper, file);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS EXPORTADOS PARA O ARQUIVO " + file);
+	}
+
+	public void SalvarClienteSerializacao(File file) {
+		try {
+
+			FileOutputStream fout = new FileOutputStream(file);
+
+			ObjectOutputStream oos = new ObjectOutputStream(fout);
+
+			oos.writeObject(listaCliente);
+
+			oos.close();
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS EXPORTADOS PARA O ARQUIVO " + file);
+	}
+
+	public void LerClienteXML(File file) {
+		try {
+			JAXBContext context = JAXBContext.newInstance(ClienteWrapper.class);
+			Unmarshaller um = context.createUnmarshaller();
+
+			ClienteWrapper wrapper = (ClienteWrapper) um.unmarshal(file);
+
+			if (listaCliente != null)
+				listaCliente.clear();
+			else
+				listaCliente = new ArrayList<>();
+
+			listaCliente.addAll(wrapper.getListaCliente());
+
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
+		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS IMPORTADOS DO ARQUIVO " + file);
+	}
+
+	public void LerClienteSerializacao(File file) {
+		try {
+
+			FileInputStream fin = new FileInputStream(file);
+
+			ObjectInputStream ois = new ObjectInputStream(fin);
+
+			if (listaCliente != null)
+				listaCliente.clear();
+			else
+				listaCliente = new ArrayList<>();
+
+			listaCliente = (List<Cliente>) ois.readObject();
+
+			ois.close();
+		} catch (Exception ex) {
+			JOptionPane.showMessageDialog(null, "Arquivo vazio ou nao encontrado!");
+		}
+		JOptionPane.showMessageDialog(null, "PRODUTOS IMPORTADOS DO ARQUIVO " + file);
 	}
 
 	public void SetModel(int modelo) {
@@ -1039,11 +1224,12 @@ public class TelaPrincipal extends JFrame {
 				inclusao.setString(3, c.getEndereco());
 				inclusao.setInt(4, c.getNumero());
 				inclusao.setString(5, c.getComplemento());
-				inclusao.setString(6, c.getCidade());
-				inclusao.setString(7, c.getEstado());
-				inclusao.setInt(8, c.getCep());
-				inclusao.setString(9, c.getTelefone());
-				inclusao.setString(10, c.getCelular());
+				inclusao.setString(6, c.getBairro());
+				inclusao.setString(7, c.getCidade());
+				inclusao.setString(8, c.getEstado());
+				inclusao.setInt(9, c.getCep());
+				inclusao.setString(10, c.getTelefone());
+				inclusao.setString(11, c.getCelular());
 			} catch (Exception e) {
 				JOptionPane.showMessageDialog(null, "ERRO NA CONEXAO COM O BANCO!");
 			}

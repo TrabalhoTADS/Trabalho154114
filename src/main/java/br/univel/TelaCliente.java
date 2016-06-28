@@ -196,7 +196,7 @@ public class TelaCliente  {
 		ReaderArquivo reader = new ReaderArquivo();
 		List<String> lista = reader.lerArquivo(file);
 
-		parserCliente parser = new parserCliente();
+		ParserCliente parser = new ParserCliente();
 		setListaCliente(parser.getCliente(lista));
 
 		ClienteModel model = new ClienteModel(getListaCliente());

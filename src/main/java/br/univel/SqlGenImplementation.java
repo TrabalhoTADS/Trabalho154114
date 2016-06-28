@@ -37,7 +37,13 @@ public class SqlGenImplementation {
 
 	protected String getCreateTable(Connection con, Object obj) {
 
-		String sql = "CREATE TABLE produto(id INT PRIMARY KEY, descricao VARCHAR(255), preco double);";
+		String sql = "";
+
+		if (obj.getClass() == Produto.class) {
+			sql = "CREATE TABLE produto(id INT PRIMARY KEY, descricao VARCHAR(255), preco double);";
+		} else if (obj.getClass() == Cliente.class) {
+			sql = "CREATE TABLE cliente(id INT PRIMARY KEY, nome VARCHAR(50), endereco VARCHAR(50), numero int, complemento VARCHAR(10), bairro VARCHAR(20), cidade VARCHAR(20), estado VARCHAR(20), cep int, telefone VARCHAR(20), celular VARCHAR(20));";
+		}
 
 		return sql.toString(); // Cria a String
 	}
@@ -48,7 +54,7 @@ public class SqlGenImplementation {
 		if (obj.getClass() == Produto.class) {
 			sql = "Insert into produto (id, descricao, preco) values (?, ?, ?);";
 		} else if (obj.getClass() == Cliente.class) {
-			sql = "Insert into produto (id, descricao, preco) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+			sql = "Insert into cliente (id, nome, endereco, numero, complemento, bairro, cidade, estado, cep, telefone, celular) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 		}
 
 		PreparedStatement ps = null;
@@ -107,13 +113,9 @@ public class SqlGenImplementation {
 
 		if (obj.getClass() == Produto.class) {
 			Produto p = (Produto) obj;
-			sql = "UPDATE produto set descricao = '"
-			    + p.getDescricao()
-			    + "', preco = "
-				+ p.getPreco()
-				+ " WHERE id = "
-				+ p.getId() + ";";
-		} else if (obj.getClass() == Cliente.class){
+			sql = "UPDATE produto set descricao = '" + p.getDescricao() + "', preco = " + p.getPreco() + " WHERE id = "
+					+ p.getId() + ";";
+		} else if (obj.getClass() == Cliente.class) {
 			Cliente c = (Cliente) obj;
 			sql = "SELECT * FROM cliente WHERE id = " + c.getId() + ";";
 		}
@@ -134,7 +136,7 @@ public class SqlGenImplementation {
 		if (obj.getClass() == Produto.class) {
 			Produto p = (Produto) obj;
 			sql = "DELETE FROM produto WHERE id = " + p.getId() + ";";
-		} else if (obj.getClass() == Cliente.class){
+		} else if (obj.getClass() == Cliente.class) {
 			Cliente c = (Cliente) obj;
 			sql = "DELETE FROM cliente WHERE id = " + c.getId() + ";";
 		}
