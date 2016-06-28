@@ -18,6 +18,7 @@ import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -33,6 +34,11 @@ import javax.swing.border.EmptyBorder;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.view.JasperViewer;
 
 public class TelaPrincipal extends JFrame {
 
@@ -365,6 +371,18 @@ public class TelaPrincipal extends JFrame {
 		telaProduto.add(btnNewButton_7, gbc_btnNewButton_7);
 
 		JButton btnRelatorio = new JButton("Relatorio");
+		btnRelatorio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JasperPrint relat;
+
+				try {
+					relat = gerar();
+					JasperViewer.viewReport(relat, false);
+				} catch (Exception e) {
+					JOptionPane.showMessageDialog(null, "Erro: " + e.getMessage());
+				}
+			}
+		});
 		GridBagConstraints gbc_btnRelatorio = new GridBagConstraints();
 		gbc_btnRelatorio.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnRelatorio.gridx = 7;
@@ -374,6 +392,18 @@ public class TelaPrincipal extends JFrame {
 		mostraUltima();
 
 		configuraTabela(1);
+	}
+
+	public JasperPrint gerar() {
+		JasperPrint rel = null;
+		try {
+			HashMap map = new HashMap();
+			String arquivoJasper = "RelProdutos.jasper";
+			rel = JasperFillManager.fillReport(arquivoJasper, map, getImp().getCon());
+		} catch (JRException e) {
+			JOptionPane.showMessageDialog(null,e.getMessage());
+		}
+		return rel;
 	}
 
 	protected void adicionaClientes() {
