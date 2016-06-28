@@ -1,2 +1,5113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<listaprodutos/>
+<listaprodutos>
+    <produto>
+        <id>86440</id>
+        <descricao>3DS APP NINTENDO XL NEW PRETO 78151</descricao>
+        <preco>207</preco>
+    </produto>
+    <produto>
+        <id>88060</id>
+        <descricao>3DS APP NINTENDO XL NEW RED</descricao>
+        <preco>201</preco>
+    </produto>
+    <produto>
+        <id>8074</id>
+        <descricao>3DS APP NINTENDO XL PINK</descricao>
+        <preco>144</preco>
+    </produto>
+    <produto>
+        <id>152568</id>
+        <descricao>3DS FONTE 3DSXL/3DSXL NEW BIVOLT</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>22206</id>
+        <descricao>3DS JOGO 3D STEEL DIVER (7119)</descricao>
+        <preco>14.4199999999999999289457264239899814128875732421875</preco>
+    </produto>
+    <produto>
+        <id>3058</id>
+        <descricao>3DS JOGO DISNEY PIXAR CARS 2 02042</descricao>
+        <preco>16.5</preco>
+    </produto>
+    <produto>
+        <id>2900</id>
+        <descricao>3DS JOGO LEGO PIRATAS DO CARIBE O JOGO 02117</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>150364</id>
+        <descricao>3DS JOGO LEGO THE LOGO MOVIE VIDEO GAMES</descricao>
+        <preco>18</preco>
+    </produto>
+    <produto>
+        <id>22485</id>
+        <descricao>3DS JOGO LEGO THE LORD OF THE RINGS 24894 (3977</descricao>
+        <preco>20.60000000000000142108547152020037174224853515625</preco>
+    </produto>
+    <produto>
+        <id>72446</id>
+        <descricao>3DS JOGO POKEMON ART ACADEMY 74286</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>22777</id>
+        <descricao>3DS JOGO POKEMON X 74248</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>75719</id>
+        <descricao>3DS JOGO POKEMON Y</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>56751</id>
+        <descricao>ACENDEDOR P/CIGARROS MICROFINS 4IN1 2USB P/CARRO</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>157259</id>
+        <descricao>ADAP. CONVERSOR SERIAL 9P/PARALELO 25P</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>91581</id>
+        <descricao>ADAP. DE AUDIO P/IPHONE DE 30PINOS P/8PINOS</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>38920</id>
+        <descricao>ADAP. DE SOM VIRTUAL 5.1 3D USB</descricao>
+        <preco>6.5</preco>
+    </produto>
+    <produto>
+        <id>38910</id>
+        <descricao>ADAP. DE SOM VIRTUAL 7.1 USB 2.0</descricao>
+        <preco>12.5</preco>
+    </produto>
+    <produto>
+        <id>48023</id>
+        <descricao>ADAP. DVI MACHO/2 DVI FEMEA</descricao>
+        <preco>13.5</preco>
+    </produto>
+    <produto>
+        <id>56762</id>
+        <descricao>ADAP. DVI MACHO/2DVI FEMEA (11035)</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>48180</id>
+        <descricao>ADAP. HDMI FEMEA/MACHO</descricao>
+        <preco>4.5</preco>
+    </produto>
+    <produto>
+        <id>48203</id>
+        <descricao>ADAP. HDMI MACHO/DVI FEMEA</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>11136</id>
+        <descricao>ADAP. P/USAR 2 SIM NO MESMO CELULAR</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>56773</id>
+        <descricao>ADAP. PS2 PARA USB</descricao>
+        <preco>0.5</preco>
+    </produto>
+    <produto>
+        <id>56784</id>
+        <descricao>ADAP. RS-232/RS-485</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>91570</id>
+        <descricao>ADAP. TELEFONE AMERICANO USB MAGIC JACK</descricao>
+        <preco>36.5</preco>
+    </produto>
+    <produto>
+        <id>119672</id>
+        <descricao>ADAP. USB EXTENSOR SATE. AL-09 2.0</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>152625</id>
+        <descricao>ADAP. USB EXTENSOR SATE. AL-09 2.0</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>48113</id>
+        <descricao>ADAP. USB MACHO/FEMEA</descricao>
+        <preco>3.79999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>59519</id>
+        <descricao>ADAP. USB P/IPAD MINI LEITOR SD 2508</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>56820</id>
+        <descricao>ADAP. USB PARA PS2</descricao>
+        <preco>1.5</preco>
+    </produto>
+    <produto>
+        <id>129190</id>
+        <descricao>ADAP. WIRELESS P/MEMORIA SD AE400</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>187666</id>
+        <descricao>AMP BOOSTER BA-2000 4CH STEREO 3000W (X)</descricao>
+        <preco>67</preco>
+    </produto>
+    <produto>
+        <id>106747</id>
+        <descricao>AMP ROADSTAR RS-4810D 4800W POWER TWO 4CH</descricao>
+        <preco>179</preco>
+    </produto>
+    <produto>
+        <id>123208</id>
+        <descricao>ANTENA PARABOLICA 90CM C/LNB EV-90ANT EVOLUTIONBOX</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>122319</id>
+        <descricao>APPLE ADAP. CABO AV COMPOSITE MC748E/A</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>160163</id>
+        <descricao>APPLE ADAP. CABO AV COMPOSITE MC748E/A</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>119729</id>
+        <descricao>APPLE ADAP. DVI/DVI M9321BE/B</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>122385</id>
+        <descricao>APPLE ADAP. DVI/MINI VIDEO M9319G/A</descricao>
+        <preco>38</preco>
+    </produto>
+    <produto>
+        <id>122320</id>
+        <descricao>APPLE ADAP. DVI/VIDEO M9267G/A</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>91627</id>
+        <descricao>APPLE ADAP. HDMI P/DVI MJVU2AM/A</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>82740</id>
+        <descricao>APPLE ADAP. KIT CONEX.CAM P/IPAD MC531ZM/A</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>91605</id>
+        <descricao>APPLE ADAP. KIT CONEX.CAM P/IPAD MC531ZM/A</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>120833</id>
+        <descricao>APPLE ADAP. KIT CONEX.CAM P/IPAD MC531ZM/A</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>80928</id>
+        <descricao>APPLE ADAP. LIGHTNING P/30 PINOS 0.2M MD824ZM/A</descricao>
+        <preco>33.7000000000000028421709430404007434844970703125</preco>
+    </produto>
+    <produto>
+        <id>91649</id>
+        <descricao>APPLE ADAP. LIGHTNING P/30 PINOS 0.2M MD824ZM/A</descricao>
+        <preco>33.7000000000000028421709430404007434844970703125</preco>
+    </produto>
+    <produto>
+        <id>173145</id>
+        <descricao>APPLE ADAP. LIGHTNING P/30 PINOS MD823AM/A</descricao>
+        <preco>34</preco>
+    </produto>
+    <produto>
+        <id>91706</id>
+        <descricao>APPLE ADAP. MICRO DVI P/S-VIDEO MB202G/A</descricao>
+        <preco>15.5</preco>
+    </produto>
+    <produto>
+        <id>122295</id>
+        <descricao>APPLE ADAP. USB P/IPHONE 5 BRANCO PARALELO</descricao>
+        <preco>6.5</preco>
+    </produto>
+    <produto>
+        <id>145043</id>
+        <descricao>APPLE ADAP. USB-C VGA MULTIPORT MJ1L2AM/A</descricao>
+        <preco>81</preco>
+    </produto>
+    <produto>
+        <id>141926</id>
+        <descricao>APPLE ADAP. USB-C/USB MJ1M2AM/A</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>73616</id>
+        <descricao>APPLE AIRPORT EXTREME WIFI ME918AM/A</descricao>
+        <preco>183</preco>
+    </produto>
+    <produto>
+        <id>82627</id>
+        <descricao>APPLE AIRPORT TIME CAPSULE 2TB ME177AM/A</descricao>
+        <preco>290</preco>
+    </produto>
+    <produto>
+        <id>122396</id>
+        <descricao>APPLE BASE DOCK IPAD MC360ZM/A</descricao>
+        <preco>21</preco>
+    </produto>
+    <produto>
+        <id>119740</id>
+        <descricao>APPLE BASE DOCK IPHONE/IPOD 3PK MC650ZM/A</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>153075</id>
+        <descricao>APPLE BASE DOCK POWER IPHONE 4 MC596E/A</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>122409</id>
+        <descricao>APPLE BASE DOCK POWER IPHONE/IPOD MC596E/A</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>122410</id>
+        <descricao>APPLE CABO HDMI/HDMI  B87 MC838BE/A</descricao>
+        <preco>23</preco>
+    </produto>
+    <produto>
+        <id>122420</id>
+        <descricao>APPLE CABO HDMI/HDMI  B87 MC838BE/B</descricao>
+        <preco>23</preco>
+    </produto>
+    <produto>
+        <id>193338</id>
+        <descricao>APPLE CABO USB LIGHTNING 1.0M MD818ZM/A (X)</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>157147</id>
+        <descricao>APPLE CABO USB LIGHTNING 2.0M MD819AM/A</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>192337</id>
+        <descricao>APPLE CABO USB LIGHTNING 2.0M MD819ZM/A (X)</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>145021</id>
+        <descricao>APPLE CABO USB-C CHARGE 2M MJWT2AM/A</descricao>
+        <preco>39</preco>
+    </produto>
+    <produto>
+        <id>128942</id>
+        <descricao>APPLE DVD-RW SUPERDRIVE USB MD564BE/A</descricao>
+        <preco>80</preco>
+    </produto>
+    <produto>
+        <id>151523</id>
+        <descricao>APPLE FONE DE OUVIDO MD186ZM/A</descricao>
+        <preco>69</preco>
+    </produto>
+    <produto>
+        <id>107456</id>
+        <descricao>APPLE FONTE CARREGADOR IPHONE/IPAD MD836E/A</descricao>
+        <preco>19</preco>
+    </produto>
+    <produto>
+        <id>64324</id>
+        <descricao>APPLE FONTE CARREGADOR IPHONE/IPOD 5W MD810E/A</descricao>
+        <preco>18</preco>
+    </produto>
+    <produto>
+        <id>82862</id>
+        <descricao>APPLE FONTE MACBOOK AIR 45W MAGSAFE MC747E/A</descricao>
+        <preco>80</preco>
+    </produto>
+    <produto>
+        <id>88622</id>
+        <descricao>APPLE FONTE MACBOOK PRO 85W MAGSAF2 MD506E/A</descricao>
+        <preco>80</preco>
+    </produto>
+    <produto>
+        <id>175080</id>
+        <descricao>APPLE MOUSE S/FIO MAGIC TRACKPAD 2  MJ2R2LZ/A</descricao>
+        <preco>138</preco>
+    </produto>
+    <produto>
+        <id>8557</id>
+        <descricao>APPLE TV DIGITAL MEDIA PLAYER MD199LL/A</descricao>
+        <preco>71</preco>
+    </produto>
+    <produto>
+        <id>167530</id>
+        <descricao>APPLE TV DIGITAL MLNC2E/A 64GB WI-FI/HDMI/BLUTOOTH</descricao>
+        <preco>209</preco>
+    </produto>
+    <produto>
+        <id>132814</id>
+        <descricao>APPLE WATCH MJ2T2LL/A SPORT 38MM BRANCO</descricao>
+        <preco>315</preco>
+    </produto>
+    <produto>
+        <id>130037</id>
+        <descricao>APPLE WATCH MJ3N2LL/A SPORT 42MM BRANCO</descricao>
+        <preco>369</preco>
+    </produto>
+    <produto>
+        <id>168542</id>
+        <descricao>APPLE WATCH MJYL2LL/A STAINLESS STEEL PRETO 38MM</descricao>
+        <preco>725</preco>
+    </produto>
+    <produto>
+        <id>188870</id>
+        <descricao>APPLE WATCH PULSEIRA  MJ5E2ZM/A LOOP 38MM SILVER</descricao>
+        <preco>145</preco>
+    </produto>
+    <produto>
+        <id>188869</id>
+        <descricao>APPLE WATCH PULSEIRA  MLKU2ZM/A SPORT 38MM BRANCO</descricao>
+        <preco>53</preco>
+    </produto>
+    <produto>
+        <id>108020</id>
+        <descricao>APRES. MULTIMIDIA LOGITECH R800 910-001350</descricao>
+        <preco>61</preco>
+    </produto>
+    <produto>
+        <id>31980</id>
+        <descricao>APRES. MULTIMIDIA SATELLITE LR-13R</descricao>
+        <preco>26.5</preco>
+    </produto>
+    <produto>
+        <id>28346</id>
+        <descricao>APRES. MULTIMIDIA SATELLITE LR-17G</descricao>
+        <preco>33</preco>
+    </produto>
+    <produto>
+        <id>121081</id>
+        <descricao>APRES. MULTIMIDIA SATELLITE LR-17G</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>28313</id>
+        <descricao>APRES. MULTIMIDIA SATELLITE LR-18R</descricao>
+        <preco>27</preco>
+    </produto>
+    <produto>
+        <id>46515</id>
+        <descricao>APRES. MULTIMIDIA TARGUS AMP09US WIRELESS</descricao>
+        <preco>31</preco>
+    </produto>
+    <produto>
+        <id>46526</id>
+        <descricao>APRES. MULTIMIDIA TARGUS AMP13US-50 WIRELESS</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>46537</id>
+        <descricao>APRES. MULTIMIDIA TARGUS AMP16US-50 WIRELESS</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>165280</id>
+        <descricao>AR SPLIT 12000 BTUS AUX AS-H12A2/NR 220V/60H</descricao>
+        <preco>195</preco>
+    </produto>
+    <produto>
+        <id>163717</id>
+        <descricao>AR SPLIT 18000 BTUS AUX AS-H18B2/NR 220V/60H</descricao>
+        <preco>350</preco>
+    </produto>
+    <produto>
+        <id>121116</id>
+        <descricao>AR SPLIT 18000 BTUS CLIMAX 220V/60HZ P/TETO</descricao>
+        <preco>570</preco>
+    </produto>
+    <produto>
+        <id>104453</id>
+        <descricao>AR SPLIT 18000 BTUS FREE 220V/60HZ QUENTE/FRIO</descricao>
+        <preco>420</preco>
+    </produto>
+    <produto>
+        <id>163728</id>
+        <descricao>AR SPLIT 24000 BTUS AUX AS-H24B2/NR 220V/60H</descricao>
+        <preco>505</preco>
+    </produto>
+    <produto>
+        <id>140071</id>
+        <descricao>ARMADILHA ELETRICA P/INSETO A-IT24 SATE BIVOLT</descricao>
+        <preco>36</preco>
+    </produto>
+    <produto>
+        <id>33544</id>
+        <descricao>ASPIRADOR DE PO HLD P/TECLADO FD-368</descricao>
+        <preco>6.5</preco>
+    </produto>
+    <produto>
+        <id>75820</id>
+        <descricao>BABA ELETRONICA MOTOROLA MBP621 BRANCO</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>192045</id>
+        <descricao>BABA ELETRONICA ORANGE OR-BE10 BRANCO</descricao>
+        <preco>56</preco>
+    </produto>
+    <produto>
+        <id>192056</id>
+        <descricao>BABA ELETRONICA ORANGE OR-BE100 BRANCO</descricao>
+        <preco>85</preco>
+    </produto>
+    <produto>
+        <id>140251</id>
+        <descricao>BABA ELETRONICA ORANGE OR-BE1100K BRANCO</descricao>
+        <preco>105</preco>
+    </produto>
+    <produto>
+        <id>140262</id>
+        <descricao>BABA ELETRONICA ORANGE OR-BE1200K BRANCO</descricao>
+        <preco>90</preco>
+    </produto>
+    <produto>
+        <id>140273</id>
+        <descricao>BABA ELETRONICA ORANGE OR-BE200 BRANCO</descricao>
+        <preco>95</preco>
+    </produto>
+    <produto>
+        <id>181122</id>
+        <descricao>BALANÇA DIGITAL SATELLITE A-WS002</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>28403</id>
+        <descricao>BALAN€A DIGITAL SATELLITE A-WS006 PRETO</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>192135</id>
+        <descricao>BALAN€A DIGITAL SATELLITE A-WS014 VIDRO</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>8680</id>
+        <descricao>BARBEADOR PHILIPS POWER TOUCH PT870 BIVOLT (78474)</descricao>
+        <preco>72.5</preco>
+    </produto>
+    <produto>
+        <id>159150</id>
+        <descricao>BASTAO SELFIE EUROPOWER  C/CONTROL ROSA</descricao>
+        <preco>8.699999999999999289457264239899814128875732421875</preco>
+    </produto>
+    <produto>
+        <id>187633</id>
+        <descricao>BATERIA ELECTRONICA EN SILICONA BAT-001 (X)</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>131712</id>
+        <descricao>BATERIA P/ APPLE MACBOOK A1280 ANKER 10.8V 4200MAH</descricao>
+        <preco>85</preco>
+    </produto>
+    <produto>
+        <id>57594</id>
+        <descricao>BATERIA P/CAMERA REC BAK BK-FD1/BD1 700MAH</descricao>
+        <preco>1.3000000000000000444089209850062616169452667236328125</preco>
+    </produto>
+    <produto>
+        <id>170882</id>
+        <descricao>BATERIA P/CEL SKY 5.0S 3.8V 2250MAH</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>170939</id>
+        <descricao>BATERIA P/CEL SKY 5.5Q 3.8V 2600MAH</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>170906</id>
+        <descricao>BATERIA P/CEL SKY 5.5W 3.7V 2400MAH</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>113655</id>
+        <descricao>BATERIA PORTATIL CHARZON COLUMBUS  6000MAH</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>113633</id>
+        <descricao>BATERIA PORTATIL CHARZON COLUMBUS  9000MAH</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>113622</id>
+        <descricao>BATERIA PORTATIL CHARZON COLUMBUS 12000MAH</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>64616</id>
+        <descricao>BATERIA PORTATIL GENESIS GB-5000 PRETO</descricao>
+        <preco>25.5</preco>
+    </produto>
+    <produto>
+        <id>57045</id>
+        <descricao>BATERIA PORTATIL MICROFINS USB HR1302</descricao>
+        <preco>22.5</preco>
+    </produto>
+    <produto>
+        <id>89397</id>
+        <descricao>BATERIA PORTATIL MTEK PB11A022 2200MAH PRETO/VERDE</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>89410</id>
+        <descricao>BATERIA PORTATIL MTEK PB17B066 6600MAH BRANCO</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>89400</id>
+        <descricao>BATERIA PORTATIL MTEK PB17B088 10400MAH BRANCO/AZU</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>144738</id>
+        <descricao>BATERIA PORTATIL MTEK PB25A040  4000MAH BRANCO/AZU</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>57012</id>
+        <descricao>BATERIA PORTATIL POWER BANK</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>57001</id>
+        <descricao>BATERIA PORTATIL POWER BANK BRANCO</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>57023</id>
+        <descricao>BATERIA PORTATIL POWER BANK BRANCO</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>8770</id>
+        <descricao>BATERIA PORTATIL POWER BANK PB-2001 2000MAH USB</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>57034</id>
+        <descricao>BATERIA PORTATIL POWER BANK PRETO</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>85630</id>
+        <descricao>BATERIA PORTATIL SENTEY LS-2104 2800MAH ROSA</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>85529</id>
+        <descricao>BATERIA PORTATIL SENTEY LS-2154 10400MAH BRANCO/LI</descricao>
+        <preco>24.89999999999999857891452847979962825775146484375</preco>
+    </produto>
+    <produto>
+        <id>173314</id>
+        <descricao>BATERIA PORTATIL SOLAR P1100F 2600MAH ROSA</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>73122</id>
+        <descricao>BATERIA PORTATIL USB ARGOM 2500MAH PRATA</descricao>
+        <preco>17</preco>
+    </produto>
+    <produto>
+        <id>137830</id>
+        <descricao>BATERIA PORTATIL USB HELLO KITTY KN6606 6000MAH</descricao>
+        <preco>42</preco>
+    </produto>
+    <produto>
+        <id>137841</id>
+        <descricao>BATERIA PORTATIL USB HELLO KITTY KN6628 6000MAH</descricao>
+        <preco>42</preco>
+    </produto>
+    <produto>
+        <id>137852</id>
+        <descricao>BATERIA PORTATIL USB HELLO KITTY KN6640 6000MAH</descricao>
+        <preco>42</preco>
+    </produto>
+    <produto>
+        <id>101428</id>
+        <descricao>BATERIA SAMSUNG N210/N220/N218 AA-PB1VC6W- 1</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>8838</id>
+        <descricao>BONECO ALIENS VS PREDATOR (CABEZA ALIENS) (69510)</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>683</id>
+        <descricao>BONECO ALIENS VS PREDATOR (MEDIO CORPO) I005 (6952</descricao>
+        <preco>98</preco>
+    </produto>
+    <produto>
+        <id>110393</id>
+        <descricao>BONECO ALIENS VS PREDATOR BAD BLOOD I006 GRANDE</descricao>
+        <preco>175</preco>
+    </produto>
+    <produto>
+        <id>347</id>
+        <descricao>BONECO ALIENS VS PREDATOR BAD BLOOD I006 GRANDE (5</descricao>
+        <preco>175</preco>
+    </produto>
+    <produto>
+        <id>110382</id>
+        <descricao>BONECO ALIENS VS PREDATOR I003</descricao>
+        <preco>148</preco>
+    </produto>
+    <produto>
+        <id>303</id>
+        <descricao>BONECO ALIENS VS PREDATOR I003 GRANDE (54793)</descricao>
+        <preco>117</preco>
+    </produto>
+    <produto>
+        <id>852</id>
+        <descricao>BONECO ALIENS VS PREDATOR I006 GRANDE (70881)</descricao>
+        <preco>91</preco>
+    </produto>
+    <produto>
+        <id>8893</id>
+        <descricao>BONECO ALIENS VS PREDATOR I007 (69542)</descricao>
+        <preco>42</preco>
+    </produto>
+    <produto>
+        <id>110327</id>
+        <descricao>BONECO ALIENS VS PREDATOR I010 GRANDE</descricao>
+        <preco>120</preco>
+    </produto>
+    <produto>
+        <id>8917</id>
+        <descricao>BONECO ALIENS VS PREDATOR I010 GRANDE (70892)</descricao>
+        <preco>70</preco>
+    </produto>
+    <produto>
+        <id>9817</id>
+        <descricao>BONECO ANGRY BIRDS PELUCIA PASSARINHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>9828</id>
+        <descricao>BONECO ANGRY BIRDS PELUCIA STAR WARS BRANCO(54894)</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>8950</id>
+        <descricao>BONECO AVATAR SPIRIT AANG 31900 (54940)</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>8961</id>
+        <descricao>BONECO AVATAR TRUDY CHACON JAMES CAMERONÏS 80602 (</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>8994</id>
+        <descricao>BONECO BATMAN ARKHAM CITY (54984)</descricao>
+        <preco>23</preco>
+    </produto>
+    <produto>
+        <id>751</id>
+        <descricao>BONECO BATMAN ARKHAM F013 GRANDE (70927)</descricao>
+        <preco>124</preco>
+    </produto>
+    <produto>
+        <id>784</id>
+        <descricao>BONECO BEN HAKER M022 GRANDE (70938)</descricao>
+        <preco>62</preco>
+    </produto>
+    <produto>
+        <id>182942</id>
+        <descricao>BONECO BIRDS 8 91203 (X)</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>9031</id>
+        <descricao>BONECO BLEACH R008 GRANDE (709</descricao>
+        <preco>36</preco>
+    </produto>
+    <produto>
+        <id>134737</id>
+        <descricao>BONECO BLEACH R021 GRANDE</descricao>
+        <preco>92</preco>
+    </produto>
+    <produto>
+        <id>9053</id>
+        <descricao>BONECO BLEACH TOSHIRO HITSUGAYA 81002</descricao>
+        <preco>35</preco>
+    </produto>
+    <produto>
+        <id>134748</id>
+        <descricao>BONECO CACHORRO REPTIL T098</descricao>
+        <preco>54</preco>
+    </produto>
+    <produto>
+        <id>9075</id>
+        <descricao>BONECO DADO PELUCIA SUPER MARIO</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>9100</id>
+        <descricao>BONECO DEUS EX FEOROVA (55032)</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>113925</id>
+        <descricao>BONECO DEUS EX HUMAN REVOLUTION LAWRENCE BARRETT</descricao>
+        <preco>33</preco>
+    </produto>
+    <produto>
+        <id>9132</id>
+        <descricao>BONECO DIABLO T097 GRANDE (70960)</descricao>
+        <preco>107</preco>
+    </produto>
+    <produto>
+        <id>134759</id>
+        <descricao>BONECO DINOSAURO REX T100</descricao>
+        <preco>152</preco>
+    </produto>
+    <produto>
+        <id>140970</id>
+        <descricao>BONECO DISNEY INFINITY DASH</descricao>
+        <preco>17.5</preco>
+    </produto>
+    <produto>
+        <id>46177</id>
+        <descricao>BONECO DISNEY INFINITY DRAX SUPER HEROES MARVEL</descricao>
+        <preco>14.5</preco>
+    </produto>
+    <produto>
+        <id>46133</id>
+        <descricao>BONECO DISNEY INFINITY NICK FURY 1205600000000</descricao>
+        <preco>13.9000000000000003552713678800500929355621337890625</preco>
+    </produto>
+    <produto>
+        <id>46144</id>
+        <descricao>BONECO DISNEY INFINITY ROCKET RACCOON 120564000000</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>46100</id>
+        <descricao>BONECO DISNEY INFINITY VENOM 1205610000000</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>110350</id>
+        <descricao>BONECO DRAGON BALL M020 GRANDE</descricao>
+        <preco>115</preco>
+    </produto>
+    <produto>
+        <id>9198</id>
+        <descricao>BONECO DRAGON BALL M020 GRANDE (70982)</descricao>
+        <preco>72</preco>
+    </produto>
+    <produto>
+        <id>9233</id>
+        <descricao>BONECO DRAGON BALL P029 GRANDE (71020)</descricao>
+        <preco>45</preco>
+    </produto>
+    <produto>
+        <id>9255</id>
+        <descricao>BONECO DRAGON BALL Z P034 (71041)</descricao>
+        <preco>45</preco>
+    </produto>
+    <produto>
+        <id>92066</id>
+        <descricao>BONECO FIJIT FRIENDS LOGAN INTERATIVO AZUL</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>9266</id>
+        <descricao>BONECO FINAL FANTASY MOOGLE (5</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>182953</id>
+        <descricao>BONECO FINAL FANTASY XII JUDGE MAGISTER</descricao>
+        <preco>80</preco>
+    </produto>
+    <produto>
+        <id>134770</id>
+        <descricao>BONECO FINAL FANTASY XIII HOPE ESTHEIM</descricao>
+        <preco>32</preco>
+    </produto>
+    <produto>
+        <id>9288</id>
+        <descricao>BONECO FINAL FANTASY XIII ODIN (69600)</descricao>
+        <preco>100</preco>
+    </produto>
+    <produto>
+        <id>9299</id>
+        <descricao>BONECO FINAL FANTASY XIII SAZH (55526)</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>105320</id>
+        <descricao>BONECO FRANKY MOVES BF-37</descricao>
+        <preco>64</preco>
+    </produto>
+    <produto>
+        <id>9312</id>
+        <descricao>BONECO FRONT MISSION EVOLDE ZENITH (55728)</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>134805</id>
+        <descricao>BONECO GEARS OF WAR 2 TICHER</descricao>
+        <preco>23</preco>
+    </produto>
+    <produto>
+        <id>134792</id>
+        <descricao>BONECO GEARS OF WAR GRENADIER BEAST</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>110349</id>
+        <descricao>BONECO GOD OF WAR KRATOS GOW III 007</descricao>
+        <preco>132</preco>
+    </produto>
+    <produto>
+        <id>9446</id>
+        <descricao>BONECO HALO REACH 4 CORTANA (45716)</descricao>
+        <preco>14.9000000000000003552713678800500929355621337890625</preco>
+    </produto>
+    <produto>
+        <id>9468</id>
+        <descricao>BONECO HALO REACH DELUXE BOXED (45570)</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>9490</id>
+        <descricao>BONECO HALO SKIRMISHER MURMILLO (69632)</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>9503</id>
+        <descricao>BONECO HALO UNIVERS MASTER CHI</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>9536</id>
+        <descricao>BONECO HARRY POTTER SERIES II PROF SNAPE</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>694</id>
+        <descricao>BONECO IRON MAN MEDIO CORPO VERMELHO (69744)</descricao>
+        <preco>178</preco>
+    </produto>
+    <produto>
+        <id>114017</id>
+        <descricao>BONECO MARVEL CAPITAN AMERICA D048 PEQUENO (71052)</descricao>
+        <preco>56</preco>
+    </produto>
+    <produto>
+        <id>773</id>
+        <descricao>BONECO MARVEL IRON MAN D050 (71085)</descricao>
+        <preco>116</preco>
+    </produto>
+    <produto>
+        <id>9648</id>
+        <descricao>BONECO MARVEL THE INCREDIBLE HULK D046</descricao>
+        <preco>94</preco>
+    </produto>
+    <produto>
+        <id>134838</id>
+        <descricao>BONECO MARVEL THE INCREDIBLE HULK D047</descricao>
+        <preco>99</preco>
+    </produto>
+    <produto>
+        <id>110292</id>
+        <descricao>BONECO MARVEL THE INCREDIBLE HULK VS SPIDER-MAN</descricao>
+        <preco>278</preco>
+    </produto>
+    <produto>
+        <id>9660</id>
+        <descricao>BONECO MOD-METAL GEAR SOLID PEACE WALKER CHRYSALIS</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>9705</id>
+        <descricao>BONECO NARUTO M021 (71120)</descricao>
+        <preco>57</preco>
+    </produto>
+    <produto>
+        <id>9727</id>
+        <descricao>BONECO NARUTO R007 (71142)</descricao>
+        <preco>57</preco>
+    </produto>
+    <produto>
+        <id>9738</id>
+        <descricao>BONECO NARUTO R011 (71153)</descricao>
+        <preco>46</preco>
+    </produto>
+    <produto>
+        <id>9749</id>
+        <descricao>BONECO NARUTO R019 (71175)</descricao>
+        <preco>57</preco>
+    </produto>
+    <produto>
+        <id>9760</id>
+        <descricao>BONECO ONE PEACE M007 (71197)</descricao>
+        <preco>84</preco>
+    </produto>
+    <produto>
+        <id>9771</id>
+        <descricao>BONECO ONE PEACE M013 (71186)</descricao>
+        <preco>69</preco>
+    </produto>
+    <produto>
+        <id>110338</id>
+        <descricao>BONECO ONE PEACE M014</descricao>
+        <preco>104</preco>
+    </produto>
+    <produto>
+        <id>819</id>
+        <descricao>BONECO ONE PEACE M014 (71210)</descricao>
+        <preco>62</preco>
+    </produto>
+    <produto>
+        <id>820</id>
+        <descricao>BONECO ONE PEACE M025 (71232)</descricao>
+        <preco>106</preco>
+    </produto>
+    <produto>
+        <id>109144</id>
+        <descricao>BONECO RESIDENT EVIL PAPERMAU K006 (71243)</descricao>
+        <preco>61</preco>
+    </produto>
+    <produto>
+        <id>182964</id>
+        <descricao>BONECO SKYLANDERS SPROCKET</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>9984</id>
+        <descricao>BONECO SKYLANDERS TOWER CASE BOITIER DE LA TOUR TO</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>134871</id>
+        <descricao>BONECO STAR CRAFT II ROBO S/CAIXA</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>134882</id>
+        <descricao>BONECO STAR CRAFT II SERIES 2 COLLECTORS</descricao>
+        <preco>54</preco>
+    </produto>
+    <produto>
+        <id>10056</id>
+        <descricao>BONECO STAR WARS D GRANDE T011 SIDIOU (39471)</descricao>
+        <preco>38</preco>
+    </produto>
+    <produto>
+        <id>10078</id>
+        <descricao>BONECO STREET FIGHTER IV M006 (71254)</descricao>
+        <preco>74</preco>
+    </produto>
+    <produto>
+        <id>10090</id>
+        <descricao>BONECO STREET FIGHTER KID ROBOT T11 (69801)</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>10102</id>
+        <descricao>BONECO STREET FIGHTER S005 (71265)</descricao>
+        <preco>47</preco>
+    </produto>
+    <produto>
+        <id>10113</id>
+        <descricao>BONECO STREET FIGHTER S006 (71276)</descricao>
+        <preco>56</preco>
+    </produto>
+    <produto>
+        <id>830</id>
+        <descricao>BONECO STREET FIGHTER S007 (71287)</descricao>
+        <preco>172</preco>
+    </produto>
+    <produto>
+        <id>171558</id>
+        <descricao>BONECO SUPER MARIO BROS C/PELOTA</descricao>
+        <preco>60</preco>
+    </produto>
+    <produto>
+        <id>109199</id>
+        <descricao>BONECO SUPER MARIO DONKEY KONG COLLECTION 3 IN 1</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>141645</id>
+        <descricao>BONECO SUPER MARIO LUIGI SACOLA</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>10304</id>
+        <descricao>BONECO SUPER MARIO LUIGI TENNIS (55717)</descricao>
+        <preco>17.800000000000000710542735760100185871124267578125</preco>
+    </produto>
+    <produto>
+        <id>9840</id>
+        <descricao>BONECO SUPER MARIO PELUCIA CHAIN CHOMP 12528</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>113980</id>
+        <descricao>BONECO SUPER MARIO PRINCESA PEQUENO (67079)</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>141656</id>
+        <descricao>BONECO SUPER MARIO SACOLA</descricao>
+        <preco>23</preco>
+    </produto>
+    <produto>
+        <id>10381</id>
+        <descricao>BONECO SUPER MARIO SMALL GESSO</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>109212</id>
+        <descricao>BONECO SUPER MARIO TOAD COLLECTION 4 IN 1</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>114432</id>
+        <descricao>BONECO SUPER MARIO YOSHI FUTBALL 6IN 1 (145873)</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>134906</id>
+        <descricao>BONECO SUPER MARIO YOSHI NORMAL</descricao>
+        <preco>17</preco>
+    </produto>
+    <produto>
+        <id>10438</id>
+        <descricao>BONECO TRANSFORME METAL I015 (55952)</descricao>
+        <preco>47</preco>
+    </produto>
+    <produto>
+        <id>10550</id>
+        <descricao>BRINQUEDO DISNEY INFINITY FRANCESCO (79341)</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>131756</id>
+        <descricao>BRINQUEDO METRALHADORA FIRE POWER F4-D</descricao>
+        <preco>98</preco>
+    </produto>
+    <produto>
+        <id>10594</id>
+        <descricao>BRINQUEDO QUEBRA CABECA SUPER MARIO YOSHI 200PCS</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>10607</id>
+        <descricao>BRINQUEDO TABULEIRO HELLO KITTY YAHTZEE 43337 (563</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>119841</id>
+        <descricao>CABO ADAP. DVI SINGLE-LINK SAPPHIRE ATI EYEFINITY</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>48482</id>
+        <descricao>CABO ADAP. HLD DISPLAY P/DVI</descricao>
+        <preco>17.5</preco>
+    </produto>
+    <produto>
+        <id>57089</id>
+        <descricao>CABO ADAP. HLD DISPLAY P/DVI (10976)</descricao>
+        <preco>24.5</preco>
+    </produto>
+    <produto>
+        <id>48460</id>
+        <descricao>CABO ADAP. HLD DISPLAY-PORT</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>48506</id>
+        <descricao>CABO ADAP. HLD EXT RJ45/USB MACHO/FEMEA</descricao>
+        <preco>15.800000000000000710542735760100185871124267578125</preco>
+    </produto>
+    <produto>
+        <id>57090</id>
+        <descricao>CABO ADAP. HLD MINI DISPLAY-DVI (11013)</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>57102</id>
+        <descricao>CABO ADAP. HLD MINI DVI P/VGA</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>38931</id>
+        <descricao>CABO ADAP. HLD RGB/USB 2.0 RS232</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>38896</id>
+        <descricao>CABO ADAP. HLD USB 2.0 2IN 1 P/HD</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>38909</id>
+        <descricao>CABO ADAP. HLD USB 2.0 RJ45</descricao>
+        <preco>11.5</preco>
+    </produto>
+    <produto>
+        <id>48550</id>
+        <descricao>CABO ADAP. HLD USB 2.0-3.0 P/HD 3.0</descricao>
+        <preco>5.5</preco>
+    </produto>
+    <produto>
+        <id>48583</id>
+        <descricao>CABO ADAP. HLD USB 3.0 MICRO/HD EXTERNO</descricao>
+        <preco>7.5</preco>
+    </produto>
+    <produto>
+        <id>48607</id>
+        <descricao>CABO ADAP. MICRO HDMI-VGA</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>157810</id>
+        <descricao>CABO ADAP. MICRO-HDMI MACHO/VGA FEMEA/SOM</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>157821</id>
+        <descricao>CABO ADAP. MINI-HDMI MACHO/VGA FEMEA/SOM</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>57056</id>
+        <descricao>CABO ADAP. USB 3.0/BLU-RAY AM/MICRO</descricao>
+        <preco>5.5</preco>
+    </produto>
+    <produto>
+        <id>48921</id>
+        <descricao>CABO ADAP. VGA/HDMI/SOM</descricao>
+        <preco>34</preco>
+    </produto>
+    <produto>
+        <id>57146</id>
+        <descricao>CABO AUDIO DIGITAL P/CD-ROM/DVD/GRAVADOR</descricao>
+        <preco>0.6999999999999999555910790149937383830547332763671875</preco>
+    </produto>
+    <produto>
+        <id>57168</id>
+        <descricao>CABO AUDIO/2RCA+AUDIO FEMEA 30CM MICROFINS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>57203</id>
+        <descricao>CABO AUDIO/VIDEO  3MTS</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>122486</id>
+        <descricao>CABO AUDIO/VIDEO ACOUSTIC RESEARCH PR-193 25FT</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>57607</id>
+        <descricao>CABO AUDIO/VIDEO P/CAMERA SAMSUNG</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>121127</id>
+        <descricao>CABO CONVERSOR P/FONTE DE 20 PINOS P/24 PINOS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>57258</id>
+        <descricao>CABO DE FORCA P/FONTE GABINETE 1.3M</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>38964</id>
+        <descricao>CABO DE FORCA P/FONTE GABINETE 1.8M</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>121160</id>
+        <descricao>CABO DE FORCA P/GABINETE</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>54424</id>
+        <descricao>CABO DE FORCA P/NOTEBOOK 3 PINOS P/FONTE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>121171</id>
+        <descricao>CABO DE FORCA TRIPOLAR</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>133927</id>
+        <descricao>CABO DE FORCA XFX 300/500V 2MT 3PINOS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>121182</id>
+        <descricao>CABO DE FORCA XFX 300V 1MT 3PINOS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>10640</id>
+        <descricao>CABO DV FIREWIRE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>38997</id>
+        <descricao>CABO DVI/DVI HLD C/FILTRO 10 METROS</descricao>
+        <preco>17.800000000000000710542735760100185871124267578125</preco>
+    </produto>
+    <produto>
+        <id>38986</id>
+        <descricao>CABO DVI/DVI HLD C/FILTRO 3 METROS</descricao>
+        <preco>7.79999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>38975</id>
+        <descricao>CABO DVI/DVI HLD C/FILTRO 5 METROS</descricao>
+        <preco>9.800000000000000710542735760100185871124267578125</preco>
+    </produto>
+    <produto>
+        <id>10684</id>
+        <descricao>CABO EXTENSOR DISNEY INFINITE USB 1.8 METROS</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>116298</id>
+        <descricao>CABO EXTENSOR HDMI/RJ45 FULL HD 1080P</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>48720</id>
+        <descricao>CABO EXTENSOR USB 2.0 10 METROS</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>38808</id>
+        <descricao>CABO EXTENSOR USB 2.0 1METRO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>48741</id>
+        <descricao>CABO EXTENSOR USB 2.0 3 METROS</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>48752</id>
+        <descricao>CABO EXTENSOR USB 2.0 5 METROS</descricao>
+        <preco>8.800000000000000710542735760100185871124267578125</preco>
+    </produto>
+    <produto>
+        <id>166775</id>
+        <descricao>CABO EXTENSOR USB 3.0 3 METROS</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>166764</id>
+        <descricao>CABO EXTENSOR USB 3.0 5 METROS</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>121149</id>
+        <descricao>CABO FONTE 2PINOS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>57269</id>
+        <descricao>CABO HD SATA SERIAL ATA AL-04 (DADOS)</descricao>
+        <preco>0.59999999999999997779553950749686919152736663818359375</preco>
+    </produto>
+    <produto>
+        <id>92213</id>
+        <descricao>CABO HD SATA SERIAL ATA AL-04 (DADOS)</descricao>
+        <preco>1.899999999999999911182158029987476766109466552734375</preco>
+    </produto>
+    <produto>
+        <id>157461</id>
+        <descricao>CABO HDMI/3RCA C/FILTRO 1.5M</descricao>
+        <preco>9.5</preco>
+    </produto>
+    <produto>
+        <id>57280</id>
+        <descricao>CABO HDMI/5RCA VIDEO COMPONENTE</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>57326</id>
+        <descricao>CABO HDMI/DVI C/ADAPTADOR HDMI 20M</descricao>
+        <preco>38</preco>
+    </produto>
+    <produto>
+        <id>57337</id>
+        <descricao>CABO HDMI/DVI-D 20M</descricao>
+        <preco>48</preco>
+    </produto>
+    <produto>
+        <id>48810</id>
+        <descricao>CABO HDMI/HDMI 10 METROS</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>92145</id>
+        <descricao>CABO HDMI/HDMI 15 METROS</descricao>
+        <preco>17</preco>
+    </produto>
+    <produto>
+        <id>57348</id>
+        <descricao>CABO HDMI/HDMI 20 METROS</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>48809</id>
+        <descricao>CABO HDMI/HDMI 30 METROS</descricao>
+        <preco>44.5</preco>
+    </produto>
+    <produto>
+        <id>192875</id>
+        <descricao>CABO HDMI/HDMI 40 METROS</descricao>
+        <preco>90</preco>
+    </produto>
+    <produto>
+        <id>87452</id>
+        <descricao>CABO HDMI/HDMI 5 METROS</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>180660</id>
+        <descricao>CABO HDMI/HDMI FREE 1.5 METROS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>146885</id>
+        <descricao>CABO HDMI/HDMI FREE FR-H200F 3D FULL HD 2 METROS</descricao>
+        <preco>3.5</preco>
+    </produto>
+    <produto>
+        <id>189120</id>
+        <descricao>CABO HDMI/HDMI FULL HD 1080P 3D V1.4 3 METROS</descricao>
+        <preco>6.5</preco>
+    </produto>
+    <produto>
+        <id>28480</id>
+        <descricao>CABO HDMI/HDMI SATE. AL-32 2 METROS GOLD</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>48910</id>
+        <descricao>CABO HDMI/MICRO HDMI 1.5M</descricao>
+        <preco>5.5</preco>
+    </produto>
+    <produto>
+        <id>57392</id>
+        <descricao>CABO HDMI/MINI-HDMI 3 METROS</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>57360</id>
+        <descricao>CABO HDMI/MINI-HDMI HLD 1.8M</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>33757</id>
+        <descricao>CABO HDMI/MINI-HDMI HLD 5 METROS</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>49002</id>
+        <descricao>CABO HDMI/VGA 3 METROS</descricao>
+        <preco>6.79999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>49035</id>
+        <descricao>CABO HDMI/VGA 5 METROS</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>48954</id>
+        <descricao>CABO HDMI/VGA C/FILTRO 1.8 METROS</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>48943</id>
+        <descricao>CABO HDMI/VGA/3RCA 1.5 METROS</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>49057</id>
+        <descricao>CABO KIT 3X1 VGA/USB/AUDIO MICROFINS</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>57449</id>
+        <descricao>CABO MINI USB/USB MACHO MICROFINS 1.5M</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>49136</id>
+        <descricao>CABO OPTICO HLD 10 METROS</descricao>
+        <preco>22.5</preco>
+    </produto>
+    <produto>
+        <id>49103</id>
+        <descricao>CABO OPTICO HLD 3 METROS</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>49114</id>
+        <descricao>CABO OPTICO HLD 5 METROS</descricao>
+        <preco>12.5</preco>
+    </produto>
+    <produto>
+        <id>49215</id>
+        <descricao>CABO PARALELO P/IMPRE 3M</descricao>
+        <preco>7.5</preco>
+    </produto>
+    <produto>
+        <id>57450</id>
+        <descricao>CABO PARALELO P/IMPRE 5M</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>157191</id>
+        <descricao>CABO PARALELO P/IMPRE 5M</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>119784</id>
+        <descricao>CABO PARALELO P/IMPRE.10M</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>78946</id>
+        <descricao>CABO REDE CAT 6 305/100MBPS 305MTS</descricao>
+        <preco>66</preco>
+    </produto>
+    <produto>
+        <id>63547</id>
+        <descricao>CABO REDE ROLO RG59 + POWER 100 M.</descricao>
+        <preco>44</preco>
+    </produto>
+    <produto>
+        <id>119808</id>
+        <descricao>CABO SATA P/TRANSFERENCIA DE DADOS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>71704</id>
+        <descricao>CABO SERIAL/SERIAL HLD</descricao>
+        <preco>4.5</preco>
+    </produto>
+    <produto>
+        <id>59520</id>
+        <descricao>CABO USB 2.0 P/IPHONE/IPOD MACALLY 1MTS</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>59530</id>
+        <descricao>CABO USB 2.0 P/IPHONE/IPOD MACALLY RETRATIL</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>59563</id>
+        <descricao>CABO USB 2.0 P/IPHONE/IPOD/IPAD MACALLY RETRATIL</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>59945</id>
+        <descricao>CABO USB 2.0 P/IPOD MACALLY 2MTS</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>50565</id>
+        <descricao>CABO USB 2.0 X USB FEMEA MICROFINS 1.8 METROS</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>64469</id>
+        <descricao>CABO USB MACHO/MINI USB MICROFINS</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>192359</id>
+        <descricao>CABO USB P/ S5 SAMSUNG 1M ORIGINAL (X)</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>192381</id>
+        <descricao>CABO USB P/ SAMSUNG 1M ORIGINAL (X)</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>192392</id>
+        <descricao>CABO USB P/ SAMSUNG 2M ORIGINAL (X)</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>38819</id>
+        <descricao>CABO USB P/IMPRE C/FILTRO 3 METROS</descricao>
+        <preco>5.25</preco>
+    </produto>
+    <produto>
+        <id>57482</id>
+        <descricao>CABO USB P/IMPRE. 1.8M</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>57493</id>
+        <descricao>CABO USB P/IMPRE. C/FILTRO 10M</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>57528</id>
+        <descricao>CABO USB P/IMPRE/GRAV/HD TIPO BM (3.0) 1.8M</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>92235</id>
+        <descricao>CABO USB X MINI USB 2.0 - 1.8METROS</descricao>
+        <preco>1.5</preco>
+    </produto>
+    <produto>
+        <id>57561</id>
+        <descricao>CABO VGA/3RCA VIDEO COMPONENTE</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>157685</id>
+        <descricao>CABO VGA/5RCA C/FILTRO 1.5M</descricao>
+        <preco>9.800000000000000710542735760100185871124267578125</preco>
+    </produto>
+    <produto>
+        <id>57572</id>
+        <descricao>CABO VGA/5RCA VIDEO COMPONENTE 1.5M</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>48998</id>
+        <descricao>CABO VGA/MINI HDMI+AV(69642)</descricao>
+        <preco>23</preco>
+    </produto>
+    <produto>
+        <id>157709</id>
+        <descricao>CABO VGA/USB/DVI 30PINOS</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>57583</id>
+        <descricao>CABO VGA/USB/DVI 30PINOS</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>50611</id>
+        <descricao>CABO VGA/VGA 1.5 METROS</descricao>
+        <preco>4.5</preco>
+    </produto>
+    <produto>
+        <id>50745</id>
+        <descricao>CABO VGA/VGA 15 METROS</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>50767</id>
+        <descricao>CABO VGA/VGA 20 METROS</descricao>
+        <preco>27</preco>
+    </produto>
+    <produto>
+        <id>50644</id>
+        <descricao>CABO VGA/VGA 3 METROS</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>50789</id>
+        <descricao>CABO VGA/VGA 30 METROS</descricao>
+        <preco>36</preco>
+    </produto>
+    <produto>
+        <id>50677</id>
+        <descricao>CABO VGA/VGA 5 METROS</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>57540</id>
+        <descricao>CABO VGA/VGA 50 METROS</descricao>
+        <preco>58</preco>
+    </produto>
+    <produto>
+        <id>126009</id>
+        <descricao>CALCULADORA HP 10S+ CIENTIFICA</descricao>
+        <preco>7.79999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>10752</id>
+        <descricao>CALCULADORA HP GRAFICA 50G MANUAL PORT/ESP</descricao>
+        <preco>60</preco>
+    </produto>
+    <produto>
+        <id>119852</id>
+        <descricao>CAMERA DIGITAL FUJITA XTREME SPORTS BULLET HD 2</descricao>
+        <preco>86</preco>
+    </produto>
+    <produto>
+        <id>192258</id>
+        <descricao>CAMERA DIGITAL NIKON D5300 18-55 VR II KIT PRETO X</descricao>
+        <preco>509</preco>
+    </produto>
+    <produto>
+        <id>184327</id>
+        <descricao>CAMERA DIGITAL SAMSUNG NX MINI WIR. TOUCH BRANCO</descricao>
+        <preco>230</preco>
+    </produto>
+    <produto>
+        <id>184349</id>
+        <descricao>CAMERA DIGITAL SAMSUNG NX MINI WIR. TOUCH MARROM</descricao>
+        <preco>230</preco>
+    </produto>
+    <produto>
+        <id>184316</id>
+        <descricao>CAMERA DIGITAL SAMSUNG NX MINI WIR. TOUCH PRETO</descricao>
+        <preco>230</preco>
+    </produto>
+    <produto>
+        <id>184338</id>
+        <descricao>CAMERA DIGITAL SAMSUNG NX MINI WIR. TOUCH ROSA</descricao>
+        <preco>230</preco>
+    </produto>
+    <produto>
+        <id>175002</id>
+        <descricao>CAMERA DIGITAL SAMSUNG WB2200F 16.4MP PRETO</descricao>
+        <preco>238</preco>
+    </produto>
+    <produto>
+        <id>10875</id>
+        <descricao>CAMERA DIGITAL SONY SLT-A77V 24MP BODY</descricao>
+        <preco>770</preco>
+    </produto>
+    <produto>
+        <id>10886</id>
+        <descricao>CAMERA DIGITAL SONY SLT-A99V 24MP BODY</descricao>
+        <preco>1750</preco>
+    </produto>
+    <produto>
+        <id>68058</id>
+        <descricao>CAMERA INTOVA EDGE X PRETO</descricao>
+        <preco>224</preco>
+    </produto>
+    <produto>
+        <id>68047</id>
+        <descricao>CAMERA INTOVA NOVA HD PRETO</descricao>
+        <preco>149</preco>
+    </produto>
+    <produto>
+        <id>68036</id>
+        <descricao>CAMERA INTOVA SPORT 10K PRETO</descricao>
+        <preco>76</preco>
+    </produto>
+    <produto>
+        <id>57720</id>
+        <descricao>CAMERA IP EDIMAX IC-3010WG 54MBPS WIRELESS</descricao>
+        <preco>58</preco>
+    </produto>
+    <produto>
+        <id>57730</id>
+        <descricao>CAMERA IP LOG.961-000299 OUTDOOR WIRELESS</descricao>
+        <preco>297</preco>
+    </produto>
+    <produto>
+        <id>57741</id>
+        <descricao>CAMERA IP LOG.961-000301 INDOOR SECURITY WIRELESS</descricao>
+        <preco>158</preco>
+    </produto>
+    <produto>
+        <id>52804</id>
+        <descricao>CAMERA IP VOYAGER VR-49HD BRANCO</descricao>
+        <preco>109</preco>
+    </produto>
+    <produto>
+        <id>52837</id>
+        <descricao>CAMERA IP VOYAGER VR-800</descricao>
+        <preco>84</preco>
+    </produto>
+    <produto>
+        <id>52859</id>
+        <descricao>CAMERA IP VOYAGER VR-801</descricao>
+        <preco>84</preco>
+    </produto>
+    <produto>
+        <id>52780</id>
+        <descricao>CAMERA IP VOYAGER VR-HD550 BRANCO</descricao>
+        <preco>85</preco>
+    </produto>
+    <produto>
+        <id>52892</id>
+        <descricao>CAMERA IP VOYAGER VR-IPC5H29-N</descricao>
+        <preco>100</preco>
+    </produto>
+    <produto>
+        <id>57630</id>
+        <descricao>CAMERA LENTE PERFECT VIEW FINDER 3.0X</descricao>
+        <preco>75</preco>
+    </produto>
+    <produto>
+        <id>122565</id>
+        <descricao>CAMERA MOTORSPORTS LIQUID IMAGE IMPACT OFF ROAD RB</descricao>
+        <preco>161</preco>
+    </produto>
+    <produto>
+        <id>122554</id>
+        <descricao>CAMERA MOTORSPORTS LIQUID IMAGE IMPACT OFF ROAD RB</descricao>
+        <preco>161</preco>
+    </produto>
+    <produto>
+        <id>92582</id>
+        <descricao>CAMERA POLAROID CUBE HD ACS BICYCLE MOUNT</descricao>
+        <preco>27.5</preco>
+    </produto>
+    <produto>
+        <id>92617</id>
+        <descricao>CAMERA POLAROID CUBE HD ACS HELMET MOUNT</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>92639</id>
+        <descricao>CAMERA POLAROID CUBE HD ACS SUCTION CUP MOUNT</descricao>
+        <preco>51</preco>
+    </produto>
+    <produto>
+        <id>92640</id>
+        <descricao>CAMERA POLAROID CUBE HD ACS TRIPE MOUNT ADAPTER</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>92672</id>
+        <descricao>CAMERA POLAROID CUBE HD DIGITAL CAMERA VERMELHA</descricao>
+        <preco>99</preco>
+    </produto>
+    <produto>
+        <id>188656</id>
+        <descricao>CAMERA RICOH THETA M15 P/PC-SMARTPHONE BRANCA (X)</descricao>
+        <preco>300</preco>
+    </produto>
+    <produto>
+        <id>57763</id>
+        <descricao>CAMERA WEBCAM JEWAY NEGRO</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>122576</id>
+        <descricao>CAMERA WEBCAM JEWAY USB PRETO RB</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>51342</id>
+        <descricao>CAMERA WEBCAM SATELLITE WB-538 PRETO</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>28581</id>
+        <descricao>CAMERA WEBCAM SATELLITE WB-C12 PRETO</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>30833</id>
+        <descricao>CAMERA WEBCAM SATELLITE WB-C26 PRETO</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>28638</id>
+        <descricao>CAMERA WEBCAM SATELLITE WB-C30 PRETO</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>51107</id>
+        <descricao>CAMERA XTREME FULL HD EGO LI-727 BRANC</descricao>
+        <preco>138</preco>
+    </produto>
+    <produto>
+        <id>51130</id>
+        <descricao>CAMERA XTREME FULL HD EGO LI-727 ROXO</descricao>
+        <preco>138</preco>
+    </produto>
+    <produto>
+        <id>51162</id>
+        <descricao>CAMERA XTREME FULL HD EGO LI-727 VERMELO</descricao>
+        <preco>138</preco>
+    </produto>
+    <produto>
+        <id>119920</id>
+        <descricao>CANETA TAB./CELULAR ARGOM ARG-AC-0211R VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>122587</id>
+        <descricao>CANETA TAB./CELULAR GENIUS 100L TOUCH PEN LILAS RB</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>119942</id>
+        <descricao>CANETA TAB./CELULAR GENIUS 100L TOUCH PEN PRETO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>119986</id>
+        <descricao>CANETA TAB./CELULAR GENIUS 200D TOUCH PEN AZUL</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>122598</id>
+        <descricao>CANETA TAB./CELULAR NOKIA STYLUS SU-35 RB</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>182303</id>
+        <descricao>CAPA P/ JOYSTICK XBOX 360 THE AVENGER</descricao>
+        <preco>1</preco>
+    </produto>
+    <produto>
+        <id>57640</id>
+        <descricao>CAPA P/CAMERA IXUS BLANCO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>28649</id>
+        <descricao>CAPA P/CAMERA SATELLITE A-KP13 GRAY (82974)</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>28650</id>
+        <descricao>CAPA P/CAMERA SATELLITE A-KP13 PRETO (82974)</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>129214</id>
+        <descricao>CAPA P/CAMERA TARGUS TG-SC5425 PRETO</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>152748</id>
+        <descricao>CAPA P/CEL. GALAXY A3 THE NEW CASE VARIAS CORES</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>152759</id>
+        <descricao>CAPA P/CEL. GALAXY A5 THE NEW CASE ROSA</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>153020</id>
+        <descricao>CAPA P/CEL. GALAXY A7 SILICONE</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>152760</id>
+        <descricao>CAPA P/CEL. GALAXY A7 THE NEW CASE PRETO</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>58685</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 2 VIVA VERMELHO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>123858</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 3 BESTCASE AZUL</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>123803</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 3 BESTCASE BRANCO</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>123814</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 3 BESTCASE DOURADO</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>123836</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 3 BESTCASE ROSA</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>123891</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 4 BESTCASE AZUL</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>123926</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 4 BESTCASE DOURADO</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>123880</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 4 BESTCASE MARRON</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>79396</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 4 CUSTOMIZE VARIAS CORES</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>79352</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE 4 US LTE VARIAS CORES</descricao>
+        <preco>3.5</preco>
+    </produto>
+    <produto>
+        <id>124030</id>
+        <descricao>CAPA P/CEL. GALAXY NOTE EDGE BESTCASE ROSA</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>153031</id>
+        <descricao>CAPA P/CEL. GALAXY S4 9500 SILICONE</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>124029</id>
+        <descricao>CAPA P/CEL. GALAXY S4 BESTCASE DOURADO</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>124007</id>
+        <descricao>CAPA P/CEL. GALAXY S4 BESTCASE MARRON</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>77159</id>
+        <descricao>CAPA P/CEL. GALAXY S4 BMW M3 PRETO</descricao>
+        <preco>16.5</preco>
+    </produto>
+    <produto>
+        <id>78329</id>
+        <descricao>CAPA P/CEL. GALAXY S4 FERRARI VERMELHO</descricao>
+        <preco>15.5</preco>
+    </produto>
+    <produto>
+        <id>77070</id>
+        <descricao>CAPA P/CEL. GALAXY S4 FERRARI VERMELHO</descricao>
+        <preco>16.5</preco>
+    </produto>
+    <produto>
+        <id>93337</id>
+        <descricao>CAPA P/CEL. GALAXY S4 KEEP CALM AND GO SHOPPING</descricao>
+        <preco>1</preco>
+    </produto>
+    <produto>
+        <id>153356</id>
+        <descricao>CAPA P/CEL. GALAXY S4 KENZO VARIAS CORES</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>77080</id>
+        <descricao>CAPA P/CEL. GALAXY S4 MINI FERRARI PRETO</descricao>
+        <preco>16.5</preco>
+    </produto>
+    <produto>
+        <id>58710</id>
+        <descricao>CAPA P/CEL. GALAXY S4 WD LIPSTICK 2310LIP61 HEART</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>58720</id>
+        <descricao>CAPA P/CEL. GALAXY S4 WD TRINITY 2310TRI41 ROSA</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>153064</id>
+        <descricao>CAPA P/CEL. GALAXY S5 9600 SILICONE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>123948</id>
+        <descricao>CAPA P/CEL. GALAXY S5 BESTCASE MARRON</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>123970</id>
+        <descricao>CAPA P/CEL. GALAXY S5 BESTCASE ROSA</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>152882</id>
+        <descricao>CAPA P/CEL. GALAXY S5 FASHION VARIAS CORES</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>152906</id>
+        <descricao>CAPA P/CEL. GALAXY S5 FRAGANCIAS VARIAS</descricao>
+        <preco>9.5</preco>
+    </produto>
+    <produto>
+        <id>153176</id>
+        <descricao>CAPA P/CEL. GALAXY S5 MINI LIBRO VARIAS CORES</descricao>
+        <preco>5.5</preco>
+    </produto>
+    <produto>
+        <id>93315</id>
+        <descricao>CAPA P/CEL. GALAXY S5 MINI ORIGINAL SVIEW GOLD</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>93304</id>
+        <descricao>CAPA P/CEL. GALAXY S5 MINI ORIGINIAL SVIEW BRANCO</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>128527</id>
+        <descricao>CAPA P/CEL. GALAXY S5 WHITE DIAMONDS CRISTAL</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>128505</id>
+        <descricao>CAPA P/CEL. GALAXY S5 WHITE DIAMONDS DOURADO</descricao>
+        <preco>9.5</preco>
+    </produto>
+    <produto>
+        <id>128123</id>
+        <descricao>CAPA P/CEL. GALAXY S5 WHITE DIAMONDS PRETO</descricao>
+        <preco>7.5</preco>
+    </produto>
+    <produto>
+        <id>128134</id>
+        <descricao>CAPA P/CEL. GALAXY S5 WHITE DIAMONDS TRANSPARENTE</descricao>
+        <preco>7.5</preco>
+    </produto>
+    <produto>
+        <id>153187</id>
+        <descricao>CAPA P/CEL. GALAXY S6 EDGE LIBRO VARIAS CORES</descricao>
+        <preco>5.5</preco>
+    </produto>
+    <produto>
+        <id>152580</id>
+        <descricao>CAPA P/CEL. GALAXY S6 EDGE SILICONE</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>152928</id>
+        <descricao>CAPA P/CEL. GALAXY S6 EDGE VARIAS CORES</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>153198</id>
+        <descricao>CAPA P/CEL. GALAXY S6 LIBRO VARIAS CORES</descricao>
+        <preco>5.5</preco>
+    </produto>
+    <produto>
+        <id>195318</id>
+        <descricao>CAPA P/CEL. GALAXY S7 4LIFE BUMPER PRETO</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>195340</id>
+        <descricao>CAPA P/CEL. GALAXY S7 4LIFE BUMPER TRANSPARENTE</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191437</id>
+        <descricao>CAPA P/CEL. GALAXY S7 BICICLETA S7-01-64</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191404</id>
+        <descricao>CAPA P/CEL. GALAXY S7 BLACKJACK S7-01-69</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191481</id>
+        <descricao>CAPA P/CEL. GALAXY S7 CAREFUL DRIVING S7-01-78</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191593</id>
+        <descricao>CAPA P/CEL. GALAXY S7 COBRA S7-01-42</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>195330</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE 4LIFE BUMPER PRETO</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>195329</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE 4LIFE TRANSPARENTE FLF-</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191571</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE BICICLETA S7E-01-64</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191661</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE BLACKJACK S7E-01-69</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191650</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE CAREFUL DRIVING S7E-01-</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191683</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE COBRA S7E-01-42</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191628</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE JOGO POKER S7E-01-68</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191694</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE MILK S7E-01-50</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191639</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE PECAS DE CARRO S7E-01-7</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191672</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE ROCK S7E-01-41</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191460</id>
+        <descricao>CAPA P/CEL. GALAXY S7 EDGE URSO S7E-01-37</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191527</id>
+        <descricao>CAPA P/CEL. GALAXY S7 JOGO POKER S7-01-68</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191549</id>
+        <descricao>CAPA P/CEL. GALAXY S7 MILK S7-01-50</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191459</id>
+        <descricao>CAPA P/CEL. GALAXY S7 PECAS DE CARRO S7-01-77</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191560</id>
+        <descricao>CAPA P/CEL. GALAXY S7 ROCK S7-01-41</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>191415</id>
+        <descricao>CAPA P/CEL. GALAXY S7 URSO S7-01-37</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>153345</id>
+        <descricao>CAPA P/CEL. GENERICA MICHAEL KORS</descricao>
+        <preco>11.5</preco>
+    </produto>
+    <produto>
+        <id>155672</id>
+        <descricao>CAPA P/CEL. GENERICA VARIOS MODELOS</descricao>
+        <preco>3.29999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>155694</id>
+        <descricao>CAPA P/CEL. GENERICA VARIOS MODELOS</descricao>
+        <preco>2.29999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>155707</id>
+        <descricao>CAPA P/CEL. GENERICA VARIOS MODELOS</descricao>
+        <preco>2.29999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>152994</id>
+        <descricao>CAPA P/CEL. GENERICA VARIOS MODELOS</descricao>
+        <preco>3.29999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>152983</id>
+        <descricao>CAPA P/CEL. GENERICA VARIOS MODELOS</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>170792</id>
+        <descricao>CAPA P/CEL. SKY 6.0Q BRANCO</descricao>
+        <preco>6.5</preco>
+    </produto>
+    <produto>
+        <id>170781</id>
+        <descricao>CAPA P/CEL. SKY 6.0Q PRETO</descricao>
+        <preco>6.5</preco>
+    </produto>
+    <produto>
+        <id>85898</id>
+        <descricao>CAPA P/CEL. SONY Z3 COMPACT MUBIT BRANCO</descricao>
+        <preco>6.5</preco>
+    </produto>
+    <produto>
+        <id>153200</id>
+        <descricao>CAPA P/CEL. SONY Z3 D6653 LIBRO VARIAS CORES</descricao>
+        <preco>4.4000000000000003552713678800500929355621337890625</preco>
+    </produto>
+    <produto>
+        <id>184620</id>
+        <descricao>CAPA P/IPAD 1/2/3 CASE PRETO/ VERDE (X)</descricao>
+        <preco>9.5</preco>
+    </produto>
+    <produto>
+        <id>59104</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 AZUL ZEBRA</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>59126</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 BUILT E-LEPAD-CGD PRETO/BRANCO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>47011</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 CATERPILLAR URBAN</descricao>
+        <preco>50</preco>
+    </produto>
+    <produto>
+        <id>14139</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 COURO MARRON</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>59036</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 ELEGANCE AMARELA</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>59058</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 ELEGANCE BRANCA</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>14150</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 GENERICA</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>59091</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 LARANJA LOGO LETRA "P"</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>59170</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 QUADRICULADO LILAS</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>59249</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER AMARELA</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>59473</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER BANDEIRA BRASIL</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>59484</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER BANDEIRA EUA</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>59205</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER BEGE MD302ZM/A</descricao>
+        <preco>55</preco>
+    </produto>
+    <produto>
+        <id>59495</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER ESCUDO BRASIL</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>59508</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER HELLO KITTY</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>59250</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER OZAKI MARRON</descricao>
+        <preco>25.5</preco>
+    </produto>
+    <produto>
+        <id>59271</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER OZAKI VERMELHA</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>59238</id>
+        <descricao>CAPA P/IPAD 1/2/3/4 SMART COVER ROSA MD308ZM/A</descricao>
+        <preco>55</preco>
+    </produto>
+    <produto>
+        <id>79150</id>
+        <descricao>CAPA P/IPAD MINI 1/2/3 KALAIDENG OUMI PINK SERIES</descricao>
+        <preco>9.5</preco>
+    </produto>
+    <produto>
+        <id>96531</id>
+        <descricao>CAPA P/IPAD MINI 1/2/3/4 SMART COVER AMARELA MF063</descricao>
+        <preco>26.5</preco>
+    </produto>
+    <produto>
+        <id>96553</id>
+        <descricao>CAPA P/IPAD MINI 1/2/3/4 SMART COVER VERDE MD969ZM</descricao>
+        <preco>26.5</preco>
+    </produto>
+    <produto>
+        <id>96564</id>
+        <descricao>CAPA P/IPAD MINI 1/2/3/4 SMART COVER VERDE MF062ZA</descricao>
+        <preco>26.5</preco>
+    </produto>
+    <produto>
+        <id>188880</id>
+        <descricao>CAPA P/IPAD MINI 4 SMART COVER MKLV2ZM/A GRAY</descricao>
+        <preco>45</preco>
+    </produto>
+    <produto>
+        <id>59631</id>
+        <descricao>CAPA P/IPHONE 4/4S ANGRY BIRDS P403 AMARELO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>59642</id>
+        <descricao>CAPA P/IPHONE 4/4S ANGRY BIRDS P403 BRANCO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>59653</id>
+        <descricao>CAPA P/IPHONE 4/4S ANGRY BIRDS P403 VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>59686</id>
+        <descricao>CAPA P/IPHONE 4/4S HEX HX1050 CELESTE</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>59697</id>
+        <descricao>CAPA P/IPHONE 4/4S HEX HX1050 MARROM</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>59585</id>
+        <descricao>CAPA P/IPHONE 4/4S ILUV FLIP ICC734PNK ROSA</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>59596</id>
+        <descricao>CAPA P/IPHONE 4/4S ILUV FUSION ICC728GBL VERDE/AZL</descricao>
+        <preco>4.5</preco>
+    </produto>
+    <produto>
+        <id>59609</id>
+        <descricao>CAPA P/IPHONE 4/4S ILUV FUSION ICC728PYL AMARELO/A</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>59710</id>
+        <descricao>CAPA P/IPHONE 4/4S MACALLY FLEXIVEL ROSA</descricao>
+        <preco>1</preco>
+    </produto>
+    <produto>
+        <id>59743</id>
+        <descricao>CAPA P/IPHONE 5/5S D PROTECT MARROM</descricao>
+        <preco>3.5</preco>
+    </produto>
+    <produto>
+        <id>59754</id>
+        <descricao>CAPA P/IPHONE 5/5S D PROTECT VERMELHO</descricao>
+        <preco>3.5</preco>
+    </produto>
+    <produto>
+        <id>159420</id>
+        <descricao>CAPA P/IPHONE 5/5S EUROPOWER SK101 AZUL</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>159430</id>
+        <descricao>CAPA P/IPHONE 5/5S EUROPOWER SK101 BRANCO</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>159419</id>
+        <descricao>CAPA P/IPHONE 5/5S EUROPOWER SK101 PRETO</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>77148</id>
+        <descricao>CAPA P/IPHONE 5/5S FERRARI FEF12POSRE VERMELHO</descricao>
+        <preco>17.5</preco>
+    </produto>
+    <produto>
+        <id>78240</id>
+        <descricao>CAPA P/IPHONE 5/5S FERRARI FEFOCFLBKP5RE VERMELHO</descricao>
+        <preco>15.5</preco>
+    </produto>
+    <produto>
+        <id>78294</id>
+        <descricao>CAPA P/IPHONE 5/5S FERRARI FEFOCFLP5RE VERMELHO</descricao>
+        <preco>15.5</preco>
+    </produto>
+    <produto>
+        <id>59765</id>
+        <descricao>CAPA P/IPHONE 5/5S GRIFFIN VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>59776</id>
+        <descricao>CAPA P/IPHONE 5/5S REGATTA ICA7H321 AZUL (G)</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>59787</id>
+        <descricao>CAPA P/IPHONE 5/5S VIVA LILAS</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>177070</id>
+        <descricao>CAPA P/IPHONE 6 CASE EIMOLIFE BAMBOO WOOD</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>177485</id>
+        <descricao>CAPA P/IPHONE 6/6S 4LIFE CRYSTAL CLEAR</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>176104</id>
+        <descricao>CAPA P/IPHONE 6/6S 4LIFE PC HARD CASE ROSA</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>168420</id>
+        <descricao>CAPA P/IPHONE 6/6S AKNA CASE</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>104140</id>
+        <descricao>CAPA P/IPHONE 6/6S BRANCA DE NEVE</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>78889</id>
+        <descricao>CAPA P/IPHONE 6/6S BUMPER GOLD/BLUE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>78878</id>
+        <descricao>CAPA P/IPHONE 6/6S BUMPER GOLD/PINK</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>78867</id>
+        <descricao>CAPA P/IPHONE 6/6S BUMPER GOLD/SILVER</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>50420</id>
+        <descricao>CAPA P/IPHONE 6/6S BUMPER VARIAS CORES</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>47415</id>
+        <descricao>CAPA P/IPHONE 6/6S BUMPER VARIAS CORES</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>191303</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA ARCO IRIS</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191492</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA BANK C-IPH-6-01</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191582</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA BEAR C-IPH-6-01</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191314</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA BLACK JACK</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191279</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA C-IPH-6-01-105</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191426</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA C-IPH-6-01-64</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191617</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA C-IPH-6-01-72</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191448</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA C-IPH-6-01-77</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191268</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA CAREFUL DRIVING</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191606</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA DONUT C-IPH-6-0</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191538</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA GATO C-IPH-6-01</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191516</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA GATO C-IPH-6-01</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191470</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA GATO C-IPH-6-01</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191370</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA LOVELY C-IPH-6-</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191290</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA LOVELY C-IPH-6-</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191325</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA LOVELY C-IPH-6-</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191358</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA LUCKY 777 POKER</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191391</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA MILK C-IPH-6-01</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191369</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA MUSIC C-IPH-6-0</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191336</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA PIZZA C-IPH-6-0</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191347</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA ROCK AND ROLL</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191380</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA SNAKE C-IPH-6-0</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191280</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA SUNNY C-IPH-6-0</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191505</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA SWEET C-IPH-6-0</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>191550</id>
+        <descricao>CAPA P/IPHONE 6/6S C/PELICULA USA C-IPH-6-01</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>172414</id>
+        <descricao>CAPA P/IPHONE 6/6S CASEOLOGY BRANCO/DOURADO</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>166709</id>
+        <descricao>CAPA P/IPHONE 6/6S CASEOLOGY PRETO/DOURADO</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>78935</id>
+        <descricao>CAPA P/IPHONE 6/6S CREATIVE CASE PRETA COM VERDE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79374</id>
+        <descricao>CAPA P/IPHONE 6/6S CREATIVE PRETA/BORDAS CORES VAR</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>97071</id>
+        <descricao>CAPA P/IPHONE 6/6S E-AGE AMARELA C/ LACO ROSA</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>97082</id>
+        <descricao>CAPA P/IPHONE 6/6S E-AGE AZUL C/ LACO ROSA</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>97106</id>
+        <descricao>CAPA P/IPHONE 6/6S E-AGE ROSA C/ LACO VERDE</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>97117</id>
+        <descricao>CAPA P/IPHONE 6/6S E-AGE ROSA CLARO C/ LACO LILAS</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>97128</id>
+        <descricao>CAPA P/IPHONE 6/6S E-AGE VERDE C/ LACO ROSA</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>159272</id>
+        <descricao>CAPA P/IPHONE 6/6S ELAGO DARK LOGO PRETO</descricao>
+        <preco>18</preco>
+    </produto>
+    <produto>
+        <id>176945</id>
+        <descricao>CAPA P/IPHONE 6/6S ELAGO ES6SM-SGRGD-EC ROSE</descricao>
+        <preco>18</preco>
+    </produto>
+    <produto>
+        <id>159330</id>
+        <descricao>CAPA P/IPHONE 6/6S ELAGO LOGO BRANCO</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>159294</id>
+        <descricao>CAPA P/IPHONE 6/6S ELAGO LOGO FEEL BLACK</descricao>
+        <preco>19</preco>
+    </produto>
+    <produto>
+        <id>159318</id>
+        <descricao>CAPA P/IPHONE 6/6S ELAGO SLIM FIT 2 BRANCO</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>97319</id>
+        <descricao>CAPA P/IPHONE 6/6S ELAGO SLIM FIT BRANCO C/ PELICU</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>97330</id>
+        <descricao>CAPA P/IPHONE 6/6S ELONBO PRETA/ONCINHA C/ LACO RO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>153255</id>
+        <descricao>CAPA P/IPHONE 6/6S ENKI SERIES</descricao>
+        <preco>11.5</preco>
+    </produto>
+    <produto>
+        <id>97352</id>
+        <descricao>CAPA P/IPHONE 6/6S ESR ZIG ZAG ROSA</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>50409</id>
+        <descricao>CAPA P/IPHONE 6/6S ESTAMPADA VARIAS CORES</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>159553</id>
+        <descricao>CAPA P/IPHONE 6/6S EUROPOWER 101 BRANCO</descricao>
+        <preco>13.5</preco>
+    </produto>
+    <produto>
+        <id>78890</id>
+        <descricao>CAPA P/IPHONE 6/6S FASHION BLACK</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>78902</id>
+        <descricao>CAPA P/IPHONE 6/6S FASHION BLACK/SILVER</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>78913</id>
+        <descricao>CAPA P/IPHONE 6/6S FASHION BLACK/WHITE</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>97409</id>
+        <descricao>CAPA P/IPHONE 6/6S IORANGE BRANCA/VERMELHA</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>97453</id>
+        <descricao>CAPA P/IPHONE 6/6S LIFEPROOF ROSA</descricao>
+        <preco>97</preco>
+    </produto>
+    <produto>
+        <id>74066</id>
+        <descricao>CAPA P/IPHONE 6/6S MEILAITE CASE COVER AZUL</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>74099</id>
+        <descricao>CAPA P/IPHONE 6/6S MEILAITE CASE COVER LILAS</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>74088</id>
+        <descricao>CAPA P/IPHONE 6/6S MEILAITE CASE COVER ROSA</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>74077</id>
+        <descricao>CAPA P/IPHONE 6/6S MEILAITE FLIP COVER VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>129673</id>
+        <descricao>CAPA P/IPHONE 6/6S MINI COOPER FLIP COURO PRETA CG</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>129662</id>
+        <descricao>CAPA P/IPHONE 6/6S MINI COOPER FLIP COURO PRETA/AZ</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>129640</id>
+        <descricao>CAPA P/IPHONE 6/6S MINI COOPER LARANJA ACRILICO</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>129629</id>
+        <descricao>CAPA P/IPHONE 6/6S MINI COOPER PRETO ACRILICO</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>129630</id>
+        <descricao>CAPA P/IPHONE 6/6S MINI COOPER VERDE ACRILICO</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>188904</id>
+        <descricao>CAPA P/IPHONE 6/6S ORIGINAL APPLE COURO AZUL MARIN</descricao>
+        <preco>48</preco>
+    </produto>
+    <produto>
+        <id>169914</id>
+        <descricao>CAPA P/IPHONE 6/6S ORIGINAL APPLE SILICONE AZUL CL</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>169925</id>
+        <descricao>CAPA P/IPHONE 6/6S ORIGINAL APPLE SILICONE CREME</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>169903</id>
+        <descricao>CAPA P/IPHONE 6/6S ORIGINAL APPLE SILICONE VERMELH</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>74134</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS 5.5 SILICONE TRANSPARENTE</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>78990</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS BUMPER GOLD</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>78979</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS BUMPER GOLD/BLACK</descricao>
+        <preco>9.5</preco>
+    </produto>
+    <produto>
+        <id>79005</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS BUMPER GOLD/BLUE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79016</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS BUMPER GOLD/PINK</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>78980</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS BUMPER GOLD/SILVER</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>74101</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS CASE COVER AZUL</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>74112</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS CASE COVER LILAS</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>79385</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS CREATIVE CASE VARIAS CORES</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>78968</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS CREATIVE VARIAS CORES</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>97879</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS ELAGO OUTFIT BRANCO/DOURAD</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>178082</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS PRODIGEE SLEEK SLIDER GOLD</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>178071</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS PRODIGEE SLEEK SLIDER GRAY</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>177980</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS PRODIGEE SLIDER AZUL/CINZA</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>177979</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS PRODIGEE SLIDER GOLD</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>177968</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS PRODIGEE SLIDER GRAY</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>128044</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS RINGKE SLIM LOGO PRETO</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>79319</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS SELFIE 5.5 BLUETOOTH AZUL</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79308</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS SELFIE 5.5 BLUETOOTH BRANC</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79320</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS SELFIE 5.5 BLUETOOTH PRETO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79330</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS SELFIE 5.5 BLUETOOTH ROSA</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79341</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS SELFIE 5.5 BLUETOOTH VERDE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>85327</id>
+        <descricao>CAPA P/IPHONE 6/6S PLUS SILICONE TRANSPARENTE</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>177878</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE ACCENT AGUA/GOLD</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>177889</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE ACCENT PRETO</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>177890</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE ACCENT PRETO/GOLD</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>177902</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE ACCENT ROSE/GOLD</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>177924</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE RICK SLIDER AZUL/CINZA</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>177935</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE RICK SLIDER BRANCO/CIN</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>177913</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE RICK SLIDER GOLD/CINZA</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>178027</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE SLEEK SLIDER GOLD</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>178060</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE SNEAKER BRANCO/VERDE</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>178049</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE SNEAKER LARANJA/BRANCO</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>178050</id>
+        <descricao>CAPA P/IPHONE 6/6S PRODIGEE SNEAKER VERDE/LILAIS</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>176080</id>
+        <descricao>CAPA P/IPHONE 6/6S RINGKE SLIM AMARELO</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>127985</id>
+        <descricao>CAPA P/IPHONE 6/6S RINGKE SLIM LOGO BRANCO</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>128099</id>
+        <descricao>CAPA P/IPHONE 6/6S RINGKE SLIM ROSA</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>97587</id>
+        <descricao>CAPA P/IPHONE 6/6S SEIDIO SURFACE AZUL</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>97598</id>
+        <descricao>CAPA P/IPHONE 6/6S SEIDIO SURFACE C/ STAND AZUL</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>97600</id>
+        <descricao>CAPA P/IPHONE 6/6S SEIDIO SURFACE C/ STAND LILAS</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>79194</id>
+        <descricao>CAPA P/IPHONE 6/6S SELFIE 4.7 BLUETOOTH AZUL</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79183</id>
+        <descricao>CAPA P/IPHONE 6/6S SELFIE 4.7 BLUETOOTH BRANCO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79207</id>
+        <descricao>CAPA P/IPHONE 6/6S SELFIE 4.7 BLUETOOTH PRETO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79218</id>
+        <descricao>CAPA P/IPHONE 6/6S SELFIE 4.7 BLUETOOTH ROSA</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>79229</id>
+        <descricao>CAPA P/IPHONE 6/6S SELFIE 4.7 BLUETOOTH VERDE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>50363</id>
+        <descricao>CAPA P/IPHONE 6/6S SILICONE LISA VARIAS TRANSP</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>47426</id>
+        <descricao>CAPA P/IPHONE 6/6S SILICONE VARIAS CORES</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>166595</id>
+        <descricao>CAPA P/IPHONE 6/6S SPECK CANDYSHELL BRANCO</descricao>
+        <preco>30</preco>
+    </produto>
+    <produto>
+        <id>166620</id>
+        <descricao>CAPA P/IPHONE 6/6S SPECK CANDYSHELL INKED FLOREADO</descricao>
+        <preco>52</preco>
+    </produto>
+    <produto>
+        <id>166584</id>
+        <descricao>CAPA P/IPHONE 6/6S SPECK CANDYSHELL PRETO</descricao>
+        <preco>38</preco>
+    </produto>
+    <produto>
+        <id>166608</id>
+        <descricao>CAPA P/IPHONE 6/6S SPECK CANDYSHELL ROSA</descricao>
+        <preco>30</preco>
+    </produto>
+    <produto>
+        <id>166630</id>
+        <descricao>CAPA P/IPHONE 6/6S SPECK CANDYSHELL ROXO</descricao>
+        <preco>30</preco>
+    </produto>
+    <produto>
+        <id>159228</id>
+        <descricao>CAPA P/IPHONE 6/6S SPIGEN METALIZED PRETO/PRATA</descricao>
+        <preco>31</preco>
+    </produto>
+    <produto>
+        <id>159182</id>
+        <descricao>CAPA P/IPHONE 6/6S SPIGEN THIN FIT BRANCO</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>166573</id>
+        <descricao>CAPA P/IPHONE 6/6S TRIBE C/PELICULA PROTECTOR PRET</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>47380</id>
+        <descricao>CAPA P/IPHONE 6/6S WATER PROOF CASE AZUL</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>47358</id>
+        <descricao>CAPA P/IPHONE 6/6S WATER PROOF CASE ROSA</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>50543</id>
+        <descricao>CAPA P/IPHONE 6/6S WATER PROOF VARIAS CORES</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>128459</id>
+        <descricao>CAPA P/IPHONE 6/6S WHITE DIAMONDS AZUL</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>128582</id>
+        <descricao>CAPA P/IPHONE 6/6S WHITE DIAMONDS AZUL</descricao>
+        <preco>20.5</preco>
+    </produto>
+    <produto>
+        <id>128639</id>
+        <descricao>CAPA P/IPHONE 6/6S WHITE DIAMONDS CRISTAL AZUL</descricao>
+        <preco>10.5</preco>
+    </produto>
+    <produto>
+        <id>128593</id>
+        <descricao>CAPA P/IPHONE 6/6S WHITE DIAMONDS GRAND PURSE ROSA</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>128571</id>
+        <descricao>CAPA P/IPHONE 6/6S WHITE DIAMONDS ROSA</descricao>
+        <preco>21.5</preco>
+    </produto>
+    <produto>
+        <id>113183</id>
+        <descricao>CAPA P/IPHONE 6/6S WHITE DIAMONDS THE ROCK PRETO</descricao>
+        <preco>30</preco>
+    </produto>
+    <produto>
+        <id>59844</id>
+        <descricao>CAPA P/IPOD BELKIN SHIELD MICRA BRANCO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>59855</id>
+        <descricao>CAPA P/IPOD SCOSCHE GLOSSEE IT4S3</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>51274</id>
+        <descricao>CAPA P/JOYSTICK SILICONE PS2/PS3</descricao>
+        <preco>2</preco>
+    </produto>
+    <produto>
+        <id>54222</id>
+        <descricao>CAPA P/NB  7" AMERICAN CASE A-CASE PRETO</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>29470</id>
+        <descricao>CAPA P/NB  8" SATE. A-KP12 PRETO/CINZA</descricao>
+        <preco>3.5</preco>
+    </produto>
+    <produto>
+        <id>62412</id>
+        <descricao>CAPA P/NB 10" ALTEGO 36002 CINZA/TRANSPARENTE</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>54244</id>
+        <descricao>CAPA P/NB 10" AMERICAN CASE A-CASE PRETO</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>62423</id>
+        <descricao>CAPA P/NB 10" AMERICAN CASE NB-10 PRATA</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>62434</id>
+        <descricao>CAPA P/NB 10" C/AL€A NPS FUNDO DRAGAO</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>14140</id>
+        <descricao>CAPA P/NB 10" GENERICA</descricao>
+        <preco>4.95000000000000017763568394002504646778106689453125</preco>
+    </produto>
+    <produto>
+        <id>62489</id>
+        <descricao>CAPA P/NB 10" HI NS-022S AMARELO</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>62490</id>
+        <descricao>CAPA P/NB 10" HP VX403AA PRETO</descricao>
+        <preco>12</preco>
+    </produto>
+    <produto>
+        <id>62445</id>
+        <descricao>CAPA P/NB 10" MIRACLE NS-021 BRANCO/VERDE</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>62467</id>
+        <descricao>CAPA P/NB 10" NPS FUNDO HOMEM COM CHARUTO</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>89803</id>
+        <descricao>CAPA P/NB 10" SATE. A-KP12 PRETO/CINZA</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>62478</id>
+        <descricao>CAPA P/NB 10" SIMPLES PRETO</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>32128</id>
+        <descricao>CAPA P/NB 10" TARGUS TSS13502US AMARELO</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>62502</id>
+        <descricao>CAPA P/NB 13" C/AL€A NPS FUNDO BOLINHAS</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62513</id>
+        <descricao>CAPA P/NB 13" C/AL€A NPS FUNDO DRAGAO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62524</id>
+        <descricao>CAPA P/NB 13" C/AL€A NPS FUNDO REGGAE</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62535</id>
+        <descricao>CAPA P/NB 13" C/AL€A NPS ROSA BORBOL</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62557</id>
+        <descricao>CAPA P/NB 13" CHENSON CG39855 Q LILAS</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62568</id>
+        <descricao>CAPA P/NB 13" CHENSON CG39855 R VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62579</id>
+        <descricao>CAPA P/NB 13" CHENSON CG39858 Q LILAS</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62580</id>
+        <descricao>CAPA P/NB 13" CHENSON CG39858 R VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62590</id>
+        <descricao>CAPA P/NB 13" LENOVO NPS 40245</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62625</id>
+        <descricao>CAPA P/NB 13" NPS 40285 LOVE</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62614</id>
+        <descricao>CAPA P/NB 13" NPS CORA€AO FUNDO VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62737</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO ABSTRATO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62748</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO AMARELO C/ABSTRATO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62759</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO AMARELO LISTRA COLOR</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62760</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO CIRCULOS COLORIDOS</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62770</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO CORA€AO COM ALIAN€A</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62781</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO CORA€AO FORMATO VERDE</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62792</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO CORA€AO VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62805</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO CORA€AO VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62816</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO LARANJA HELLO KITTY</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62827</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO LILAS LISTRAS COLORIDOS</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62849</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO PANTERA COR DE ROSA</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62850</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO PISTOLA</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62838</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO PRETO/VERMELHO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62860</id>
+        <descricao>CAPA P/NB 13" NPS FUNDO REGGAE CORA€AO</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62691</id>
+        <descricao>CAPA P/NB 13" NPS PERSONAGEM ANIME 40287</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62704</id>
+        <descricao>CAPA P/NB 13" NPS ROSA 40288</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62715</id>
+        <descricao>CAPA P/NB 13" NPS ROSAS BRANCO/AMARELO 40288</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>62726</id>
+        <descricao>CAPA P/NB 13" NPS SINGELO 40288</descricao>
+        <preco>5</preco>
+    </produto>
+    <produto>
+        <id>32082</id>
+        <descricao>CAPA P/NB 13" TARGUS TTS00104US MARROM/PRETO</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>63806</id>
+        <descricao>CAPA P/TABLET  5" VARIAS ESTAMPAS (G)</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>73177</id>
+        <descricao>CAPA P/TABLET  7" ARGOM ARG-BG-1092E CINZA</descricao>
+        <preco>14.5</preco>
+    </produto>
+    <produto>
+        <id>73199</id>
+        <descricao>CAPA P/TABLET  7" ARGOM ARG-SL-4207 CINZA</descricao>
+        <preco>14.5</preco>
+    </produto>
+    <produto>
+        <id>156730</id>
+        <descricao>CAPA P/TABLET 10" AMERICAN CASE TA010F PRETO</descricao>
+        <preco>6</preco>
+    </produto>
+    <produto>
+        <id>73201</id>
+        <descricao>CAPA P/TABLET 10" ARGOM ARG-SL-0010R PRETO</descricao>
+        <preco>14.5</preco>
+    </produto>
+    <produto>
+        <id>63771</id>
+        <descricao>CAPA P/TABLET 10" GRIFFIN P/GALAXY GZB-6 BRANCO</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>92044</id>
+        <descricao>CARREGADOR BELKIN MIXIT PAREDE BRANCO</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>92055</id>
+        <descricao>CARREGADOR BELKIN MIXIT PAREDE PRETO</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>194070</id>
+        <descricao>CARREGADOR KLIP DUAL USB KMA-210 2500MAH</descricao>
+        <preco>20</preco>
+    </produto>
+    <produto>
+        <id>184720</id>
+        <descricao>CARREGADOR KLIP XTREME DUAL USB P/CARRO KMA-105</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>184764</id>
+        <descricao>CARREGADOR KLIP XTREME POWER BANK KBH-135RD 2600MH</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>184775</id>
+        <descricao>CARREGADOR KLIP XTREME POWER BANK KBH-150 5000MHZ</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>184786</id>
+        <descricao>CARREGADOR KLIP XTREME POWER BANK KBH-170 7500MHZ</descricao>
+        <preco>25.5</preco>
+    </produto>
+    <produto>
+        <id>184797</id>
+        <descricao>CARREGADOR KLIP XTREME POWER BANK KBH-190 12000MHZ</descricao>
+        <preco>35.5</preco>
+    </produto>
+    <produto>
+        <id>49944</id>
+        <descricao>CARREGADOR P/CARRO ENTRADA 12V A-R08</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>63782</id>
+        <descricao>CARREGADOR P/CARRO P/SAMSUNG GALAXY TAB</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>71590</id>
+        <descricao>CARREGADOR P/CARRO USB 3.0 SENTEY LS-2240</descricao>
+        <preco>33</preco>
+    </produto>
+    <produto>
+        <id>176205</id>
+        <descricao>CARREGADOR P/PARED LDNIO USB 2.1A 2PORT A2268 BRAN</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>176216</id>
+        <descricao>CARREGADOR P/PARED LDNIO USB 2.1A 2PORT A2269 BRAN</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>176227</id>
+        <descricao>CARREGADOR P/PARED LDNIO USB 2.1A 2PORT A2271 BRAN</descricao>
+        <preco>11</preco>
+    </produto>
+    <produto>
+        <id>176249</id>
+        <descricao>CARREGADOR P/PARED LDNIO USB 2.1A 2PORT DL-AC56</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>176250</id>
+        <descricao>CARREGADOR P/PARED LDNIO USB 2.1A 2PORT DL-AC61 BR</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>176282</id>
+        <descricao>CARREGADOR P/PARED LDNIO USB 3.4A 3PORT DL-AC65 BR</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>176306</id>
+        <descricao>CARREGADOR P/PARED LDNIO USB 4.2A 4PORT DL-AC62 BR</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>141162</id>
+        <descricao>CARREGADOR SAMSUNG WIRELESS PAD MICRO USB CAPITAO</descricao>
+        <preco>60</preco>
+    </produto>
+    <produto>
+        <id>57785</id>
+        <descricao>CARREGADOR UNIVERSAL 8IN1 PSP IPHONE</descricao>
+        <preco>8.800000000000000710542735760100185871124267578125</preco>
+    </produto>
+    <produto>
+        <id>180973</id>
+        <descricao>CARREGADOR UNIVERSAL INFOCEC U70 SLIM VERMELHO</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>57796</id>
+        <descricao>CARREGADOR UNIVERSAL LI-ION IPOD/PSP USB</descricao>
+        <preco>21</preco>
+    </produto>
+    <produto>
+        <id>57810</id>
+        <descricao>CARREGADOR UNIVERSAL WALK/CAM/MOBILE/MP3/GAMEBOY</descricao>
+        <preco>35</preco>
+    </produto>
+    <produto>
+        <id>96240</id>
+        <descricao>CARTUCHO FILAMENTO P/ IMPRESSORA 3D CUBIFY PRETO</descricao>
+        <preco>56.5</preco>
+    </produto>
+    <produto>
+        <id>149440</id>
+        <descricao>CARTUCHO HP C4913A (82) YELLOW</descricao>
+        <preco>41</preco>
+    </produto>
+    <produto>
+        <id>66270</id>
+        <descricao>CARTUCHO HP C8728AL (28) COLOR</descricao>
+        <preco>23.5</preco>
+    </produto>
+    <produto>
+        <id>66291</id>
+        <descricao>CARTUCHO HP C9351CL (21XL) PRETO</descricao>
+        <preco>23.5</preco>
+    </produto>
+    <produto>
+        <id>57842</id>
+        <descricao>CARTUCHO HP C9352AL (22) COLOR</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>66337</id>
+        <descricao>CARTUCHO HP C9386AL (88) CIANO</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>146380</id>
+        <descricao>CARTUCHO HP CB316WL (564) PRETO</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>146347</id>
+        <descricao>CARTUCHO HP CB318WL (564) CYAN</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>146358</id>
+        <descricao>CARTUCHO HP CB319WL (564) MAGENTA</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>146370</id>
+        <descricao>CARTUCHO HP CB320WL (564) AMARELO</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>86609</id>
+        <descricao>CARTUCHO HP CB335WL (74) PRETO</descricao>
+        <preco>18</preco>
+    </produto>
+    <produto>
+        <id>37895</id>
+        <descricao>CARTUCHO HP CC640WL (60) PRETO</descricao>
+        <preco>16.5</preco>
+    </produto>
+    <produto>
+        <id>66482</id>
+        <descricao>CARTUCHO HP CC644WL (60XL) COLOR</descricao>
+        <preco>36</preco>
+    </produto>
+    <produto>
+        <id>66370</id>
+        <descricao>CARTUCHO HP CC653AL (901) PRETO</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>66360</id>
+        <descricao>CARTUCHO HP CC656AL (901) COLOR</descricao>
+        <preco>25.5</preco>
+    </produto>
+    <produto>
+        <id>66381</id>
+        <descricao>CARTUCHO HP CH561HL (122) PRETO</descricao>
+        <preco>10.5</preco>
+    </produto>
+    <produto>
+        <id>138810</id>
+        <descricao>CARTUCHO HP CH562HL (122) COLOR</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>37919</id>
+        <descricao>CARTUCHO HP CH562WN (61) 4.5ML COLOR</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>66405</id>
+        <descricao>CARTUCHO HP CH563HL (122XL) PRETO</descricao>
+        <preco>27.5</preco>
+    </produto>
+    <produto>
+        <id>66427</id>
+        <descricao>CARTUCHO HP CN054AL (933XL) CIANO</descricao>
+        <preco>17.5</preco>
+    </produto>
+    <produto>
+        <id>66438</id>
+        <descricao>CARTUCHO HP CN055AL (933XL) MAGNETA</descricao>
+        <preco>17.5</preco>
+    </produto>
+    <produto>
+        <id>66449</id>
+        <descricao>CARTUCHO HP CN056AL (933XL) AMARELO</descricao>
+        <preco>17.5</preco>
+    </produto>
+    <produto>
+        <id>66450</id>
+        <descricao>CARTUCHO HP CN057AL (932) PRETO</descricao>
+        <preco>18.5</preco>
+    </produto>
+    <produto>
+        <id>149383</id>
+        <descricao>CARTUCHO HP CN690AL (675) PRETO</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>149394</id>
+        <descricao>CARTUCHO HP CN691AL (675) COLOR</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>66056</id>
+        <descricao>CARTUCHO HP CZ104AL (662) COLOR</descricao>
+        <preco>9.5</preco>
+    </produto>
+    <produto>
+        <id>11090</id>
+        <descricao>CASE DISNEY INFINITY CASE 3 PACK (79262)</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>11103</id>
+        <descricao>CASE DISNEY INFINITY PLAY LAND STORE (79284)</descricao>
+        <preco>7</preco>
+    </produto>
+    <produto>
+        <id>102945</id>
+        <descricao>CASE SPEAKER SOUNDLINK COLOR BLUETOOTH</descricao>
+        <preco>21</preco>
+    </produto>
+    <produto>
+        <id>166720</id>
+        <descricao>CCTV CAIXA DE FUSIVEIS LV-DX15 15AMP</descricao>
+        <preco>15</preco>
+    </produto>
+    <produto>
+        <id>157876</id>
+        <descricao>CCTV CAIXA DE FUSIVEIS S-120-12 10AMP</descricao>
+        <preco>32</preco>
+    </produto>
+    <produto>
+        <id>57900</id>
+        <descricao>CCTV CAIXA DE FUSIVEIS S-120-12 10AMP</descricao>
+        <preco>31</preco>
+    </produto>
+    <produto>
+        <id>57921</id>
+        <descricao>CCTV CAIXA DE FUSIVEIS S-60-12 5AMP</descricao>
+        <preco>30</preco>
+    </produto>
+    <produto>
+        <id>57932</id>
+        <descricao>CCTV CAMERA CASH-HIRS-S480</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>57943</id>
+        <descricao>CCTV CAMERA CASH-SLOW-520L</descricao>
+        <preco>38</preco>
+    </produto>
+    <produto>
+        <id>57965</id>
+        <descricao>CCTV CAMERA PSJ-608SNH 1/3"" SONY PLATA</descricao>
+        <preco>35</preco>
+    </produto>
+    <produto>
+        <id>57976</id>
+        <descricao>CCTV CAMERA SUPORTE BASE</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>64638</id>
+        <descricao>CCTV CAMERA VOYAGER VR-AR1008 ARRAY 1/3</descricao>
+        <preco>65</preco>
+    </produto>
+    <produto>
+        <id>57987</id>
+        <descricao>CCTV CONECTOR BNC MOLA P/ RCA DORADO</descricao>
+        <preco>0.40000000000000002220446049250313080847263336181640625</preco>
+    </produto>
+    <produto>
+        <id>57998</id>
+        <descricao>CCTV CONECTOR COAXIAL P-4 FEMEA GREEN</descricao>
+        <preco>0.9899999999999999911182158029987476766109466552734375</preco>
+    </produto>
+    <produto>
+        <id>58024</id>
+        <descricao>CCTV CONECTOR DC CABLE P-4 (11349)</descricao>
+        <preco>0.299999999999999988897769753748434595763683319091796875</preco>
+    </produto>
+    <produto>
+        <id>58035</id>
+        <descricao>CCTV CONECTOR P-4 FEMEA GREEN (11371)</descricao>
+        <preco>1</preco>
+    </produto>
+    <produto>
+        <id>58046</id>
+        <descricao>CCTV CONECTOR P-4 MACHO GREEN</descricao>
+        <preco>1.5</preco>
+    </produto>
+    <produto>
+        <id>57886</id>
+        <descricao>CCTV FECHADURA ELETRICA SAMSUNG SHS-3120 AZUL</descricao>
+        <preco>260</preco>
+    </produto>
+    <produto>
+        <id>57897</id>
+        <descricao>CCTV FECHADURA ELETRICA SAMSUNG SHS-DS16</descricao>
+        <preco>215</preco>
+    </produto>
+    <produto>
+        <id>166753</id>
+        <descricao>CCTV FONTE HLD  5AMP S-60-12</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>166742</id>
+        <descricao>CCTV FONTE HLD  8AMP S-96-12</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>166731</id>
+        <descricao>CCTV FONTE HLD 10AMP LV-DX10</descricao>
+        <preco>13</preco>
+    </produto>
+    <produto>
+        <id>57910</id>
+        <descricao>CCTV FONTE HLD 20AMP S-240-12</descricao>
+        <preco>22</preco>
+    </produto>
+    <produto>
+        <id>71110</id>
+        <descricao>CCTV VIDEO BALUM BOSTER HLD</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>140756</id>
+        <descricao>CEL BLU ADVANCE 4.0L A-010L DUAL AZUL</descricao>
+        <preco>49.89999999999999857891452847979962825775146484375</preco>
+    </produto>
+    <produto>
+        <id>173650</id>
+        <descricao>CEL BLU ADVANCE 4.0L A-010L DUAL ROSA</descricao>
+        <preco>50</preco>
+    </produto>
+    <produto>
+        <id>153086</id>
+        <descricao>CEL BLU LIFE ONE X L-133 DUAL BRANCO</descricao>
+        <preco>285</preco>
+    </produto>
+    <produto>
+        <id>173942</id>
+        <descricao>CEL BLU NEO N-030L 5.5" DUAL PRETO</descricao>
+        <preco>81.900000000000005684341886080801486968994140625</preco>
+    </produto>
+    <produto>
+        <id>173672</id>
+        <descricao>CEL BLU SELFIE S-470A DUAL AZUL</descricao>
+        <preco>180</preco>
+    </produto>
+    <produto>
+        <id>135705</id>
+        <descricao>CEL BLU STUDIO 6.0 HD D-651L DUAL PRETO</descricao>
+        <preco>130</preco>
+    </produto>
+    <produto>
+        <id>21989</id>
+        <descricao>CEL BLU VIVO AIR D-980L PRETO</descricao>
+        <preco>139</preco>
+    </produto>
+    <produto>
+        <id>164145</id>
+        <descricao>CEL BLU VIVO AIR LTE V-0000UU PRETO</descricao>
+        <preco>159.900000000000005684341886080801486968994140625</preco>
+    </produto>
+    <produto>
+        <id>147214</id>
+        <descricao>CEL CAT B25 SMARTPHONE DUAL PRETO</descricao>
+        <preco>57</preco>
+    </produto>
+    <produto>
+        <id>160398</id>
+        <descricao>CEL CAT S30 SMARTPHONE DUAL PRETO/CINZA</descricao>
+        <preco>256</preco>
+    </produto>
+    <produto>
+        <id>186362</id>
+        <descricao>CEL CAT S30 SMARTPHONE DUAL PRETO/CINZA PY/ARG</descricao>
+        <preco>255</preco>
+    </produto>
+    <produto>
+        <id>152020</id>
+        <descricao>CEL CAT S40 SMARTPHONE PRETO/CINZA</descricao>
+        <preco>377</preco>
+    </produto>
+    <produto>
+        <id>115141</id>
+        <descricao>CEL CAT S50 SMARTPHONE PRETO/CINZA</descricao>
+        <preco>335</preco>
+    </produto>
+    <produto>
+        <id>11237</id>
+        <descricao>CEL FREECEL FREE ONE DUAL 4BANDAS/FM PURPURA</descricao>
+        <preco>8.5</preco>
+    </produto>
+    <produto>
+        <id>189141</id>
+        <descricao>CEL LG G360 DUAL 3.0" PRETO</descricao>
+        <preco>54</preco>
+    </produto>
+    <produto>
+        <id>179173</id>
+        <descricao>CEL LG LEON H340F 1SIM PRETO</descricao>
+        <preco>106</preco>
+    </produto>
+    <produto>
+        <id>171929</id>
+        <descricao>CEL LG MAGNA H500G PRETO</descricao>
+        <preco>115</preco>
+    </produto>
+    <produto>
+        <id>171940</id>
+        <descricao>CEL LG MAGNA H520G BRANCO</descricao>
+        <preco>125</preco>
+    </produto>
+    <produto>
+        <id>138809</id>
+        <descricao>CEL LG T-375 PRETO</descricao>
+        <preco>29</preco>
+    </produto>
+    <produto>
+        <id>140936</id>
+        <descricao>CEL LG Y30 H221G JOY 1SIM BRANCO</descricao>
+        <preco>73</preco>
+    </produto>
+    <produto>
+        <id>169352</id>
+        <descricao>CEL LG Y30 H221G JOY 1SIM PRETO</descricao>
+        <preco>73</preco>
+    </produto>
+    <produto>
+        <id>118256</id>
+        <descricao>CEL LG Y30 H222G JOY DUAL PRETO</descricao>
+        <preco>73</preco>
+    </produto>
+    <produto>
+        <id>181010</id>
+        <descricao>CEL MOTOROLA MOTO E XT1521 4GB PRETO</descricao>
+        <preco>89</preco>
+    </produto>
+    <produto>
+        <id>148046</id>
+        <descricao>CEL MOTOROLA MOTO G XT1039 4G 8GB PRETO S/CARREGAD</descricao>
+        <preco>123.900000000000005684341886080801486968994140625</preco>
+    </produto>
+    <produto>
+        <id>179220</id>
+        <descricao>CEL MOTOROLA RAZER D1 XT914 1SIM PRETO</descricao>
+        <preco>59</preco>
+    </produto>
+    <produto>
+        <id>134691</id>
+        <descricao>CEL NOKIA X RM-981 DUAL SIM PRETO</descricao>
+        <preco>65</preco>
+    </produto>
+    <produto>
+        <id>39831</id>
+        <descricao>CEL PLUM AXE PLUS Z403 DUAL AZUL</descricao>
+        <preco>49.89999999999999857891452847979962825775146484375</preco>
+    </produto>
+    <produto>
+        <id>39842</id>
+        <descricao>CEL PLUM AXE PLUS Z403 DUAL VERMELHO</descricao>
+        <preco>49.89999999999999857891452847979962825775146484375</preco>
+    </produto>
+    <produto>
+        <id>39853</id>
+        <descricao>CEL PLUM CHECK PLUS Z450 DUAL BRANCO/AZUL</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>39864</id>
+        <descricao>CEL PLUM CHECK PLUS Z450 DUAL BRANCO/VERMELHO</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>39875</id>
+        <descricao>CEL PLUM CHECK PLUS Z450 DUAL PRETO</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>39886</id>
+        <descricao>CEL PLUM CHECK PLUS Z450 DUAL PRETO/VERMELHO</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>43040</id>
+        <descricao>CEL PLUM COACH PLUS II Z621 DUAL BRANCO</descricao>
+        <preco>137</preco>
+    </produto>
+    <produto>
+        <id>43051</id>
+        <descricao>CEL PLUM COACH PLUS II Z621 DUAL PRETO</descricao>
+        <preco>137</preco>
+    </produto>
+    <produto>
+        <id>70141</id>
+        <descricao>CEL PLUM MIGHT PLUS Z512 DUAL BRANCO</descricao>
+        <preco>97</preco>
+    </produto>
+    <produto>
+        <id>70152</id>
+        <descricao>CEL PLUM MIGHT PLUS Z512I DUAL PRETO</descricao>
+        <preco>97</preco>
+    </produto>
+    <produto>
+        <id>39897</id>
+        <descricao>CEL PLUM PILOT PLUS Z550 DUAL BRANCO</descricao>
+        <preco>132</preco>
+    </produto>
+    <produto>
+        <id>39900</id>
+        <descricao>CEL PLUM PILOT PLUS Z550 DUAL GRAFITE</descricao>
+        <preco>132</preco>
+    </produto>
+    <produto>
+        <id>39607</id>
+        <descricao>CEL PLUM PIZAZZ D100 DUAL ROSA</descricao>
+        <preco>26</preco>
+    </produto>
+    <produto>
+        <id>39618</id>
+        <descricao>CEL PLUM PIZAZZ D100 DUAL ROXO</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>39640</id>
+        <descricao>CEL PLUM RAM E200 DUAL LARANJA</descricao>
+        <preco>55</preco>
+    </produto>
+    <produto>
+        <id>39651</id>
+        <descricao>CEL PLUM RAM E200 DUAL PRETO</descricao>
+        <preco>55</preco>
+    </produto>
+    <produto>
+        <id>39662</id>
+        <descricao>CEL PLUM SWITCH A202 DUAL 3G PRETO/AZUL</descricao>
+        <preco>21</preco>
+    </produto>
+    <produto>
+        <id>39673</id>
+        <descricao>CEL PLUM SWITCH A202 DUAL 3G PRETO/MAGNETA</descricao>
+        <preco>21</preco>
+    </produto>
+    <produto>
+        <id>39684</id>
+        <descricao>CEL PLUM SWITCH A202 DUAL 3G PRETO/VERDE</descricao>
+        <preco>21</preco>
+    </produto>
+    <produto>
+        <id>42981</id>
+        <descricao>CEL PLUM SYNC 5.0 X230 DUAL AZUL</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>43018</id>
+        <descricao>CEL PLUM SYNC 5.0 X230 DUAL BRANCO</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>42992</id>
+        <descricao>CEL PLUM SYNC 5.0 X230 DUAL PRETO</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>43007</id>
+        <descricao>CEL PLUM SYNC 5.0 X230 DUAL ROSA</descricao>
+        <preco>77</preco>
+    </produto>
+    <produto>
+        <id>39695</id>
+        <descricao>CEL PLUM SYNC X210 DUAL AZUL</descricao>
+        <preco>46</preco>
+    </produto>
+    <produto>
+        <id>39730</id>
+        <descricao>CEL PLUM SYNC X210 DUAL VERMELHO</descricao>
+        <preco>46</preco>
+    </produto>
+    <produto>
+        <id>39741</id>
+        <descricao>CEL PLUM VELOCITY II X260 DUAL AZUL</descricao>
+        <preco>35</preco>
+    </produto>
+    <produto>
+        <id>39752</id>
+        <descricao>CEL PLUM VELOCITY II X260 DUAL BRANCO</descricao>
+        <preco>35</preco>
+    </produto>
+    <produto>
+        <id>39763</id>
+        <descricao>CEL PLUM VELOCITY II X260 DUAL VERMELHO</descricao>
+        <preco>35</preco>
+    </produto>
+    <produto>
+        <id>172491</id>
+        <descricao>CEL SAMSUNG GRAND NEO GT-I9060M 1SIM PRETO 3G</descricao>
+        <preco>122</preco>
+    </produto>
+    <produto>
+        <id>194339</id>
+        <descricao>CEL SAMSUNG GRAND NEO GT-I9060M 1SIM PRETO 3G (X)</descricao>
+        <preco>122</preco>
+    </produto>
+    <produto>
+        <id>163682</id>
+        <descricao>CEL SAMSUNG J2 SM-J200M DUAL BRANCO 4G</descricao>
+        <preco>135</preco>
+    </produto>
+    <produto>
+        <id>194317</id>
+        <descricao>CEL SAMSUNG J2 SM-J200M DUAL BRANCO 4G (X)</descricao>
+        <preco>135</preco>
+    </produto>
+    <produto>
+        <id>194306</id>
+        <descricao>CEL SAMSUNG J2 SM-J200M DUAL PRETO 4G (X)</descricao>
+        <preco>135</preco>
+    </produto>
+    <produto>
+        <id>162570</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M 1SIM 16GB BRANCO 4G</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>191975</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M 1SIM 16GB BRANCO 4G (X)</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>173370</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M 1SIM 16GB DOURADO 4G</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>194328</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M 1SIM 16GB DOURADO 4G (X)</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>183719</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M DUAL 16GB BRANCO 4G (X)</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>147607</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M DUAL 16GB DOURADO 4G</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>183720</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M DUAL 16GB DOURADO 4G (X)</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>183730</id>
+        <descricao>CEL SAMSUNG J7 SM-J700M DUAL 16GB PRETO 4G (X)</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>145010</id>
+        <descricao>CEL SAMSUNG NOTE 5 SM-N920G 32GB 4G PRETO</descricao>
+        <preco>565</preco>
+    </produto>
+    <produto>
+        <id>190098</id>
+        <descricao>CEL SAMSUNG NOTE 5 SM-N920G 32GB 4G PRETO (X)</descricao>
+        <preco>565</preco>
+    </produto>
+    <produto>
+        <id>172469</id>
+        <descricao>CEL SAMSUNG NOTE 5 SM-N920G 32GB 4G SILV TITAN</descricao>
+        <preco>545</preco>
+    </produto>
+    <produto>
+        <id>191942</id>
+        <descricao>CEL SAMSUNG NOTE 5 SM-N920G 32GB 4G SILV TITAN (X)</descricao>
+        <preco>545</preco>
+    </produto>
+    <produto>
+        <id>134625</id>
+        <descricao>CEL SAMSUNG S GLIDE SGH-I927R 1SIM PRETO</descricao>
+        <preco>69.900000000000005684341886080801486968994140625</preco>
+    </produto>
+    <produto>
+        <id>191224</id>
+        <descricao>CEL SAMSUNG S5 SM-G900V 16GB 1SIM 4G BRANCO RB (X)</descricao>
+        <preco>259</preco>
+    </produto>
+    <produto>
+        <id>191202</id>
+        <descricao>CEL SAMSUNG S5 SM-G900V 16GB 1SIM 4G GOLD RB (X)</descricao>
+        <preco>259</preco>
+    </produto>
+    <produto>
+        <id>191213</id>
+        <descricao>CEL SAMSUNG S5 SM-G900V 16GB 1SIM 4G PRETO RB (X)</descricao>
+        <preco>259</preco>
+    </produto>
+    <produto>
+        <id>120227</id>
+        <descricao>CEL SAMSUNG S6 EDGE SM-G925F 64GB 4G PRETO</descricao>
+        <preco>549</preco>
+    </produto>
+    <produto>
+        <id>90435</id>
+        <descricao>CEL SAMSUNG S6 SM-G920I 32GB 4G LTE BRANCO</descricao>
+        <preco>445</preco>
+    </produto>
+    <produto>
+        <id>167822</id>
+        <descricao>CEL SAMSUNG S6 SM-G920I 32GB 4G LTE BRANCO (X)</descricao>
+        <preco>445</preco>
+    </produto>
+    <produto>
+        <id>118379</id>
+        <descricao>CEL SAMSUNG S6 SM-G920I 32GB 4G LTE DOURADO</descricao>
+        <preco>445</preco>
+    </produto>
+    <produto>
+        <id>177217</id>
+        <descricao>CEL SAMSUNG S6 SM-G920I 32GB 4G LTE DOURADO (X)</descricao>
+        <preco>445</preco>
+    </produto>
+    <produto>
+        <id>181491</id>
+        <descricao>CEL SAMSUNG S7 EDGE SM-G935F 32GB 4G DOURADO</descricao>
+        <preco>715</preco>
+    </produto>
+    <produto>
+        <id>181560</id>
+        <descricao>CEL SAMSUNG S7 EDGE SM-G935F 32GB 4G DOURADO (X)</descricao>
+        <preco>715</preco>
+    </produto>
+    <produto>
+        <id>181515</id>
+        <descricao>CEL SAMSUNG S7 EDGE SM-G935F 32GB 4G PRATA</descricao>
+        <preco>715</preco>
+    </produto>
+    <produto>
+        <id>181581</id>
+        <descricao>CEL SAMSUNG S7 EDGE SM-G935F 32GB 4G PRATA (X)</descricao>
+        <preco>715</preco>
+    </produto>
+    <produto>
+        <id>181526</id>
+        <descricao>CEL SAMSUNG S7 EDGE SM-G935F 32GB 4G PRETO</descricao>
+        <preco>715</preco>
+    </produto>
+    <produto>
+        <id>181570</id>
+        <descricao>CEL SAMSUNG S7 EDGE SM-G935F 32GB 4G PRETO (X)</descricao>
+        <preco>715</preco>
+    </produto>
+    <produto>
+        <id>181537</id>
+        <descricao>CEL SAMSUNG S7 SM-G930F 32GB 4G DOURADO</descricao>
+        <preco>597</preco>
+    </produto>
+    <produto>
+        <id>181592</id>
+        <descricao>CEL SAMSUNG S7 SM-G930F 32GB 4G DOURADO (X)</descricao>
+        <preco>597</preco>
+    </produto>
+    <produto>
+        <id>181548</id>
+        <descricao>CEL SAMSUNG S7 SM-G930F 32GB 4G PRATA</descricao>
+        <preco>597</preco>
+    </produto>
+    <produto>
+        <id>181605</id>
+        <descricao>CEL SAMSUNG S7 SM-G930F 32GB 4G PRATA (X)</descricao>
+        <preco>597</preco>
+    </produto>
+    <produto>
+        <id>170691</id>
+        <descricao>CEL SKY DEVICES 4.0D 4GB AZUL</descricao>
+        <preco>49.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165583</id>
+        <descricao>CEL SKY DEVICES 4.0D 4GB PINK</descricao>
+        <preco>49.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165561</id>
+        <descricao>CEL SKY DEVICES 4.0D 4GB SILVER</descricao>
+        <preco>49.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>184483</id>
+        <descricao>CEL SKY DEVICES 4.0D FUEGO DUAL AZUL</descricao>
+        <preco>39.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>184494</id>
+        <descricao>CEL SKY DEVICES 4.0D FUEGO DUAL BRANCO</descricao>
+        <preco>39.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>184507</id>
+        <descricao>CEL SKY DEVICES 4.0D FUEGO DUAL PRATA</descricao>
+        <preco>39.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>184450</id>
+        <descricao>CEL SKY DEVICES 4.0D FUEGO DUAL PRETO</descricao>
+        <preco>39.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>184472</id>
+        <descricao>CEL SKY DEVICES 4.0D FUEGO DUAL ROSA</descricao>
+        <preco>39.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165618</id>
+        <descricao>CEL SKY DEVICES 4.5D 4GB BRANCO</descricao>
+        <preco>62.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>170715</id>
+        <descricao>CEL SKY DEVICES 4.5D 4GB GOLD</descricao>
+        <preco>62.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165607</id>
+        <descricao>CEL SKY DEVICES 4.5D 4GB PRETO</descricao>
+        <preco>62.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165629</id>
+        <descricao>CEL SKY DEVICES 4.5D 4GB SILVER</descricao>
+        <preco>62.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>176484</id>
+        <descricao>CEL SKY DEVICES 5.0D FUEGO 4G BRANCO DUAL 850/1900</descricao>
+        <preco>68.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>176495</id>
+        <descricao>CEL SKY DEVICES 5.0D FUEGO 4G BRANCO DUAL 850/2100</descricao>
+        <preco>68.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>176520</id>
+        <descricao>CEL SKY DEVICES 5.0D FUEGO 4G GOLD DUAL 850/1900</descricao>
+        <preco>68.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>176519</id>
+        <descricao>CEL SKY DEVICES 5.0D FUEGO 4G GRAY DUAL 850/1900</descricao>
+        <preco>68.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>176530</id>
+        <descricao>CEL SKY DEVICES 5.0D FUEGO 4G GRAY DUAL 850/2100</descricao>
+        <preco>68.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>176508</id>
+        <descricao>CEL SKY DEVICES 5.0D FUEGO 4G ROSA DUAL 850/1900</descricao>
+        <preco>68.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165460</id>
+        <descricao>CEL SKY DEVICES 5.0W 4GB AZUL</descricao>
+        <preco>72.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165427</id>
+        <descricao>CEL SKY DEVICES 5.0W 4GB BRANCO</descricao>
+        <preco>72.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165450</id>
+        <descricao>CEL SKY DEVICES 5.0W 4GB GOLD</descricao>
+        <preco>75</preco>
+    </produto>
+    <produto>
+        <id>165471</id>
+        <descricao>CEL SKY DEVICES 5.0W 4GB PINK</descricao>
+        <preco>72.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165438</id>
+        <descricao>CEL SKY DEVICES 5.0W 4GB PRETO</descricao>
+        <preco>72.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>165449</id>
+        <descricao>CEL SKY DEVICES 5.0W 4GB SILVER</descricao>
+        <preco>72.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>175180</id>
+        <descricao>CEL SKY DEVICES 6.0Q 8GB GOLD</descricao>
+        <preco>133</preco>
+    </produto>
+    <produto>
+        <id>165630</id>
+        <descricao>CEL SKY DEVICES ELITE 5.0L 4G GOLD</descricao>
+        <preco>119</preco>
+    </produto>
+    <produto>
+        <id>165651</id>
+        <descricao>CEL SKY DEVICES ELITE 5.0L 4G PRETO</descricao>
+        <preco>119</preco>
+    </produto>
+    <produto>
+        <id>165640</id>
+        <descricao>CEL SKY DEVICES ELITE 5.0L 4G SILVER</descricao>
+        <preco>119</preco>
+    </produto>
+    <produto>
+        <id>173426</id>
+        <descricao>CEL SKY DEVICES ELITE 5.0LW 3G/4G BRANCO DUAL SIM</descricao>
+        <preco>93.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>189881</id>
+        <descricao>CEL SKY DEVICES ELITE 5.0LW 3G/4G DOURADO DUAL</descricao>
+        <preco>93.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>173415</id>
+        <descricao>CEL SKY DEVICES ELITE 5.0LW 3G/4G PRETO DUAL SIM</descricao>
+        <preco>93.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>189905</id>
+        <descricao>CEL SKY DEVICES ELITE 5.5L 3G/4G DOURADO DUAL SIM</descricao>
+        <preco>139</preco>
+    </produto>
+    <produto>
+        <id>173404</id>
+        <descricao>CEL SKY DEVICES ELITE 5.5L 3G/4G PRETO DUAL SIM</descricao>
+        <preco>139</preco>
+    </produto>
+    <produto>
+        <id>173391</id>
+        <descricao>CEL SKY DEVICES ELITE 5.5L 3G/4G SILVER DUAL SIM</descricao>
+        <preco>139</preco>
+    </produto>
+    <produto>
+        <id>189916</id>
+        <descricao>CEL SKY DEVICES ELITE 6.0L 3G/4G DUAL CINZA</descricao>
+        <preco>149</preco>
+    </produto>
+    <produto>
+        <id>178251</id>
+        <descricao>CEL SKY DEVICES ELITE 6.0L 3G/4G DUAL DOURADO</descricao>
+        <preco>149</preco>
+    </produto>
+    <produto>
+        <id>178262</id>
+        <descricao>CEL SKY DEVICES ELITE 6.0L 3G/4G DUAL PRATA</descricao>
+        <preco>149</preco>
+    </produto>
+    <produto>
+        <id>178284</id>
+        <descricao>CEL SKY DEVICES ELITE 7.0L 3G/4G DUAL BRANCO</descricao>
+        <preco>134</preco>
+    </produto>
+    <produto>
+        <id>178273</id>
+        <descricao>CEL SKY DEVICES ELITE 7.0L 3G/4G DUAL CINZA</descricao>
+        <preco>134</preco>
+    </produto>
+    <produto>
+        <id>184518</id>
+        <descricao>CEL SKY DEVICES PLATINUM 5.0+ 3G/4G DUAL DOURADO</descricao>
+        <preco>109</preco>
+    </produto>
+    <produto>
+        <id>189870</id>
+        <descricao>CEL SKY DEVICES PLATINUM 5.0+ 3G/4G DUAL PRETO</descricao>
+        <preco>109</preco>
+    </produto>
+    <produto>
+        <id>170760</id>
+        <descricao>CEL SKY DEVICES PLATINUM 5.5 3G/4G DUAL CHIP BRANC</descricao>
+        <preco>93.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>170759</id>
+        <descricao>CEL SKY DEVICES PLATINUM 5.5 3G/4G DUAL CHIP GOLD</descricao>
+        <preco>93.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>170748</id>
+        <descricao>CEL SKY DEVICES PLATINUM 5.5 3G/4G DUAL CHIP GRAY</descricao>
+        <preco>93.7999999999999971578290569595992565155029296875</preco>
+    </produto>
+    <produto>
+        <id>178295</id>
+        <descricao>CEL SKY DEVICES PLATINUM 6.0 3G/4G DUAL CINZA</descricao>
+        <preco>128</preco>
+    </produto>
+    <produto>
+        <id>178308</id>
+        <descricao>CEL SKY DEVICES PLATINUM 6.0 3G/4G DUAL DOURADO</descricao>
+        <preco>128</preco>
+    </produto>
+    <produto>
+        <id>178319</id>
+        <descricao>CEL SKY DEVICES PLATINUM 6.0 3G/4G DUAL PRATA</descricao>
+        <preco>128</preco>
+    </produto>
+    <produto>
+        <id>194025</id>
+        <descricao>CEL SKY DEVICES PLATINUM 6.0+ 3G/4G DUAL DOURADO</descricao>
+        <preco>133.5</preco>
+    </produto>
+    <produto>
+        <id>194014</id>
+        <descricao>CEL SKY DEVICES PLATINUM 6.0+ 3G/4G DUAL PRATA</descricao>
+        <preco>133.5</preco>
+    </produto>
+    <produto>
+        <id>179296</id>
+        <descricao>CEL SONY XPERIA Z5 E6853 PREMIUN 4G 1SIM 32GB PRET</descricao>
+        <preco>563</preco>
+    </produto>
+    <produto>
+        <id>11988</id>
+        <descricao>CELULAR SONY XPERIA Z C6602 LILAS (60285)</descricao>
+        <preco>320.30000000000001136868377216160297393798828125</preco>
+    </produto>
+    <produto>
+        <id>71636</id>
+        <descricao>CFTV CAMERA HLD S-5002 420TVL PRETO</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>71691</id>
+        <descricao>CFTV CAMERA HLD S-601 420TVL BRANCO</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>53377</id>
+        <descricao>CFTV CAMERA HLD S-6048 DOME</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>40362</id>
+        <descricao>CFTV CAMERA KONDOR KD-41S 600TVL BRANCO</descricao>
+        <preco>27.5</preco>
+    </produto>
+    <produto>
+        <id>171738</id>
+        <descricao>CFTV CAMERA ORANGE OR-HAC-HDW1000M DOMO 720P BRANC</descricao>
+        <preco>35</preco>
+    </produto>
+    <produto>
+        <id>171727</id>
+        <descricao>CFTV CAMERA ORANGE OR-HAC-HDW1000R DOMO 720P BRANC</descricao>
+        <preco>34</preco>
+    </produto>
+    <produto>
+        <id>192078</id>
+        <descricao>CFTV CAMERA ORANGE OR-HAC-HDW1200MN 0360</descricao>
+        <preco>46</preco>
+    </produto>
+    <produto>
+        <id>171828</id>
+        <descricao>CFTV CAMERA ORANGE OR-HAC-HFW1000RM 720P</descricao>
+        <preco>33</preco>
+    </produto>
+    <produto>
+        <id>178128</id>
+        <descricao>CFTV CAMERA ORANGE OR-HAC-HFW1200S 1080P</descricao>
+        <preco>49</preco>
+    </produto>
+    <produto>
+        <id>52578</id>
+        <descricao>CFTV CAMERA POSONIC PS-72B 480TVL PRETO</descricao>
+        <preco>30.5</preco>
+    </produto>
+    <produto>
+        <id>52982</id>
+        <descricao>CFTV CAMERA VOYAGER VR-330SP 600TVL PRET</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>52690</id>
+        <descricao>CFTV CAMERA VOYAGER VR-45S7 550TVL PRETO</descricao>
+        <preco>44</preco>
+    </produto>
+    <produto>
+        <id>171749</id>
+        <descricao>CFTV DVR ORANGE OR-HCVR4104HS-S2 4 CHANNEL 720P</descricao>
+        <preco>55</preco>
+    </produto>
+    <produto>
+        <id>171750</id>
+        <descricao>CFTV DVR ORANGE OR-HCVR4108HS-S2 8 CHANNEL 720P</descricao>
+        <preco>80</preco>
+    </produto>
+    <produto>
+        <id>171760</id>
+        <descricao>CFTV DVR ORANGE OR-HCVR4116HS-S2 16 CHANNEL 720P</descricao>
+        <preco>140</preco>
+    </produto>
+    <produto>
+        <id>178139</id>
+        <descricao>CFTV DVR ORANGE OR-HCVR5104H-S2 4 CHANNEL 1080P</descricao>
+        <preco>90</preco>
+    </produto>
+    <produto>
+        <id>192089</id>
+        <descricao>CFTV DVR ORANGE OR-HDCVI4700KIT 4 CHANNEL C/KIT</descricao>
+        <preco>210</preco>
+    </produto>
+    <produto>
+        <id>192090</id>
+        <descricao>CFTV DVR ORANGE OR-HDCVI8700KIT 8 CHANNEL C/KIT</descricao>
+        <preco>232</preco>
+    </produto>
+    <produto>
+        <id>149058</id>
+        <descricao>CFTV FONTE HLD 15AMP 12V P/CAMERA</descricao>
+        <preco>14</preco>
+    </produto>
+    <produto>
+        <id>53467</id>
+        <descricao>CFTV FONTE HLD 1AMP 12V P/CAMERA</descricao>
+        <preco>3.5</preco>
+    </produto>
+    <produto>
+        <id>53489</id>
+        <descricao>CFTV FONTE HLD 3AMP 12V P/CAMERA</descricao>
+        <preco>7.9000000000000003552713678800500929355621337890625</preco>
+    </produto>
+    <produto>
+        <id>102798</id>
+        <descricao>CFTV QSEE CAMERA 1080P QH8007D SDI DOME BRANCA</descricao>
+        <preco>145</preco>
+    </produto>
+    <produto>
+        <id>102800</id>
+        <descricao>CFTV QSEE CAMERA 1080P QTN8017B VISAO NOTURNA</descricao>
+        <preco>157</preco>
+    </produto>
+    <produto>
+        <id>133062</id>
+        <descricao>CFTV QSEE DVR QT534-2H4 C/KIT 4CH/2CCD C/HD 500GB</descricao>
+        <preco>236</preco>
+    </produto>
+    <produto>
+        <id>133108</id>
+        <descricao>CFTV QSEE DVR QT5716-16H4-2 KIT 16CH/16CAM HD 2TB</descricao>
+        <preco>750</preco>
+    </produto>
+    <produto>
+        <id>191896</id>
+        <descricao>CIGARRO ELECTRONICO KANGERTECH SUBOX MINI BRANCO X</descricao>
+        <preco>67</preco>
+    </produto>
+    <produto>
+        <id>191885</id>
+        <descricao>CIGARRO ELECTRONICO KANGERTECH SUBOX MINI PRETO X</descricao>
+        <preco>67</preco>
+    </produto>
+    <produto>
+        <id>191874</id>
+        <descricao>CIGARRO ELECTRONICO KANGERTECH SUBOX NANO LILAS</descricao>
+        <preco>43</preco>
+    </produto>
+    <produto>
+        <id>191852</id>
+        <descricao>CIGARRO ELECTRONICO KANGERTECH SUBOX NANO PRETO</descricao>
+        <preco>43</preco>
+    </produto>
+    <produto>
+        <id>191863</id>
+        <descricao>CIGARRO ELECTRONICO KANGERTECH SUBOX NANO ROSA</descricao>
+        <preco>43</preco>
+    </produto>
+    <produto>
+        <id>59115</id>
+        <descricao>CONECTOR KIT P/IPAD  5IN1 DR05-IPA</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>59159</id>
+        <descricao>CONECTOR KIT P/IPAD  5IN1 QT-2110</descricao>
+        <preco>40</preco>
+    </produto>
+    <produto>
+        <id>86743</id>
+        <descricao>CONTROL P/BASTAO DE SELFIE SHUTTER AMARELO</descricao>
+        <preco>1.5</preco>
+    </produto>
+    <produto>
+        <id>85821</id>
+        <descricao>CONTROLE AZAMERICA  RECEPTOR S1001/S1005</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>78823</id>
+        <descricao>CONTROLE LUZ LED VIA CELULAR WIFI370</descricao>
+        <preco>49</preco>
+    </produto>
+    <produto>
+        <id>63378</id>
+        <descricao>CONTROLE REMOTO P/ PLACA CAPTURA PINNACLE</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>189624</id>
+        <descricao>CONVERSOR DIGITAL SKYMEDIA SKM-ISDBT-S7 USB</descricao>
+        <preco>21</preco>
+    </produto>
+    <produto>
+        <id>58103</id>
+        <descricao>CONVERSOR PARALELO 9P/ SERIAL 25P</descricao>
+        <preco>10</preco>
+    </produto>
+    <produto>
+        <id>49338</id>
+        <descricao>COOLER EXAUSTOR 12X12</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>69026</id>
+        <descricao>COOLER EXAUSTOR 8X8</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>120003</id>
+        <descricao>COOLER EXAUSTOR OMEGA EVERCOOL</descricao>
+        <preco>3</preco>
+    </produto>
+    <produto>
+        <id>71300</id>
+        <descricao>COOLER INTEL I3 530  HZ 1150/1155</descricao>
+        <preco>8</preco>
+    </produto>
+    <produto>
+        <id>76371</id>
+        <descricao>COOLER INTEL I7 E41997-002 0.60A 1150/1155</descricao>
+        <preco>9</preco>
+    </produto>
+    <produto>
+        <id>49382</id>
+        <descricao>COOLER P/HD 2 FAN HD 3.5 LYF</descricao>
+        <preco>6.25</preco>
+    </produto>
+    <produto>
+        <id>58158</id>
+        <descricao>COOLER PGA K7 VIEWTECH AMD 2800-2CI BOX</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>58169</id>
+        <descricao>COOLER PGA K7/P3 COOLERMASTER</descricao>
+        <preco>4</preco>
+    </produto>
+    <produto>
+        <id>58170</id>
+        <descricao>COOLER PGA P4 478P COOLER MASTER</descricao>
+        <preco>5.79999999999999982236431605997495353221893310546875</preco>
+    </produto>
+    <produto>
+        <id>137874</id>
+        <descricao>CORTADOR PAPEL SATELITE C506P 110V/60HZ</descricao>
+        <preco>28</preco>
+    </produto>
+    <produto>
+        <id>133780</id>
+        <descricao>COSMETICO ANTI-RUGAS INSTANTLY AGELESS 0.3ML</descricao>
+        <preco>2.5</preco>
+    </produto>
+    <produto>
+        <id>126894</id>
+        <descricao>COZ. BIALETTI PANELA PARA MACARRAO VERMELHA 7185</descricao>
+        <preco>75</preco>
+    </produto>
+    <produto>
+        <id>146986</id>
+        <descricao>COZ. KITCHENAID AC. BOWL AQUECIDO KSM1CBL 110V</descricao>
+        <preco>385</preco>
+    </produto>
+    <produto>
+        <id>148260</id>
+        <descricao>COZ. KITCHENAID AC. HUB PACK KSMHAP PRATA</descricao>
+        <preco>16</preco>
+    </produto>
+    <produto>
+        <id>172974</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. ENCHEDOR DE LINGUICA</descricao>
+        <preco>24</preco>
+    </produto>
+    <produto>
+        <id>192820</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. GOURMET PASTA PRESS (X)</descricao>
+        <preco>235</preco>
+    </produto>
+    <produto>
+        <id>106297</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. JE CITRUS JUICER</descricao>
+        <preco>37</preco>
+    </produto>
+    <produto>
+        <id>192809</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. KIT KGSSA VARIOS ACE X</descricao>
+        <preco>160</preco>
+    </produto>
+    <produto>
+        <id>93741</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. KRAV RAVIOLI MAKE</descricao>
+        <preco>180</preco>
+    </produto>
+    <produto>
+        <id>148215</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. KRAV RAVIOLI MAKER</descricao>
+        <preco>175</preco>
+    </produto>
+    <produto>
+        <id>93720</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. MOEDOR DE CARNE (X)</descricao>
+        <preco>78</preco>
+    </produto>
+    <produto>
+        <id>106398</id>
+        <descricao>COZ. KITCHENAID AC. P/BAT. MOEDOR DE CARNE FGA</descricao>
+        <preco>75</preco>
+    </produto>
+    <produto>
+        <id>131958</id>
+        <descricao>COZ. KITCHENAID ACES. P/ BAT. GOURMET PASTA PRS</descricao>
+        <preco>235</preco>
+    </produto>
+    <produto>
+        <id>136425</id>
+        <descricao>COZ. KITCHENAID BACIA DE VIDRO C/TAMPA DE MEDIC</descricao>
+        <preco>94</preco>
+    </produto>
+    <produto>
+        <id>192607</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT BRANCO</descricao>
+        <preco>430</preco>
+    </produto>
+    <produto>
+        <id>192684</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT BRANCO</descricao>
+        <preco>430</preco>
+    </produto>
+    <produto>
+        <id>126233</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT LILAS</descricao>
+        <preco>375</preco>
+    </produto>
+    <produto>
+        <id>172941</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT PRETA</descricao>
+        <preco>375</preco>
+    </produto>
+    <produto>
+        <id>193090</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT ROSA</descricao>
+        <preco>430</preco>
+    </produto>
+    <produto>
+        <id>193136</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT ROSA</descricao>
+        <preco>430</preco>
+    </produto>
+    <produto>
+        <id>145166</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT SILVER</descricao>
+        <preco>430</preco>
+    </produto>
+    <produto>
+        <id>192719</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT SILVER</descricao>
+        <preco>430</preco>
+    </produto>
+    <produto>
+        <id>111383</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT VERMELHA</descricao>
+        <preco>430</preco>
+    </produto>
+    <produto>
+        <id>188500</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT VIDRO (X)</descricao>
+        <preco>425</preco>
+    </produto>
+    <produto>
+        <id>126222</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT VIDRO COBRE</descricao>
+        <preco>385</preco>
+    </produto>
+    <produto>
+        <id>172740</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT VIDRO PRATA</descricao>
+        <preco>425</preco>
+    </produto>
+    <produto>
+        <id>106466</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT VIDRO VERMEL</descricao>
+        <preco>480</preco>
+    </produto>
+    <produto>
+        <id>172739</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA ARTISAN 5QT VIDRO VERMEL</descricao>
+        <preco>435</preco>
+    </produto>
+    <produto>
+        <id>192640</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA CLASSIC 4.5QT PRETA</descricao>
+        <preco>350</preco>
+    </produto>
+    <produto>
+        <id>172963</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA CLASSIC 4.5QT PRETA</descricao>
+        <preco>350</preco>
+    </produto>
+    <produto>
+        <id>188465</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA KSM85PBOB PRETA 4.5QT</descricao>
+        <preco>380</preco>
+    </produto>
+    <produto>
+        <id>188511</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA KSM85PBSL SILV 4.5QT (X)</descricao>
+        <preco>380</preco>
+    </produto>
+    <produto>
+        <id>188487</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA KSM85PBSM SILVER MET 4.5</descricao>
+        <preco>380</preco>
+    </produto>
+    <produto>
+        <id>188421</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA KSM85PBSM SILVER MET.4.5</descricao>
+        <preco>380</preco>
+    </produto>
+    <produto>
+        <id>145403</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA MANUAL BLACK 7VEL 110V</descricao>
+        <preco>78</preco>
+    </produto>
+    <produto>
+        <id>140295</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA MANUAL PINK 5VEL 110V</descricao>
+        <preco>78</preco>
+    </produto>
+    <produto>
+        <id>145414</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA MANUAL WHITE 7VEL 110V</descricao>
+        <preco>78</preco>
+    </produto>
+    <produto>
+        <id>136470</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA PROFIS. 5QT PRATA</descricao>
+        <preco>460</preco>
+    </produto>
+    <produto>
+        <id>188443</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA PROFIS. 5QT PRATA (X)</descricao>
+        <preco>460</preco>
+    </produto>
+    <produto>
+        <id>188375</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA PROFIS. 5QT PRETA</descricao>
+        <preco>460</preco>
+    </produto>
+    <produto>
+        <id>188454</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA PROFIS. 5QT PRETA (X)</descricao>
+        <preco>460</preco>
+    </produto>
+    <produto>
+        <id>188432</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA PROFIS. 5QT VERMELHA(X)</descricao>
+        <preco>460</preco>
+    </produto>
+    <produto>
+        <id>193103</id>
+        <descricao>COZ. KITCHENAID BATEDEIRA PROFIS. 6QT VIDRO SILVER</descricao>
+        <preco>595</preco>
+    </produto>
+    <produto>
+        <id>122790</id>
+        <descricao>COZ. KITCHENAID CAFETEIRA KCM0402CU 4XIC PRATA</descricao>
+        <preco>99</preco>
+    </produto>
+    <produto>
+        <id>145289</id>
+        <descricao>COZ. KITCHENAID CAFETEIRA KCM111OB 12XIC PRETA</descricao>
+        <preco>95</preco>
+    </produto>
+    <produto>
+        <id>145650</id>
+        <descricao>COZ. KITCHENAID CAFETEIRA KCM1202WH 12XIC BRANCA</descricao>
+        <preco>99</preco>
+    </produto>
+    <produto>
+        <id>136537</id>
+        <descricao>COZ. KITCHENAID CAFETEIRA KCM1402CU 14XIC CINZA</descricao>
+        <preco>137</preco>
+    </produto>
+    <produto>
+        <id>142084</id>
+        <descricao>COZ. KITCHENAID CAFETEIRA KCM1402OB 14XIC PRETA</descricao>
+        <preco>137</preco>
+    </produto>
+    <produto>
+        <id>138270</id>
+        <descricao>COZ. KITCHENAID CHALEIRA 2L AMARELO KTEN20CBIS</descricao>
+        <preco>68</preco>
+    </produto>
+    <produto>
+        <id>192752</id>
+        <descricao>COZ. KITCHENAID CHALEIRA 2L AMARELO KTEN20CBIS</descricao>
+        <preco>68</preco>
+    </produto>
+    <produto>
+        <id>192774</id>
+        <descricao>COZ. KITCHENAID CHALEIRA 2L BRANCA KTEN20CBWH</descricao>
+        <preco>68</preco>
+    </produto>
+    <produto>
+        <id>192630</id>
+        <descricao>COZ. KITCHENAID CHALEIRA 2L VERMELHO KTEN20DBER</descricao>
+        <preco>74</preco>
+    </produto>
+    <produto>
+        <id>138067</id>
+        <descricao>COZ. KITCHENAID CHALEIRA 2L VERMELHO KTEN20DBER</descricao>
+        <preco>74</preco>
+    </produto>
+    <produto>
+        <id>172908</id>
+        <descricao>COZ. KITCHENAID CHALEIRA ELETRICA BRANCA 1.7L 110V</descricao>
+        <preco>124</preco>
+    </produto>
+    <produto>
+        <id>172840</id>
+        <descricao>COZ. KITCHENAID CHALEIRA ELETRICA PRATA 1.25L 110V</descricao>
+        <preco>97</preco>
+    </produto>
+    <produto>
+        <id>172761</id>
+        <descricao>COZ. KITCHENAID CHALEIRA ELETRICA PRATA 1.7L 110V</descricao>
+        <preco>124</preco>
+    </produto>
+    <produto>
+        <id>174291</id>
+        <descricao>COZ. KITCHENAID CHALEIRA ELETRICA PRETA 1.25L 110V</descricao>
+        <preco>97</preco>
+    </produto>
+    <produto>
+        <id>111339</id>
+        <descricao>COZ. KITCHENAID CHALEIRA ELETRICA VERMELHA 1.7L 11</descricao>
+        <preco>124</preco>
+    </produto>
+    <produto>
+        <id>192741</id>
+        <descricao>COZ. KITCHENAID ESCORREDOR DE LOUCAS VERMELHO (X)</descricao>
+        <preco>85</preco>
+    </produto>
+    <produto>
+        <id>186351</id>
+        <descricao>COZ. KITCHENAID HAND MIXER 2 VELOCIDADES BRANCO</descricao>
+        <preco>70</preco>
+    </produto>
+    <produto>
+        <id>138359</id>
+        <descricao>COZ. KITCHENAID HAND MIXER 2 VELOCIDADES PINK 110V</descricao>
+        <preco>70</preco>
+    </produto>
+    <produto>
+        <id>106332</id>
+        <descricao>COZ. KITCHENAID HAND MIXER 2 VELOCIDADES PRATA</descricao>
+        <preco>70</preco>
+    </produto>
+    <produto>
+        <id>186340</id>
+        <descricao>COZ. KITCHENAID HAND MIXER 2 VELOCIDADES PRETO</descricao>
+        <preco>70</preco>
+    </produto>
+    <produto>
+        <id>140500</id>
+        <descricao>COZ. KITCHENAID JOGO FACAS C/ 12 *** MUESTRA ***</descricao>
+        <preco>25</preco>
+    </produto>
+    <produto>
+        <id>138348</id>
+        <descricao>COZ. KITCHENAID JOGO FACAS C/ 12 PCS PRETO</descricao>
+        <preco>99</preco>
+    </produto>
+    <produto>
+        <id>148382</id>
+        <descricao>COZ. KITCHENAID JOGO FACAS C/ 12 PCS VERMELHO BRIL</descricao>
+        <preco>130</preco>
+    </produto>
+    <produto>
+        <id>138337</id>
+        <descricao>COZ. KITCHENAID JOGO FACAS C/ 14 PCS PRETA</descricao>
+        <preco>135</preco>
+    </produto>
+    <produto>
+        <id>136155</id>
+        <descricao>COZ. KITCHENAID JOGO FACAS C/ 16 PCS VERMELHO</descricao>
+        <preco>145</preco>
+    </produto>
+    <produto>
+        <id>140319</id>
+        <descricao>COZ. KITCHENAID KIT COZINHA C/ 5PCS PRETO</descricao>
+        <preco>58</preco>
+    </produto>
+    <produto>
+        <id>182112</id>
+        <descricao>COZ. KITCHENAID KIT COZINHA C/ 6PCS COLORIDO</descricao>
+        <preco>5</preco>
+    </produto>
+</listaprodutos>
