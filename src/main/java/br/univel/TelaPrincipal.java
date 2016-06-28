@@ -398,7 +398,7 @@ public class TelaPrincipal extends JFrame {
 		JasperPrint rel = null;
 		try {
 			HashMap map = new HashMap();
-			String arquivoJasper = "RelProdutos.jasper";
+			String arquivoJasper = "C:\\Users\\Eduardo\\git\\Trabalho154114\\src\\main\\java\\br\\univel\\RelProdutos.jasper";
 			rel = JasperFillManager.fillReport(arquivoJasper, map, getImp().getCon());
 		} catch (JRException e) {
 			JOptionPane.showMessageDialog(null,e.getMessage());
