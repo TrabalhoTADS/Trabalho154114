@@ -76,13 +76,13 @@ public class TelaPrincipal extends JFrame {
 	private JTextField tfTel;
 	private JTextField tfCel;
 	private JTextField tfId;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
+	private JTextField tfVdaCli;
+	private JTextField tfVdaPro;
+	private JTextField tfVdaId;
+	private JTextField tfVdaQtd;
+	private JTextField tfVPago;
+	private JTextField tfTroco;
+	private JTextField tfTotal;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -101,7 +101,7 @@ public class TelaPrincipal extends JFrame {
 	public TelaPrincipal() {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 600, 377);
+		setBounds(100, 100, 700, 377);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -994,7 +994,7 @@ public class TelaPrincipal extends JFrame {
 		GridBagLayout gbl_telaVenda = new GridBagLayout();
 		gbl_telaVenda.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 		gbl_telaVenda.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		gbl_telaVenda.columnWeights = new double[] { 0.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0,
+		gbl_telaVenda.columnWeights = new double[] { 0.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0,
 				Double.MIN_VALUE };
 		gbl_telaVenda.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		telaVenda.setLayout(gbl_telaVenda);
@@ -1007,15 +1007,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblCliente.gridy = 1;
 		telaVenda.add(lblCliente, gbc_lblCliente);
 
-		textField = new JTextField();
-		GridBagConstraints gbc_textField = new GridBagConstraints();
-		gbc_textField.gridwidth = 7;
-		gbc_textField.insets = new Insets(0, 0, 5, 5);
-		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField.gridx = 2;
-		gbc_textField.gridy = 1;
-		telaVenda.add(textField, gbc_textField);
-		textField.setColumns(10);
+		tfVdaCli = new JTextField();
+		GridBagConstraints gbc_tfVdaCli = new GridBagConstraints();
+		gbc_tfVdaCli.gridwidth = 7;
+		gbc_tfVdaCli.insets = new Insets(0, 0, 5, 5);
+		gbc_tfVdaCli.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfVdaCli.gridx = 2;
+		gbc_tfVdaCli.gridy = 1;
+		telaVenda.add(tfVdaCli, gbc_tfVdaCli);
+		tfVdaCli.setColumns(10);
 
 		JLabel lblCod = new JLabel("Cod:");
 		GridBagConstraints gbc_lblCod = new GridBagConstraints();
@@ -1025,17 +1025,19 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblCod.gridy = 1;
 		telaVenda.add(lblCod, gbc_lblCod);
 
-		textField_2 = new JTextField();
-		GridBagConstraints gbc_textField_2 = new GridBagConstraints();
-		gbc_textField_2.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_2.gridx = 10;
-		gbc_textField_2.gridy = 1;
-		telaVenda.add(textField_2, gbc_textField_2);
-		textField_2.setColumns(10);
+		tfVdaId = new JTextField();
+		tfVdaId.setEditable(false);
+		GridBagConstraints gbc_tfVdaId = new GridBagConstraints();
+		gbc_tfVdaId.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfVdaId.insets = new Insets(0, 0, 5, 5);
+		gbc_tfVdaId.gridx = 10;
+		gbc_tfVdaId.gridy = 1;
+		telaVenda.add(tfVdaId, gbc_tfVdaId);
+		tfVdaId.setColumns(10);
 
 		JButton btnAdcionar_1 = new JButton("Adcionar");
 		GridBagConstraints gbc_btnAdcionar_1 = new GridBagConstraints();
+		gbc_btnAdcionar_1.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnAdcionar_1.insets = new Insets(0, 0, 5, 5);
 		gbc_btnAdcionar_1.gridx = 11;
 		gbc_btnAdcionar_1.gridy = 1;
@@ -1057,15 +1059,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblProduto.gridy = 2;
 		telaVenda.add(lblProduto, gbc_lblProduto);
 
-		textField_1 = new JTextField();
-		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
-		gbc_textField_1.gridwidth = 7;
-		gbc_textField_1.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_1.gridx = 2;
-		gbc_textField_1.gridy = 2;
-		telaVenda.add(textField_1, gbc_textField_1);
-		textField_1.setColumns(10);
+		tfVdaPro = new JTextField();
+		GridBagConstraints gbc_tfVdaPro = new GridBagConstraints();
+		gbc_tfVdaPro.gridwidth = 7;
+		gbc_tfVdaPro.insets = new Insets(0, 0, 5, 5);
+		gbc_tfVdaPro.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfVdaPro.gridx = 2;
+		gbc_tfVdaPro.gridy = 2;
+		telaVenda.add(tfVdaPro, gbc_tfVdaPro);
+		tfVdaPro.setColumns(10);
 
 		JLabel lblQtd = new JLabel("Qtd:");
 		GridBagConstraints gbc_lblQtd = new GridBagConstraints();
@@ -1075,14 +1077,14 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblQtd.gridy = 2;
 		telaVenda.add(lblQtd, gbc_lblQtd);
 
-		textField_3 = new JTextField();
-		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
-		gbc_textField_3.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_3.gridx = 10;
-		gbc_textField_3.gridy = 2;
-		telaVenda.add(textField_3, gbc_textField_3);
-		textField_3.setColumns(10);
+		tfVdaQtd = new JTextField();
+		GridBagConstraints gbc_tfVdaQtd = new GridBagConstraints();
+		gbc_tfVdaQtd.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfVdaQtd.insets = new Insets(0, 0, 5, 5);
+		gbc_tfVdaQtd.gridx = 10;
+		gbc_tfVdaQtd.gridy = 2;
+		telaVenda.add(tfVdaQtd, gbc_tfVdaQtd);
+		tfVdaQtd.setColumns(10);
 
 		JButton btnAdcionar = new JButton("Adcionar");
 		GridBagConstraints gbc_btnAdcionar = new GridBagConstraints();
@@ -1119,6 +1121,14 @@ public class TelaPrincipal extends JFrame {
 		gbc_scrollPane.gridy = 3;
 		telaVenda.add(scrollPane, gbc_scrollPane);
 
+		JButton btnExportarXml = new JButton("Exportar XML");
+		GridBagConstraints gbc_btnExportarXml = new GridBagConstraints();
+		gbc_btnExportarXml.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnExportarXml.insets = new Insets(0, 0, 5, 5);
+		gbc_btnExportarXml.gridx = 0;
+		gbc_btnExportarXml.gridy = 4;
+		telaVenda.add(btnExportarXml, gbc_btnExportarXml);
+
 		JButton btnFinalizarCompra = new JButton("Finalizar Compra");
 		GridBagConstraints gbc_btnFinalizarCompra = new GridBagConstraints();
 		gbc_btnFinalizarCompra.fill = GridBagConstraints.HORIZONTAL;
@@ -1127,6 +1137,14 @@ public class TelaPrincipal extends JFrame {
 		gbc_btnFinalizarCompra.gridx = 11;
 		gbc_btnFinalizarCompra.gridy = 4;
 		telaVenda.add(btnFinalizarCompra, gbc_btnFinalizarCompra);
+
+		JButton btnImportarXml = new JButton("Importar XML");
+		GridBagConstraints gbc_btnImportarXml = new GridBagConstraints();
+		gbc_btnImportarXml.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnImportarXml.insets = new Insets(0, 0, 5, 5);
+		gbc_btnImportarXml.gridx = 0;
+		gbc_btnImportarXml.gridy = 5;
+		telaVenda.add(btnImportarXml, gbc_btnImportarXml);
 
 		JLabel lblVpago = new JLabel("V.PAGO:");
 		lblVpago.setBackground(Color.GRAY);
@@ -1137,14 +1155,22 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblVpago.gridy = 5;
 		telaVenda.add(lblVpago, gbc_lblVpago);
 
-		textField_4 = new JTextField();
-		GridBagConstraints gbc_textField_4 = new GridBagConstraints();
-		gbc_textField_4.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_4.gridx = 12;
-		gbc_textField_4.gridy = 5;
-		telaVenda.add(textField_4, gbc_textField_4);
-		textField_4.setColumns(10);
+		tfVPago = new JTextField();
+		GridBagConstraints gbc_tfVPago = new GridBagConstraints();
+		gbc_tfVPago.insets = new Insets(0, 0, 5, 0);
+		gbc_tfVPago.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfVPago.gridx = 12;
+		gbc_tfVPago.gridy = 5;
+		telaVenda.add(tfVPago, gbc_tfVPago);
+		tfVPago.setColumns(10);
+
+		JButton btnSerializar = new JButton("Serializar");
+		GridBagConstraints gbc_btnSerializar = new GridBagConstraints();
+		gbc_btnSerializar.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnSerializar.insets = new Insets(0, 0, 5, 5);
+		gbc_btnSerializar.gridx = 0;
+		gbc_btnSerializar.gridy = 6;
+		telaVenda.add(btnSerializar, gbc_btnSerializar);
 
 		JLabel lblTroco = new JLabel("TROCO:");
 		lblTroco.setBackground(Color.GRAY);
@@ -1155,15 +1181,23 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblTroco.gridy = 6;
 		telaVenda.add(lblTroco, gbc_lblTroco);
 
-		textField_5 = new JTextField();
-		textField_5.setEnabled(false);
-		GridBagConstraints gbc_textField_5 = new GridBagConstraints();
-		gbc_textField_5.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_5.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_5.gridx = 12;
-		gbc_textField_5.gridy = 6;
-		telaVenda.add(textField_5, gbc_textField_5);
-		textField_5.setColumns(10);
+		tfTroco = new JTextField();
+		tfTroco.setEnabled(false);
+		GridBagConstraints gbc_tfTroco = new GridBagConstraints();
+		gbc_tfTroco.insets = new Insets(0, 0, 5, 0);
+		gbc_tfTroco.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfTroco.gridx = 12;
+		gbc_tfTroco.gridy = 6;
+		telaVenda.add(tfTroco, gbc_tfTroco);
+		tfTroco.setColumns(10);
+
+		JButton btnDesserializar = new JButton("Desserializar");
+		GridBagConstraints gbc_btnDesserializar = new GridBagConstraints();
+		gbc_btnDesserializar.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnDesserializar.insets = new Insets(0, 0, 5, 5);
+		gbc_btnDesserializar.gridx = 0;
+		gbc_btnDesserializar.gridy = 7;
+		telaVenda.add(btnDesserializar, gbc_btnDesserializar);
 
 		JLabel lblTotal = new JLabel("TOTAL:");
 		lblTotal.setBackground(Color.GRAY);
@@ -1174,48 +1208,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_lblTotal.gridy = 7;
 		telaVenda.add(lblTotal, gbc_lblTotal);
 
-		textField_6 = new JTextField();
-		textField_6.setEnabled(false);
-		GridBagConstraints gbc_textField_6 = new GridBagConstraints();
-		gbc_textField_6.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_6.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_6.gridx = 12;
-		gbc_textField_6.gridy = 7;
-		telaVenda.add(textField_6, gbc_textField_6);
-		textField_6.setColumns(10);
-
-		JButton btnExportarXml = new JButton("Exportar XML");
-		GridBagConstraints gbc_btnExportarXml = new GridBagConstraints();
-		gbc_btnExportarXml.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnExportarXml.gridwidth = 2;
-		gbc_btnExportarXml.insets = new Insets(0, 0, 0, 5);
-		gbc_btnExportarXml.gridx = 1;
-		gbc_btnExportarXml.gridy = 8;
-		telaVenda.add(btnExportarXml, gbc_btnExportarXml);
-
-		JButton btnImportarXml = new JButton("Importar XML");
-		GridBagConstraints gbc_btnImportarXml = new GridBagConstraints();
-		gbc_btnImportarXml.gridwidth = 2;
-		gbc_btnImportarXml.insets = new Insets(0, 0, 0, 5);
-		gbc_btnImportarXml.gridx = 3;
-		gbc_btnImportarXml.gridy = 8;
-		telaVenda.add(btnImportarXml, gbc_btnImportarXml);
-
-		JButton btnSerializar = new JButton("Serializar");
-		GridBagConstraints gbc_btnSerializar = new GridBagConstraints();
-		gbc_btnSerializar.gridwidth = 2;
-		gbc_btnSerializar.insets = new Insets(0, 0, 0, 5);
-		gbc_btnSerializar.gridx = 5;
-		gbc_btnSerializar.gridy = 8;
-		telaVenda.add(btnSerializar, gbc_btnSerializar);
-
-		JButton btnDesserializar = new JButton("Desserializar");
-		GridBagConstraints gbc_btnDesserializar = new GridBagConstraints();
-		gbc_btnDesserializar.insets = new Insets(0, 0, 0, 5);
-		gbc_btnDesserializar.gridwidth = 3;
-		gbc_btnDesserializar.gridx = 7;
-		gbc_btnDesserializar.gridy = 8;
-		telaVenda.add(btnDesserializar, gbc_btnDesserializar);
+		tfTotal = new JTextField();
+		tfTotal.setEnabled(false);
+		GridBagConstraints gbc_tfTotal = new GridBagConstraints();
+		gbc_tfTotal.insets = new Insets(0, 0, 5, 0);
+		gbc_tfTotal.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfTotal.gridx = 12;
+		gbc_tfTotal.gridy = 7;
+		telaVenda.add(tfTotal, gbc_tfTotal);
+		tfTotal.setColumns(10);
 		mostraUltima();
 
 	}
