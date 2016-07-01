@@ -10,6 +10,7 @@ public class ClienteModel extends AbstractTableModel {
 
 	public ClienteModel(List<?> lista) {
 		this.lista = (List<Cliente>) lista;
+		fireTableDataChanged();
 	}
 
 	@Override
@@ -23,6 +24,7 @@ public class ClienteModel extends AbstractTableModel {
 
 	public void setLista(List<Cliente> lista) {
 		this.lista = lista;
+		fireTableDataChanged();
 	}
 
 	@Override
