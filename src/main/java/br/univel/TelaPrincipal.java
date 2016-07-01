@@ -1,5 +1,6 @@
 package br.univel;
 
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -7,6 +8,8 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
@@ -21,6 +24,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.function.Consumer;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -32,6 +36,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import javax.swing.table.AbstractTableModel;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
@@ -40,8 +45,6 @@ import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.view.JasperViewer;
-import java.awt.Component;
-import java.awt.Color;
 
 public class TelaPrincipal extends JFrame {
 
@@ -50,6 +53,10 @@ public class TelaPrincipal extends JFrame {
 	private JTable tableCli;
 	private JTable tablePro;
 	private JTable tableProVda;
+	private JTable tableVda;
+
+	private Consumer<Cliente> consumerOnOk;
+	private Runnable runnableOnCancel;
 
 	private List<Produto> listaProduto;
 	private List<Cliente> listaCliente;
@@ -60,11 +67,17 @@ public class TelaPrincipal extends JFrame {
 	private String ABA_UM = "Produtos";
 	private String ABA_DOIS = "Clientes";
 	private String ABA_TRES = "Vendas";
+
+	private BigDecimal Vunit;
+	private BigDecimal Vtot = new BigDecimal("0");
+	private BigDecimal Vpago = new BigDecimal("0");
+	private BigDecimal Vtroco = new BigDecimal("0");
+
 	private NumberField tfCodigo;
 	private NumberField tfPreco;
 	private JTextField tfDesc;
 	private JScrollPane PainelProdutos;
-	private JScrollPane PainelVendas;
+	private JScrollPane PainelVenda;
 	private JTextField tfNome;
 	private JTextField tfEnd;
 	private JTextField tfNumero;
@@ -83,6 +96,7 @@ public class TelaPrincipal extends JFrame {
 	private JTextField tfVPago;
 	private JTextField tfTroco;
 	private JTextField tfTotal;
+	private JTextField tfVdaIdPro;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -107,15 +121,15 @@ public class TelaPrincipal extends JFrame {
 		setContentPane(contentPane);
 		GridBagLayout gbl_contentPane = new GridBagLayout();
 		gbl_contentPane.columnWidths = new int[] { 0, 0, 0, 0, 0 };
-		gbl_contentPane.rowHeights = new int[] { 0, 0, 0 };
+		gbl_contentPane.rowHeights = new int[] { 0, 0, 0, 0 };
 		gbl_contentPane.columnWeights = new double[] { 1.0, 1.0, 1.0, 0.0, Double.MIN_VALUE };
-		gbl_contentPane.rowWeights = new double[] { 0.0, 1.0, Double.MIN_VALUE };
+		gbl_contentPane.rowWeights = new double[] { 0.0, 1.0, 1.0, Double.MIN_VALUE };
 		contentPane.setLayout(gbl_contentPane);
 
 		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		GridBagConstraints gbc_tabbedPane = new GridBagConstraints();
 		gbc_tabbedPane.gridwidth = 3;
-		gbc_tabbedPane.insets = new Insets(0, 0, 0, 5);
+		gbc_tabbedPane.insets = new Insets(0, 0, 5, 5);
 		gbc_tabbedPane.fill = GridBagConstraints.BOTH;
 		gbc_tabbedPane.gridx = 0;
 		gbc_tabbedPane.gridy = 1;
@@ -443,6 +457,35 @@ public class TelaPrincipal extends JFrame {
 		}
 
 		JPanel telaCliente = new JPanel();
+
+		tableProVda = new JTable() {
+
+			@Override
+			public String getToolTipText(MouseEvent e) {
+
+				String tip = null;
+
+				Point p = e.getPoint();
+
+				int rowIndex = rowAtPoint(p);
+				int colIndex = columnAtPoint(p);
+
+				if (rowIndex == -1 || colIndex == -1) {
+					return null;
+				}
+
+				try {
+					tip = getValueAt(rowIndex, colIndex).toString();
+				} catch (RuntimeException e1) {
+
+				}
+
+				return tip;
+
+			}
+
+		};
+
 
 		tabbedPane.addTab("Clientes", telaCliente);
 		GridBagLayout gbl_telaCliente = new GridBagLayout();
@@ -993,10 +1036,10 @@ public class TelaPrincipal extends JFrame {
 		tabbedPane.addTab("Vendas", telaVenda);
 		GridBagLayout gbl_telaVenda = new GridBagLayout();
 		gbl_telaVenda.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		gbl_telaVenda.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		gbl_telaVenda.columnWeights = new double[] { 0.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0,
+		gbl_telaVenda.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		gbl_telaVenda.columnWeights = new double[] { 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0,
 				Double.MIN_VALUE };
-		gbl_telaVenda.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
+		gbl_telaVenda.rowWeights = new double[] { 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, Double.MIN_VALUE };
 		telaVenda.setLayout(gbl_telaVenda);
 
 		JLabel lblCliente = new JLabel("Cliente:");
@@ -1035,14 +1078,6 @@ public class TelaPrincipal extends JFrame {
 		telaVenda.add(tfVdaId, gbc_tfVdaId);
 		tfVdaId.setColumns(10);
 
-		JButton btnAdcionar_1 = new JButton("Adcionar");
-		GridBagConstraints gbc_btnAdcionar_1 = new GridBagConstraints();
-		gbc_btnAdcionar_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnAdcionar_1.insets = new Insets(0, 0, 5, 5);
-		gbc_btnAdcionar_1.gridx = 11;
-		gbc_btnAdcionar_1.gridy = 1;
-		telaVenda.add(btnAdcionar_1, gbc_btnAdcionar_1);
-
 		JButton btnAlterar = new JButton("Alterar");
 		GridBagConstraints gbc_btnAlterar = new GridBagConstraints();
 		gbc_btnAlterar.fill = GridBagConstraints.HORIZONTAL;
@@ -1061,13 +1096,31 @@ public class TelaPrincipal extends JFrame {
 
 		tfVdaPro = new JTextField();
 		GridBagConstraints gbc_tfVdaPro = new GridBagConstraints();
-		gbc_tfVdaPro.gridwidth = 7;
+		gbc_tfVdaPro.gridwidth = 5;
 		gbc_tfVdaPro.insets = new Insets(0, 0, 5, 5);
 		gbc_tfVdaPro.fill = GridBagConstraints.HORIZONTAL;
 		gbc_tfVdaPro.gridx = 2;
 		gbc_tfVdaPro.gridy = 2;
 		telaVenda.add(tfVdaPro, gbc_tfVdaPro);
 		tfVdaPro.setColumns(10);
+
+		JLabel label = new JLabel("Cod:");
+		GridBagConstraints gbc_label = new GridBagConstraints();
+		gbc_label.anchor = GridBagConstraints.EAST;
+		gbc_label.insets = new Insets(0, 0, 5, 5);
+		gbc_label.gridx = 7;
+		gbc_label.gridy = 2;
+		telaVenda.add(label, gbc_label);
+
+		tfVdaIdPro = new JTextField();
+		tfVdaIdPro.setEnabled(false);
+		GridBagConstraints gbc_tfVdaIdPro = new GridBagConstraints();
+		gbc_tfVdaIdPro.insets = new Insets(0, 0, 5, 5);
+		gbc_tfVdaIdPro.fill = GridBagConstraints.HORIZONTAL;
+		gbc_tfVdaIdPro.gridx = 8;
+		gbc_tfVdaIdPro.gridy = 2;
+		telaVenda.add(tfVdaIdPro, gbc_tfVdaIdPro);
+		tfVdaIdPro.setColumns(10);
 
 		JLabel lblQtd = new JLabel("Qtd:");
 		GridBagConstraints gbc_lblQtd = new GridBagConstraints();
@@ -1087,6 +1140,32 @@ public class TelaPrincipal extends JFrame {
 		tfVdaQtd.setColumns(10);
 
 		JButton btnAdcionar = new JButton("Adcionar");
+		btnAdcionar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				ProdVenda pv = new ProdVenda();
+				pv.setDescPro(tfVdaPro.getText());
+				pv.setCodPro(Integer.parseInt(tfVdaIdPro.getText()));
+				pv.setQtd(Integer.parseInt(tfVdaQtd.getText()));
+				pv.setTotal(Vunit.multiply(new BigDecimal(Integer.toString(pv.getQtd()))));
+
+				tfVdaPro.setText("");
+				tfVdaIdPro.setText("");
+				tfVdaQtd.setText("");
+
+
+				if (listaProdVenda == null)
+					listaProdVenda = new ArrayList<>();
+
+				listaProdVenda.add(pv);
+
+				Vtot = Vtot.add(pv.getTotal());
+				tfTotal.setText(Vtot.toString());
+
+				ProdVendaModel model = new ProdVendaModel(listaProdVenda);
+				tableProVda.setModel(model);
+
+			}
+		});
 		GridBagConstraints gbc_btnAdcionar = new GridBagConstraints();
 		gbc_btnAdcionar.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnAdcionar.insets = new Insets(0, 0, 5, 5);
@@ -1111,15 +1190,15 @@ public class TelaPrincipal extends JFrame {
 		gbc_btnNewButton_1.gridy = 3;
 		telaVenda.add(btnNewButton_1, gbc_btnNewButton_1);
 
-		JScrollPane scrollPane = new JScrollPane();
-		GridBagConstraints gbc_scrollPane = new GridBagConstraints();
-		gbc_scrollPane.gridheight = 5;
-		gbc_scrollPane.gridwidth = 10;
-		gbc_scrollPane.insets = new Insets(0, 0, 5, 5);
-		gbc_scrollPane.fill = GridBagConstraints.BOTH;
-		gbc_scrollPane.gridx = 1;
-		gbc_scrollPane.gridy = 3;
-		telaVenda.add(scrollPane, gbc_scrollPane);
+		JScrollPane painelVenda = new JScrollPane();
+		GridBagConstraints gbc_painelVenda = new GridBagConstraints();
+		gbc_painelVenda.gridheight = 5;
+		gbc_painelVenda.gridwidth = 10;
+		gbc_painelVenda.insets = new Insets(0, 0, 5, 5);
+		gbc_painelVenda.fill = GridBagConstraints.BOTH;
+		gbc_painelVenda.gridx = 1;
+		gbc_painelVenda.gridy = 3;
+		telaVenda.add(painelVenda, gbc_painelVenda);
 
 		JButton btnExportarXml = new JButton("Exportar XML");
 		GridBagConstraints gbc_btnExportarXml = new GridBagConstraints();
@@ -1130,6 +1209,22 @@ public class TelaPrincipal extends JFrame {
 		telaVenda.add(btnExportarXml, gbc_btnExportarXml);
 
 		JButton btnFinalizarCompra = new JButton("Finalizar Compra");
+		btnFinalizarCompra.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Vpago = new BigDecimal(tfVPago.getText());
+
+				if (Vpago.doubleValue() > Vtot.doubleValue())
+					Vtroco = Vtroco.add(Vpago.subtract(Vtot));
+
+				tfTroco.setText(Vtroco.toString());
+
+				listaProdVenda.clear();
+
+				ProdVendaModel model = new ProdVendaModel(listaProdVenda);
+				tableProVda.setModel(model);
+
+			}
+		});
 		GridBagConstraints gbc_btnFinalizarCompra = new GridBagConstraints();
 		gbc_btnFinalizarCompra.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnFinalizarCompra.gridwidth = 2;
@@ -1193,6 +1288,7 @@ public class TelaPrincipal extends JFrame {
 
 		JButton btnDesserializar = new JButton("Desserializar");
 		GridBagConstraints gbc_btnDesserializar = new GridBagConstraints();
+		gbc_btnDesserializar.anchor = GridBagConstraints.NORTH;
 		gbc_btnDesserializar.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnDesserializar.insets = new Insets(0, 0, 5, 5);
 		gbc_btnDesserializar.gridx = 0;
@@ -1202,7 +1298,7 @@ public class TelaPrincipal extends JFrame {
 		JLabel lblTotal = new JLabel("TOTAL:");
 		lblTotal.setBackground(Color.GRAY);
 		GridBagConstraints gbc_lblTotal = new GridBagConstraints();
-		gbc_lblTotal.anchor = GridBagConstraints.EAST;
+		gbc_lblTotal.anchor = GridBagConstraints.NORTHEAST;
 		gbc_lblTotal.insets = new Insets(0, 0, 5, 5);
 		gbc_lblTotal.gridx = 11;
 		gbc_lblTotal.gridy = 7;
@@ -1211,6 +1307,7 @@ public class TelaPrincipal extends JFrame {
 		tfTotal = new JTextField();
 		tfTotal.setEnabled(false);
 		GridBagConstraints gbc_tfTotal = new GridBagConstraints();
+		gbc_tfTotal.anchor = GridBagConstraints.NORTH;
 		gbc_tfTotal.insets = new Insets(0, 0, 5, 0);
 		gbc_tfTotal.fill = GridBagConstraints.HORIZONTAL;
 		gbc_tfTotal.gridx = 12;
@@ -1219,6 +1316,51 @@ public class TelaPrincipal extends JFrame {
 		tfTotal.setColumns(10);
 		mostraUltima();
 
+		tableVda = new JTable() {
+
+			@Override
+			public String getToolTipText(MouseEvent e) {
+
+				String tip = null;
+
+				Point p = e.getPoint();
+
+				int rowIndex = rowAtPoint(p);
+				int colIndex = columnAtPoint(p);
+
+				if (rowIndex == -1 || colIndex == -1) {
+					return null;
+				}
+
+				try {
+					tip = getValueAt(rowIndex, colIndex).toString();
+				} catch (RuntimeException e1) {
+
+				}
+
+				return tip;
+
+			}
+
+		};
+
+		painelVenda.setViewportView(tableVda);
+
+		JScrollPane tabelaProVda = new JScrollPane();
+		GridBagConstraints gbc_tabelaProVda = new GridBagConstraints();
+		gbc_tabelaProVda.gridheight = 2;
+		gbc_tabelaProVda.gridwidth = 13;
+		gbc_tabelaProVda.fill = GridBagConstraints.BOTH;
+		gbc_tabelaProVda.gridx = 0;
+		gbc_tabelaProVda.gridy = 8;
+		telaVenda.add(tabelaProVda, gbc_tabelaProVda);
+
+		configuraTelaVdaCliente();
+
+		tabelaProVda.setViewportView(tableProVda);
+
+		/*ProdVendaModel model = new ProdVendaModel(listaProdVenda);
+		tableProVda.setModel(model);*/
 	}
 
 	private void mostraUltima() {
@@ -1346,6 +1488,28 @@ public class TelaPrincipal extends JFrame {
 			JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!");
 		} else {
 			c = ((ClienteModel) tableCli.getModel()).getClienteNaLinha(index);
+		}
+		return c;
+	}
+
+	private Cliente getClienteSelecionadoNaTabelaVDA() {
+		Cliente c = null;
+		int index = tableVda.getSelectedRow();
+		if (index == -1) {
+			JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!");
+		} else {
+			c = ((ClienteModel) tableVda.getModel()).getClienteNaLinha(index);
+		}
+		return c;
+	}
+
+	private Produto getProdutoSelecionadoNaTabelaVDA() {
+		Produto c = null;
+		int index = tableVda.getSelectedRow();
+		if (index == -1) {
+			JOptionPane.showMessageDialog(null, "Nenhuma linha selecionada!");
+		} else {
+			c = ((ProdutoModel) tableVda.getModel()).getProdutoNaLinha(index);
 		}
 		return c;
 	}
@@ -1543,6 +1707,7 @@ public class TelaPrincipal extends JFrame {
 						}
 					}
 				}
+
 			});
 		}
 
@@ -1727,5 +1892,187 @@ public class TelaPrincipal extends JFrame {
 		 * if (listaProduto.size() > 0 && listaCliente.size() > 0)
 		 * JOptionPane.showMessageDialog(null, obj.getClass() +
 		 * "IMPORTADOS DO BANCO DE DADOS!");
-		 */ }
+		 */
+	}
+
+	private void configuraTelaVdaCliente() {
+
+		tfVdaCli.addKeyListener(new KeyAdapter() {
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+
+				busca(tfVdaCli.getText().trim(), 1);
+
+				if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+					tableVda.getSelectionModel().setSelectionInterval(0, 0);
+					tfVdaCli.transferFocus();
+				}
+
+				if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+					if (TelaPrincipal.this.runnableOnCancel != null) {
+						TelaPrincipal.this.runnableOnCancel.run();
+					}
+				}
+			}
+		});
+
+		tableVda.addMouseListener(new MouseAdapter() {
+
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (e.getClickCount() >= 1) {
+
+					if (tableVda.getModel().getClass().equals(ClienteModel.class)) {
+
+						Cliente c = getClienteSelecionadoNaTabelaVDA();
+						if (c != null) {
+							tfVdaCli.setText(c.getNome());
+							tfVdaId.setText(Integer.toString(c.getId()));
+							tfVdaCli.enable(false);
+							busca(null, 1);
+
+						}
+					}
+					if (tableVda.getModel().getClass().equals(ProdutoModel.class)) {
+
+						Produto c = getProdutoSelecionadoNaTabelaVDA();
+						if (c != null) {
+							tfVdaPro.setText(c.getDescricao());
+							tfVdaIdPro.setText(Integer.toString(c.getId()));
+							Vunit = c.getPreco();
+							busca(null, 2);
+						}
+					}
+				}
+			}
+		});
+
+		tfVdaPro.addKeyListener(new KeyAdapter() {
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+
+				busca(tfVdaPro.getText().trim(), 2);
+
+				if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+					tableVda.getSelectionModel().setSelectionInterval(0, 0);
+					tfVdaPro.transferFocus();
+				}
+
+				if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+					if (TelaPrincipal.this.runnableOnCancel != null) {
+						TelaPrincipal.this.runnableOnCancel.run();
+					}
+				}
+			}
+		});
+	}
+
+	protected void busca(String palavra, int modelo) {
+
+		if (modelo == 1) {
+
+			List<Cliente> lista = buscaClienteNoBanco(palavra);
+
+			ClienteModel model = new ClienteModel(lista);
+			tableVda.setModel(model);
+		} else if (modelo == 2) {
+			List<Produto> lista = buscaProdutoNoBanco(palavra);
+
+			ProdutoModel model = new ProdutoModel(lista);
+			tableVda.setModel(model);
+		}
+
+	}
+
+	private List<Cliente> buscaClienteNoBanco(String palavra) {
+
+		List<Cliente> lista = new ArrayList<Cliente>();
+
+		PreparedStatement ps;
+		try {
+			ps = getImp().getCon().prepareStatement("Select * from cliente where nome like '" + palavra + "%';");
+
+			ResultSet retorno = ps.executeQuery();
+
+			try {
+				while (retorno.next()) {
+					Cliente aux = new Cliente();
+					aux.setId(retorno.getInt("id"));
+					aux.setNome(retorno.getString("nome"));
+					aux.setEndereco(retorno.getString("endereco"));
+					aux.setNumero(retorno.getInt("numero"));
+					aux.setComplemento(retorno.getString("complemento"));
+					aux.setBairro(retorno.getString("bairro"));
+					aux.setCidade(retorno.getString("cidade"));
+					aux.setEstado(retorno.getString("estado"));
+					aux.setCep(retorno.getInt("cep"));
+					aux.setTelefone(retorno.getString("telefone"));
+					aux.setCelular(retorno.getString("celular"));
+
+					lista.add(aux);
+				}
+
+			} catch (Exception e) {
+
+			}
+		} catch (SQLException e1) {
+
+		}
+
+		return lista;
+	}
+
+	private List<Produto> buscaProdutoNoBanco(String palavra) {
+
+		List<Produto> lista = new ArrayList<Produto>();
+
+		PreparedStatement ps;
+		try {
+			ps = getImp().getCon().prepareStatement("Select * from produto where descricao LIKE '" + palavra.toUpperCase() + "%';");
+
+			ResultSet retorno = ps.executeQuery();
+
+			try {
+				while (retorno.next()) {
+					Produto aux = new Produto();
+					aux.setId(retorno.getInt("id"));
+					aux.setDescricao(retorno.getString("descricao"));
+					aux.setPreco(new BigDecimal(retorno.getString("preco")));
+
+					lista.add(aux);
+				}
+
+			} catch (Exception e) {
+
+			}
+		} catch (SQLException e1) {
+
+		}
+
+		return lista;
+	}
+
+	public void setOnOk(Consumer<Cliente> c) {
+		this.consumerOnOk = c;
+	}
+
+	public void setOnCancel(Runnable r) {
+		this.runnableOnCancel = r;
+	}
+
+	@Override
+	public void setVisible(boolean arg0) {
+
+		super.setVisible(arg0);
+		EventQueue.invokeLater(new Runnable() {
+
+			@Override
+			public void run() {
+				tfVdaCli.requestFocusInWindow();
+			}
+		});
+	}
+
 }
